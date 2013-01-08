@@ -1,0 +1,43 @@
+digraph modules {
+	node [style=filled,color="#FFDAB9"];
+	
+
+	 "lab-header"      [label="header"];
+	 "lab-heading"     [label="heading"];
+	 "article-header"  [label="header"];
+	 "article-heading" [label="heading"];
+	 "section-heading" [label="heading"];
+
+	 "lab-footer"      [label="footer" color="#DDA0DD"];
+	 "article-footer"  [label="footer" color="#DDA0DD"];
+	 "article-aside"   [label="aside" color="#DDA0DD"];
+	 nav               [label="nav" color="#DDA0DD"];
+
+	 lab -> "lab-header";
+	 lab -> "lab-footer";
+	 lab -> article;
+
+
+	 "lab-header" -> logo;
+         "lab-header" -> "lab-heading";
+         logo -> img;
+
+         article -> "article-header";
+         article -> nav;
+         article -> "article-aside";
+         article -> "article-footer";
+ 	 article -> sections;
+
+         "article-header" -> "article-heading";
+
+	 sections -> "section-1";
+	 sections -> "section-n";
+
+	 "section-1" -> icon;
+	 "section-1" -> "section-heading";
+         "section-1" -> content;
+
+}
+	 
+	 
+

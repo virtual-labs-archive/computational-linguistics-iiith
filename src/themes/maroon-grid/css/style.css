@@ -1,0 +1,325 @@
+/* Primary Styles -------------------------------------------*/
+/* Author: Rohit Khot ---------------------------------------*/
+
+/* Basic styling for the complete body tag ------------------*/
+/* BODY TEXT : 12px Lucida font with Cobalt color -----------*/
+/* BACKGROUND : white ---------------------------------------*/
+
+body
+{
+	font-family:"Lucida Grande","Lucida Sans Unicode",
+                "Lucida Sans", Verdana,Arial,sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	background: #f6f6ee url(../images/bck.jpg);	
+}
+
+#container
+{
+	margin:0;
+	padding:0
+	width:100%;	
+}
+
+#lab-header,#experiment-header
+{
+	background: url(../images/bck_head.jpg);
+
+	/* create a shadow of dark pinkish red */
+
+	x-shadow: inset 0px -2px 3px #480508;
+	-khtml-box-shadow: inset 0px -2px 3px #480508;
+	-webkit-box-shadow: inset 0px -2px 3px #480508;
+	box-shadow: inset 0px -2px 3px #480508;
+
+	/* solid border of greyish white */
+
+	border-bottom: 1px solid #fffffb;
+	height: 40px;
+	width: 100%;
+	display: block;
+}
+
+#lab-header-logo, #experiment-header-logo
+{
+	float:left;
+	position:relative;
+}
+
+#lab-header-logo img, #experiment-header-logo img
+{
+	margin-left:20px;
+	height:39px;
+}
+#lab-header-heading, #experiment-header-heading
+{
+	float:left;
+	position:relative;
+	
+}
+
+#lab-header-heading a:link, #experiment-header-heading a:link,
+#lab-header-heading a:visited, #experiment-header-heading a:visited
+{
+	color:#FFF;
+	text-decoration: none;
+	float: left;
+	font-size: 24px;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 5px 25px;	
+}
+
+#lab-header-heading a:focus, #experiment-header-heading a:focus,
+#lab-header-heading a:hover, #experiment-header-heading a:hover
+{
+	color:#f6f6ee;
+	background-color:#480508;		
+}
+
+
+#lab-article, #experiment-article
+{
+	width: 90%;
+	float: left;
+	padding: 20px 5px 0 0;
+	font-size: 16px;
+  	line-height: 24px;
+	margin-bottom:20px;
+	margin-left: 4em;
+}
+
+#lab-article-heading, #experiment-article-heading
+{
+	font-size: 50px;
+	font-family: Georgia, "Times New Roman", Times, Serif;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0 20px 2px 0em;
+	line-height: 60px;
+	color: #3d414c;
+	padding: 10px 0;
+	letter-spacing: 0;
+}
+
+nav#lab-article-navigation,nav#experiment-article-navigation 
+{
+	float:left;
+	height:40px;
+	position:relative;
+	width:100%;
+	border-top: 1px solid #3d414c;
+	border-bottom: 1px solid #3d414c;
+} 
+nav#lab-article-navigation ul,nav#experiment-article-navigation ul
+{
+	/*margin-left:21px;*/
+}
+
+nav#lab-article-navigation ul li,nav#experiment-article-navigation ul li
+{
+	float: left;
+	list-style: none;
+	margin-right: 0.5em; 
+}
+
+nav#lab-article-navigation ul li img,nav#experiment-article-navigation ul li img,
+nav#lab-article-navigation ul li br,nav#experiment-article-navigation ul li br
+{
+	display:none;
+}
+
+nav#lab-article-navigation ul li a:link,nav#experiment-article-navigation ul li a:link,
+nav#lab-article-navigation ul li a:visited,nav#experiment-article-navigation ul li a:visited
+{
+	color: #961b25;
+	text-decoration: underline;
+	float: right;
+	font-size: 16px;
+	text-transform:uppercase;
+	padding: 8px;
+}
+
+nav#lab-article-navigation ul li a:hover,nav#experiment-article-navigation ul li a:hover,
+nav#lab-article-navigation ul li a:focus,nav#experiment-article-navigation ul li a:focus 
+{
+	color: #ffffff;
+	background-color:#961b25;
+}
+
+#lab-article-sections-view, #experiment-article-sections-view
+{
+	padding-top:60px;
+	
+}
+
+#lab-article-sections, #experiment-article-sections
+{
+	padding-top:60px;
+	
+}
+
+#lab-article-sections .heading, #experiment-article-sections .heading
+{
+	color:#222222;
+	font-family:"proxima-nova-extra-condensed-1",
+                "proxima-nova-extra-condensed-2",
+                "Trebuchet MS","Lucida Grande",
+                "Lucida Sans Unicode","Lucida Sans",Verdana,
+                Arial,sans-serif;
+	font-size:24px;
+	font-weight:300;
+	padding:5px 0 10px;
+}
+
+#lab-article-sections .subheading, #experiment-article-sections .subheading,.content h2, .content h3
+{
+	color:#222222;
+	font-family:"proxima-nova-extra-condensed-1",
+                "proxima-nova-extra-condensed-2",
+                "Trebuchet MS","Lucida Grande",
+                "Lucida Sans Unicode","Lucida Sans",Verdana,
+                Arial,sans-serif;
+	font-size:20px;
+	font-weight:300;
+	padding:10px 0 10px;
+}
+.content p
+{
+        padding-top:10px;
+        padding-bottom:10px;
+}
+
+
+.content p a:link, a:visited
+{
+	text-decoration: underline;
+	color: #961b25;/* dusty read */
+}
+.content img, .content embed
+{
+	width:80%;
+	height:400px;
+	margin: 10px 0;
+	border: 1px solid #b2bbc0;
+}
+
+/* styles for button color */
+.button 
+{
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, 
+	                              from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+  
+}
+.button:hover 
+{
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, 
+	                              from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	
+}
+
+.button:active 
+{
+	background: -webkit-gradient(linear, left top, left bottom, 
+                              from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+}
+ 
+/* basic styles for button size, padding, etc. */
+.button 
+{
+	display: inline-block;
+  	outline: none;
+  	font-size: 16px;
+  	cursor: pointer;
+  	text-align: center;
+  	text-decoration: none;
+  	line-height: 100%;
+  	padding: .55em 2em .55em;
+  	text-transform: uppercase;
+  	-webkit-border-radius: 0.5em;
+  	-moz-border-radius: 0.5em;
+  	border-radius: 0.5em;
+  	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover 
+{
+	text-decoration: none;
+}
+.button:active 
+{
+	position: relative;
+  	top: 1px;
+}
+
+
+.content table
+{
+    /*font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;*/
+    border-collapse:separate;
+}
+
+.content table thead th
+{
+	color: #961b25;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform:uppercase;
+	padding: 10px;
+    border:1px solid #b2bbc0;
+}
+.content table tbody th
+{
+	color: #961b25;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform:uppercase;
+	padding: 10px;
+    border:1px solid #b2bbc0;
+}	
+	
+.content table tbody td
+{
+    padding:10px;
+    text-align:left;
+    border:1px solid #b2bbc0;
+}	
+
+.content ul, .content ol
+{
+	margin-left:50px;
+}
+
+aside 
+{
+	float:right;
+	width:200px;
+	position:relative;
+}
+
+#hidden-content 
+{
+	display:none;
+}
+
+.icon
+{
+	display:none;
+}
+
+.content pre
+{
+	padding-left:40px;
+	padding-bottom:10px;
+}
