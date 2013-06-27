@@ -1,0 +1,9 @@
+Noun
+Pronoun
+Verb
+Adjective
+Adverb
+Determiner
+Preposition
+Conjunction
+Interjection

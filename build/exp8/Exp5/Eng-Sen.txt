@@ -1,0 +1,10 @@
+There were once a man and a woman who had long, in vain, wished for a child. &There/EX were/VBD once/RB a/DT man/NN and/CC a/DT woman/NN who/WP had/VBD long/RB in/IN vain/JJ wished/VBN for/IN a/DT child/NN
+At length it appeared that God was about to grant their desire. &At/IN length/NN it/PRP appeared/VBD that/IN God/NNP was/VBD about/IN to/TO grant/VB their/PRP$ desire/NN
+These people had a little window at the back of their house from which a splendid garden could be seen. &These/DT people/NNS had/VBD a/DT little/JJ window/NN at/IN the/DT back/NN of/IN their/PRP$ house/NN from/IN which/WDT a/DT splendid/JJ garden/NN could/MD be/VB seen/VBN
+The garden was full of the most beautiful flowers and herbs. &The/DT garden/NN was/VBD full/JJ of/IN the/DT most/RBS beautiful/JJ flowers/NNS and/CC herbs/NNS
+It was, however, surrounded by a high wall, and no one dared to go into it because it belonged to an enchantress. &It/PRP was/VBD however/RB surrounded/VBN by/IN a/DT high/JJ wall/NN ,/, and/CC no/DT one/NN dared/VBD to/TO go/VB into/IN it/PRP because/IN it/PRP belonged/VBD to/TO an/DT enchantress/NN
+She had great power and was dreaded by all the world. &She/PRP had/VBD great/JJ power/NN and/CC was/VBD dreaded/VBN by/IN all/PDT the/DT world/NN
+One day the woman was standing by this window and looking down into the garden. &One/CD day/NN the/DT woman/NN was/VBD standing/VBG by/IN this/DT window/NN and/CC looking/VBG down/RP into/IN the/DT garden/NN
+She saw a bed which was planted with the most beautiful rampion, and she longed for it. &She/PRP saw/VBD a/DT bed/NN which/WDT was/VBD planted/VBN with/IN the/DT most/RBS beautiful/JJ rampion/NN and/CC she/PRP longed/VBD for/IN it/PRP
+Her husband was alarmed, and asked 'What ails you, dear wife?' &Her/PRP$ husband/NN was/VBD alarmed/VBN and/CC asked/VBD What/WP ails/NNS you/PRP dear/RB wife/NN
+'Ah,' she replied, 'if I cannot eat some of the rampion, which is in the garden behind our house, I shall die.' &Ah/UH she/PRP replied/VBD if/IN I/PRP can/MD not/RB eat/VB some/DT of/IN the/DT rampion/NN which/WDT is/VBZ in/IN the/DT garden/NN behind/IN our/PRP$ house/NN I/PRP shall/MD die/VB

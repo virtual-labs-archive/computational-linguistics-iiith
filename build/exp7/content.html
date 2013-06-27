@@ -1,0 +1,362 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Computational Linguistics Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        Coarse - grained POS Tagging
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+<div style="font-size:15px;">
+Part-of-speech tagging is the process of assigning a part-of-speech (lexical class marker) to each word in a corpus. The basic parts of speech are : Noun, Verb, Determiner, Adjective, Adverb, Preposition (in English), Postposition (in Hindi).<br/><br/>
+
+<center><img src="Exp5/a.jpg" alt="1_alt" style="height:250px;width:400px"/></center>
+</div>
+</div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+<div id="experiment-article-section-2-content" 
+        class="content">
+<p style="font-size:14px;">
+"Parts of speech" are the basic lexical categories of the words present in a language. It is very important to understand these, in order to understand the grammar and use of the language concerned. <br/><br/>
+Eg:<ul>
+<li>Ram(Noun) ate(Verb) an(Determiner) apple(Noun) with(Preposition) a(Article) fork(Noun).</li>
+<li>राम(Noun) ने(Postposition) चम्मच(Noun) से(Postposition) मिठाई(Noun) खाई(Verb).</li></ul>
+<br/>
+Each part of speech explains how the word is used. In fact, the same word can act as different parts of speechs depending on the context. <br/><br/>
+
+Eg: A noun in one sentence and an adjective in the next. <br/>
+
+<ul> <li>The glass was broken(Verb). </li>
+         <li>The broken(Adjective) glass pierced her flesh. </li>
+<br/><br/>
+
+Part-of-speech tagging is the process of assigning a part-of-speech (lexical class marker) to each word in a corpus. <br/><br/>
+
+<TABLE BORDER=2  CELLSPACING=2 WIDTH=100% >
+<TR>
+<TH> POS </TH><TH> Function </TH><TH> Example </TH>
+</TR>
+<TR>
+<TD>Verb</TD><TD>action or state</TD><TD> take, eat, है, सोना, गया  </TD></TR>
+<TR>
+<TD> Noun</TD><TD>naming word; person or thing </TD><TD> table, John, honesty, राम, कुर्सी, हिम्मत  </TD></TR>
+<TR>
+</TR>
+<TR>
+<TD>Pronoun</TD><TD>replaces noun</TD><TD> he, she, you, मैं, वह  </TD></TR>
+<TD> Determiner </TD><TD>occurs before noun or noun phrase</TD><TD> the, many, all </TD></TR>
+<TR>
+<TD> Adjective </TD><TD> describes noun </TD> <TD> green, big, छोटा, सुन्दर, काला </TD>
+</TR>
+<TR>
+<TD> Adverb </TD><TD> describes verb</TD> <TD> naturally, slowly,धीरे, जल्दी  </TD></TR>
+<TR>
+<TD> Preposition</TD><TD>joins noun to other POS</TD><TD> in,of, about </TD>
+</TR>
+<TR>
+<TD> Postposition</TD><TD>joins noun to other POS</TD><TD> में, से, के लिए   </TD>
+</TR>
+<TR>
+<TD> Conjunction</TD><TD> joins two words, phrases, sentences</TD><TD> but, so, और, या </TD>
+</TR>
+<TR>
+<TD> Interjection</TD><TD>express emotion or surprise followed by exclamation marks</TD> <TD> Hello!, Hurray!, वाह! </TR>
+</TABLE>
+</p>
+</div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+<hr><br>
+The objective of this experiment is to test the knowledge of basic part of speech of words as they appear in a sentence.
+<br><br><hr>
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+	<div id="POS_TAG_1"></div>
+        </div>
+
+      </section>
+
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+        <b>Assign POS tag to each word in the following sentences<br/></b>
+        <ol>
+        <li>Heat water in a large vessel.</li>
+        <li>The dog is happy.</li>
+        <li>The happy dog.</li>
+        <li>Park the car near the park.</li>
+        <li>The dog is sitting just at the gate.</li>
+        </ol><br/><br/>
+        <ol>
+        	<li>बहार जाओ</li>
+        	<li>गाड़ी उद्द्यान में खड़ी करो</li>
+        	<li>राम खाना खाकर सो गया</li>
+        	<li>राम खाते खाते सो गया</li>
+        	<li>राम ने खाते खाते खाता खुलवाया</li>
+        </ol>
+        
+<!--        <table>
+        <tr><th>Word</th><th>POS</th></tr>
+        <tr><td>Heat</td><td>Verb</td></tr>
+        <tr><td>water</td><td>Noun</td></tr>
+        <tr><td>in</td><td>Preposition</td></tr>
+        <tr><td>a</td><td>Determiner</td></tr>
+        <tr><td>large</td><td>Adjective</td></tr>
+        <tr><td>vessel</td><td>Noun</td></tr>
+        </table>
+        <br/><br/>
+        <table>
+        <tr><th>Word</th><th>POS</th></tr>
+        <tr><td>The</td><td>Determiner</td></tr>
+        <tr><td>dog</td><td>Noun</td></tr>
+        <tr><td>is</td><td>Verb</td></tr>
+        <tr><td>happy</td><td>???</td></tr>
+        </table>
+        <br/><br/>
+        <table>
+        <tr><th>Word</th><th>POS</th></tr>
+        <tr><td>The</td><td>Determiner</td></tr>
+        <tr><td>happy</td><td>Adjective</td></tr>
+        <tr><td>dog</td><td>Noun</td></tr>
+        </table>-->
+	</div>
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+<b><u>STEP1: </u></b> Select a language from the drop down menu.<br>
+<b><u>STEP2: </u></b> Select a sentence from the drop down menu.<br>
+<b><u>STEP3: </u></b> Select corresponding POS for each word in the sentence and and click the <button>Submit</button> button.<br>
+<b><u>OUTPUT1: </u></b> The submitted answer will be checked. <br/>
+<b><u>STEP4: </u></b> If incorrect, click on <button>Get Answer </button> button for the correct answer or repeat STEP3.
+<br/><br><hr>
+	  </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-7">
+   
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-7-content" 
+          class="content">
+<p><center><b> Hindi </b><br/>
+- Yamuna Kachru<br/>
+<i>Chapter 6</i></center></p>
+<br/>
+<p><center><b> A Student's Introduction To English Grammar </b><br/>
+- Rodney D. Huddleston<br/>
+<i>Chapter 6</i></center></p>
+<br/>
+<br/>
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>

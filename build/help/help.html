@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> UI Manual</title>
+</head>
+
+<body>
+<div id="lab"> <!-- The Lab Document
+		    Container -->
+<!-- %%%%%%%%%%%%%%% 48 columns %%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%% 48 columns %%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%% 48 columns %%%%%%%%%%%%% -->
+
+
+  <!-- The lab Header contains the logo and the
+       name of the lab, usually displayed on the
+       top of the page-->
+  
+  <header id="lab-header">
+    <div id="lab-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or
+	   write it in text-->
+	   <img src="images/logo.jpg" />
+    </div>
+
+    <div id="lab-header-heading" class="heading">
+      <!-- Write the name of your lab and link
+	   it to the home page of your lab (h1
+	   tag is preferred while writing your
+	   lab name)-->
+      <a href="../index.html">Virtual Labs</a>	
+    </div>
+    <!-- Add any additional element you want to
+	 add to the lab header, For example :
+	 Help (Enclosing them with suitable div
+	 is recommended)-->
+  </header>
+  
+  <!-- The lab article is the main content area
+       where all the experiment content sits-->
+
+  <article id="lab-article">
+    <!-- The lab article has an header, optional
+	 navigational menu, number of sections,
+	 an optional sidebar and a closing
+	 footer-->
+
+    <header id="lab-article-header">
+      <!-- You can add a welcome message or
+      title of the experiment enclosed in h1 tag
+      here -->
+      <div id="lab-article-heading" class="heading">
+	User Manual
+      </div>
+      <!-- Add any additional element if
+      required with proper enclosing-->
+    </header>
+    
+    <!-- Navigation menu is useful to organize
+    the view of multiple sections inside the
+    article-->
+    <nav id="lab-article-navigation">
+      <ul id="lab-article-navigation-menu">
+	<!-- The menu will be dynamically
+	generated to contain the headings of
+	your sections or instead write the menu
+	items of your choice individually
+	enclosed in <li> tag as shown below-->
+	
+      </ul>
+    </nav>
+    
+    <!-- All the sections of your lab or
+    experiment can be enclosed together with a
+    div element as shown below-->
+    <div id="lab-article-sections">
+      
+      
+      <!-- Section 1: Installation -->
+      <section id="lab-article-section-1">
+	<div id="lab-article-section-1-icon" class="icon">
+	  <!-- Enclose the icon image of your
+	  lab or write it in text-->
+	  <img src="../images/introduction.jpg"
+	  />
+	</div>
+	<!-- The heading for the section can be
+	enclosed in a div tag and shown with
+	a <h2> tag -->
+	<div id="lab-article-section-1-heading"
+	     class="heading">
+	  Installation
+	</div>
+	
+	<!-- Write the section content inside a
+	paragraph element, You can also include
+	images with <img> tag -->
+	<div id="lab-article-section-1-content" 
+	     class="content">
+
+	  <p> Welcome! This manual guides you through the
+	    process of assembling your virtual lab's content
+	    using the <strong> ui template </strong>. 
+	  </p>
+	  
+	  <p>
+	    If you are reading this help after a local
+	    installation, then you have probably already
+	    installed the ui template and you can skip this
+	    section.  If you are reading this from the web,
+	    then you need to do the following steps to
+	    install the template.
+	  </p>
+	
+	  <h3> Downloading <span class="code">ui.tgz</span></h3>
+	  <p>
+	    The first step in the installation is the downloading of the ui template.
+	  </p>
+
+	    <ol>
+	      <li>Download
+		the <span class="code">ui.tgz</span>
+		file from this link <a
+                href="http://devel.virtual-labs.ac.in/portal/ui.tgz">ui.tgz </a>
+	      </li>
+
+	      <li>Unzip the file.  This should create a
+	      directory <span class="code"> ui/</span> </li>
+
+	    </ol>
+	</div>				
+      </section>
+      
+      <section id="lab-article-section-2">
+	<div id="lab-article-section-2-icon" class="icon">
+	  <!-- Enclose the icon image of your
+	  lab or write it in text-->
+	  <img src="../images/introduction.jpg"
+	  />
+	</div>
+	<!-- The heading for the section can be
+	enclosed in a div tag and shown with
+	a <h2> tag -->
+	<div id="lab-article-section-2-heading"
+	     class="heading">
+	  ui directory
+	</div>
+	
+	<!-- Write the section content inside a
+	paragraph element, You can also include
+	images with <img> tag -->
+	<div id="lab-article-section-2-content" 
+	     class="content">
+	  
+	  <p>
+            The <span class="code">ui</span> 
+            has <span class="code">
+            src</span> and <span class="code">
+            scripts</span> directory inside it.
+            <br/>
+	    The <span class="code"> ui/</span> 
+	    directory has the following file 
+            structure:
+	  </p>
+
+	  <p>
+	    <table>
+	      <tr>
+		<td>
+                  <span class="code">
+                    ui/src/lab/ 
+                  </span>
+                </td>
+		<td> 
+                <p>All the source files for
+		  the lab are here. The files 
+                  <span class="code">index.html
+                  </span> and <span class="code">
+                  default.html</span> have been 
+                  made read only as these need 
+                  not be edited.
+                </p>
+                
+                <br/>
+                <p>
+		  In case you want to edit the 
+                  html pages, you should edit
+                  only the <span class="code">
+                  content.html</span> file in 
+                  <span class="code">ui/src/lab/</span> 
+                  and the <span class="code">
+                  ui/src/lab/exp1/</span> directory. 
+                </p>
+
+                <br/>
+                <p>
+                  While adding new experiments,
+                  make sure you create new 
+		  directories following the same 
+                  structure under <span class="code">
+                  ui/src/lab/"EXPERIMENT-ID"</span> 
+                  and change the <span class="code">
+                  content.html</span> in the 
+                  same directory. Make sure inside 
+                  the <span class="code">
+                  ui/src/lab/"EXPERIMENT-ID"</span> 
+                  directory, the files 
+                  <span class="code">index.html
+                  </span> and <span class="code">
+                  default.html</span> are not edited.
+                </p>
+
+                <br/>
+                <p>
+		  In addition, the <span class="code">
+                  ui/src/lab</span> directory
+		  contains <span class="code">js</span>, 
+                  <span class="code">images</span>, and 
+                  <span class="code">css</span> 
+                  directories. These directories 
+                  are there to hold your own 
+                  custom files. 
+                </p>
+                </td>
+	      </tr>
+	      
+	      <tr>
+		<td>   
+                  <span class="code">
+                    ui/src/lib/ 
+                  </span>
+                </td>
+		<td> 
+                <p>
+                  All the library files (like
+		  MathJax, jQuery, modernizr)
+		  are in this directory. 
+                </p>
+                </td>
+	      </tr>
+	      
+	      <tr>
+		<td>
+                  <span class="code">
+                    ui/src/themes/ 
+                  </span>  
+                </td>
+		<td> 
+                <p>
+                  Two themes are supplied
+		  with this release.  
+                  <br/>
+
+		  * maroon-grid (uses iiith style, which does
+		  not display icons)
+		  <br />
+
+		  * blue-icon (uses the iitb
+		  style, which uses icons for
+		  sections) <br /> Of course,
+		  you are free to design your
+		  own theme, and place it in the
+		  themes directory. 
+                  </p>
+                  </td>
+	      </tr>
+	      <tr>
+		<td> 
+                  <span class="code">
+                    ui/src/makefile
+                  </span>
+                </td>
+		<td>
+                <p>
+		  This file is used for building a release
+		  (described below). 
+                </p>
+                </td>
+	      </tr>
+	      <tr>
+		<td> 
+                  <span class="code">
+                    ui/scripts/
+                  </span>
+                </td>
+		<td>
+                <p>
+		  This directory has the shellscript
+                  <span class="code">transfer.sh</span>. 
+                  This file has to be run when the 
+                  user wishes to test his lab 
+                  on the test or deployment server.
+                  Run the file from the 
+                  <span class="code">ui/scripts</span> 
+                  directory using the following command:
+                  </p>
+                  <pre>
+                  <span class="code" >
+                  ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME] [OPTIONAL -F] </span>
+                  </pre>
+                  <p>
+                  where 
+		  <ul>
+		  <li>
+		  <b>USERNAME-ON-DEVEL</b> is the login name for the
+                  developer on <span class="code" >
+		  devel.virtual-labs.ac.in </span>and
+		  <li>
+                  <b>OPTIONAL NAME-OF-THEME</b> is an optional
+                  parameter which could be <b>maroon-grid</b> or 
+		  <b>blue-icon</b> or your own
+                  theme name. 
+		  <li>The <b>-F</b> option is meant for building
+		  to the  deployment server. For detailed help on 
+		  <span class="code"> transfer.sh</span>
+		  , please refer to the <span class="code">
+		   BUILD </span> section.
+		  </ul>
+                  </p>
+                </td>
+	      </tr>
+	    </table>
+	  </p>
+	</div>
+    
+    </section>
+    
+    <section id="lab-article-section-3">
+      <div id="lab-article-section-3-icon" 
+	   class="icon">
+	<!-- Enclose the icon image of your lab
+	or write it in text-->
+	<img src="../images/introduction.jpg" />
+      </div>
+      <!-- The heading for the section can be
+      enclosed in a div tag and shown with
+      a <h2> tag -->
+      <div id="lab-article-section-3-heading"
+	   class="heading">
+	Build 
+      </div>
+      
+      <!-- Write the section content inside a
+      paragraph element, You can also include
+      images with <img> tag -->
+      <div id="lab-article-section-3-content" 
+	   class="content">
+	   <p>
+          The build process is completed with the 
+	  following three milestones. 
+       </p>
+          
+       <h3>Build 1 : Local build</h3>
+	  
+        <p>
+          The purpose of the local build is to be 
+          able to view the content locally.
+          Once you run the makefile inside the 
+          <span class="code">ui/src/</span> on the local machine, the 
+          <span class="code">ui/build/</span> is created. 
+	      This is a local build deliverable of the lab's 
+          content. To run the makefile and create 
+          this local build, you need to go to  
+          <span class="code">ui/src</span>
+	      and run
+	   </p>
+        <pre>
+	       <span class="code">make -k theme=theme-name clean all</span>
+	    </pre>
+
+        <p>
+	    The theme-name is one of 
+	    </p>
+	    <p>
+	      <ul>
+	      <b>
+	        <li> maroon-grid</li>
+	        <li> blue-icon </li>
+	      </b>
+	      </ul>
+	      </p>
+	      <p>
+         or, the command
+        </p>
+
+        <pre>
+	    <span class="code">make clean all</span>
+        </pre>
+
+        <p>
+	      which uses the default theme <b>maroon-grid</b>.  
+	    </p>
+
+   	    <p>
+	     The first time around, this build will 
+          take quite long, because it copies
+	     the <span class="code">ui/src/MathJax</span> 
+          directory. The next time onwards, this 
+          won't be the case.
+	   </p>
+        
+       <pre>
+	      <span class="code">make  clean </span>
+       </pre>
+	
+	   <p>
+	      will clean the <span class="code">ui/build/</span> 
+          directory (but keep the js directory intact)
+       </p>
+	 
+       <h3>Structure of the build directory </h3>
+
+	   <pre>
+build/
+|-- content.html
+|-- css/
+|   |-- default.css
+|   |-- override.css
+|   `-- style.css
+|
+|-- default.html
+|
+|-- exp1/
+|   |-- media/
+|   |-- content.html
+|   |-- default.html
+|   `-- index.html
+|
+|-- help/
+|   |-- css/
+|       |-- override.css
+|   |-- help.html
+|   |-- images/
+|   `-- index.html
+|
+|-- images/
+|   |-- Pendulum.JPG
+|   |   ...
+|   | 
+|   `-- theory.jpg
+|
+|-- index.html
+|
+|-- js
+|   |-- MathJax/
+|   |-- MathJax-version.txt
+|   |-- jquery-1.4.2.min.js
+|   `-- modernizr-1.5.min.js
+|
+`-- theme-maroon-grid
+	</pre> 
+
+      <h3>Build 2 : Build on the Test server</h3>
+        <p>
+           The second level build creates a 
+           <span class="code">public_html/build/</span> inside the
+           home page of your lab on the test server.  
+	       The test server simulates the setup of the deployment server. 
+	       It will enable you to check whether your latest build works on 
+	       a public server (besides your local machine). 
+	       In order to deploy the lab on the deployment server,
+       	   <b>the build must first
+	       be run on the test server. </b> 	
+       </p>
+        
+	   <p>
+        You need to run the following command from inside the
+        <span class="code">ui/scripts/</span> directory:
+       </p>
+        <pre>
+        <span class="code">
+        ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME]
+	    </span>
+	    </pre>
+        
+        <p>
+        where 
+	</p>
+	<p>
+	    <ul>
+	       <li><b>USERNAME-ON-DEVEL</b> is the login name for the
+            developer on <span class="code">
+	       devel.virtual-labs.ac.in </span> </li>
+	       <li>
+             <b>OPTIONAL NAME-OF-THEME</b> is an optional
+             parameter which could be <b>maroon-grid</b> or
+       	     <b>blue-icon</b> or your own
+             theme name. 
+	        </li>
+	    </ul>
+	    </p>
+	    <p>
+        Once this command is run, you can view the 
+        lab running on the URL
+	</p>
+	<p>
+        <span class="code">
+        http://devel.virtual-labs.ac.in/test/~LAB-ID/build/
+        </span> 
+	</p>
+	<p>where <b>LAB-ID</b> is of the form <b>cseNN</b>. For example: cse09
+	</p>
+	 <p>
+	  	NOTE 
+		  <ul>
+		  <li>If you do not have the ssh keys to  
+		  <span class="code">devel.virtual-labs.ac.in</span>
+		  installed on the local machine under the 
+		  correct directory <span class="code">(/home/$USER/.ssh/)</span>,
+		  the script will prompt you for the 
+		  password multiple times.  
+		  </li>
+		  <li>The test server may take some time 
+		  to load the new build after running the script. Please keep 
+		  refreshing the web page on the browser 
+		  until it reflects your changes.
+		  </li>
+		  </ul>
+       </p>
+        
+	<h3>Build 3 : Build for the Deployment server</h3>
+        <p>
+        The third level of the build will serve as the final
+        build for the deployment server. The build directory 
+	created as a result of this final build will
+	run on the <b>deployment server</b>. To make the final build, 
+        you need to run the following command from inside the
+        <span class="code">ui/scripts/</span> directory:
+	<pre>
+        <span class="code">
+        ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME] [-F] </span></pre>
+        </p>
+        <p>
+        where
+        <ul>
+	<li> <b>USERNAME-ON-DEVEL</b> is the login name for the
+        developer on <span class="code">devel.virtual-labs.ac.in
+        </span>	</li>
+	<li>
+        <b>OPTIONAL NAME-OF-THEME</b> is an optional
+        parameter which could be <b>maroon-grid</b> or 
+	<b>blue-icon</b> or your own
+        theme name. </li>
+        <li>The <b>-F</b> option indicates that 
+	the script must make a <span class="code" >final-build</span>.
+       	Please note that the <b>-F</b> option must be mentioned as the
+	last argument only.</li>
+	</ul>
+        </p>
+	<p>
+	Once this command is run, a <span class="code">
+	final-build</span> will be created inside the <span class="code">
+	public_html </span>directory on the test server. This 
+	<span class="code"> final-build </span> will be transferred
+	automatically to the deployment server.
+		  </p>
+		  <p>
+      	NOTE  
+		  <ul>
+		  <li>If you do not have the ssh keys to  
+		  <span class="code">devel.virtual-labs.ac.in</span>
+		  installed on the local machine under the 
+		  correct directory <span class="code"> (/home/$USER/.ssh/)</span>
+		  , the script will prompt you for the 
+		  password multiple times. 
+		  </li> 
+		  <li>The test server may take some time 
+		  to load the new build after running the script. Please keep 
+		  refreshing the web page on the browser 
+		  until it reflects your changes.
+		  </li>
+		  </ul>
+	
+        </p>
+
+     
+      </div>	
+        
+       
+    </section>
+    
+    
+    <section id="lab-article-section-4">
+      <div id="lab-article-section-4-icon" 
+	   class="icon">
+	<!-- Enclose the icon image of your lab
+	or write it in text-->
+	<img src="../images/introduction.jpg" />
+      </div>
+      <!-- The heading for the section can be
+      enclosed in a div tag and shown with
+      a <h2> tag -->
+      <div id="lab-article-section-4-heading" 
+	   class="heading">
+	Content 
+      </div>
+      
+      <!-- Write the section content inside a
+      paragraph element, You can also include
+      images with <img> tag -->
+      <div id="lab-article-section-4-content" 
+	   class="content">
+	<p>
+	  This template features a demo of a 
+          science lab with a sample 
+          <span class="code">"simple pendulum"
+          </span> experiment. The following 
+          section will help you to configure this 
+          template as per your lab experiments. 
+	</p>
+        
+        <p>  
+          The <span class="code">ui/src/lab/</span> 
+          directory contains three files:
+        </p>
+        <p>
+          <ul>
+          <li><span class="code">index.html</span></li> 
+          <li><span class="code">default.html</span></li> 
+          <li><span class="code">content.html</span></li> 
+          </ul>
+        </p>
+        <p>
+          The same structure has been followed 
+          inside the <span class="code">
+          ui/src/lab/"EXPERIMENT_ID"</span> directory.
+          The description and the read-write 
+          permits for those file have been 
+          tabulated here as follows :
+        </p>  
+        <p>  
+          <table>
+          <tr>
+          <th>file</th>
+          <th>permissions</th>
+          <th>description</th>
+          </tr>
+          <tr>
+          <td><span class="code">index.html</span></td> 
+          <td>read-only</td>
+          <td>home-page</td>
+          </tr>
+          <tr>
+          <td><span class="code">default.html</span></td> 
+          <td>read-only</td>
+          <td>default-content</td>
+          </tr>
+          <tr>
+          <td><span class="code">content.html</span></td> 
+          <td>read-write</td>
+          <td>editable-content</td>
+          </tr>
+          </table>
+
+        </p>
+
+
+        <h3>Editing content.html</h3>
+	  
+	<p> The structure of content
+	  for <span class="code">
+          ui/src/lab/content.html</span> 
+	  is shown below: 
+	  <img src="images/content.png"/>
+        </p>
+
+         <p>
+           To add your lab's content, edit this 
+           file.
+
+           Add <span class="code">class="default"
+           </span> to inherit the default 
+           structure and behaviour of any element.
+	   Elements shown in purple are the ones that 
+	   you might want to inherit as default.
+
+	   <emph>Exclude the </emph> <span class="code">
+           class="default"</span> attribute for 
+           any element to which you want to
+           add your own content.
+	   By default, 
+           <span class="code">nav</span> 
+           generates a list of sections
+	   while <span class="code">aside</span>
+	   and <span class="code">footer</span> 
+           are empty.
+	 </p>
+
+
+	  <h3> Adding experiment content </h3>
+           <p>
+             While adding new experiments,
+             make sure you create new 
+	     directories following the same 
+             structure under <span class="code">
+             ui/src/lab/"EXPERIMENT-ID"</span> 
+             and change the <span class="code">
+             content.html</span> in the 
+             same directory. Make sure inside 
+             the <span class="code">
+             ui/src/lab/"EXPERIMENT_ID"</span> 
+             directory, the files 
+             <span class="code">index.html
+             </span> and <span class="code">
+             default.html</span> are not edited.
+             </p>
+
+	  <h3> Embedding multimedia</h3>
+	  <p>
+
+	    The <span class="code">embed</span> 
+            tag can be used to embed  
+            multimedia files. 
+  	    </p>
+	
+	  </div>
+    </section>
+    
+    <section id="lab-article-section-5">
+      <div id="lab-article-section-5-icon" 
+	   class="icon">
+	<!-- Enclose the icon image of your lab
+	or write it in text-->
+	<img src="../images/introduction.jpg" />
+      </div>
+      <!-- The heading for the section can be
+      enclosed in a div tag and shown with
+      a <h2> tag -->
+      <div id="lab-article-section-5-heading" 
+	   class="heading">
+	      Style 
+      </div>
+      
+      <!-- Write the section content inside a
+      paragraph element, You can also include
+      images with <img> tag -->
+      <div id="lab-article-section-5-content" 
+	   class="content">
+	   <h3> Change CSS styles </h3>
+	   <p>
+		The css styles have been defined 
+                under the <span class="code">
+                ui/src/lab/css/</span>.
+                However in case you wish to define 
+                your own css styles, you can add 
+                your styles to the file  
+                <span class="code">
+                ui/src/lab/css/override.css
+                </span>.
+           </p>
+           <h3> Add your own CSS and JS files </h3>
+                <p>
+                In order to add your own js and 
+                css files, you will need to modify
+                the read write permissions of
+                <span class="code">
+                ui/src/lab/index.html</span> and
+                then include the references of the 
+                css files.
+                </p>
+
+                <p>
+                (Note: <span class="code">
+                ui/src/lab/index.html</span> is 
+                currently a read-only file. In 
+                order to write to it you will 
+                need to modify its read write 
+                permissions by doing a 
+                <span class="code">
+                chmod 755 "path/file/" </span>). 
+                The syntax for adding css file to 
+                index.html is as follows:
+                </p>
+                <span class="code">
+		<pre>
+                  &lt;link rel="stylesheet" href="css/YOURSTYLE.css" /&gt;
+		</pre>
+                </span>
+		<p>
+		Similarly, you can add js and 
+                other files by including their
+		references in the 
+                <span class="code">
+                ui/src/lab/index.html</span> file 
+                as shown below for a js file.
+		</p>
+                <span class="code">
+		<pre>
+		  &lt;script type="text/javascript" src="js/YOURJS.js" &gt; &lt;/script &gt;
+		</pre>
+                </span>
+	   </p>
+	
+	  </div>
+    </section>
+	
+    
+</div>	
+<!-- An article can have a sidebar that contain --
+  -- related links and additional material (its --
+  -- optional at this moment)-->
+
+<aside id="lab-article-sidebar">
+  <!-- put the content that you want to appear
+       in the sidebar-->
+</aside>
+
+<!-- Article footer can display related content
+     and additional links -->
+<footer id="lab-article-footer">
+  <!-- Put the content that you want to appear
+  here-->
+</footer>
+
+</article>
+
+<!-- Links to other labs, about us page can be
+kept the lab footer-->
+<footer id="lab-footer">
+  <!-- Put the content here-->
+</footer>
+</div>		
+</body>
+</html>

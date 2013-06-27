@@ -1,0 +1,10 @@
+John gave Mary a book. &John/NNP/B-NP gave/VBD/B-VP Mary/NNP/B-NP a/DT/B-NP book/NN/I-NP
+Close the door. &Close/RB/B-VP the/DT/B-NP door/NN/I-NP
+John cut an apple with a knife. &John/NNP/B-NP cut/VB/B-VP an/DT/B-NP apple/NN/I-NP with/IN/B-PP a/DT/B-NP knife/NN/I-NP
+We have a meeting on Monday at noon. &We/PRP/B-NP have/VBP/B-VP a/DT/B-NP meeting/NN/I-NP on/IN/B-PP Monday/NNP/B-NP at/IN/B-PP noon/NN/B-NP
+It is raining heavily in the south. &It/PRP/B-NP is/VBZ/B-VP raining/VBG/I-VP heavily/RB/B-ADVP in/IN/B-PP the/DT/B-NP south/RB/I-NP
+Mary baked a cake for the children in orphanage. &Mary/NNP/B-NP baked/VBD/B-VP a/DT/B-NP cake/NN/I-NP for/IN/B-PP the/DT/B-NP children/NNS/I-NP in/IN/B-PP orphanage/NN/B-NP
+The reputation of Ask Jeeves was very poor. &The/DT/B-NP reputation/NN/I-NP of/IN/B-PP Ask/VB/B-VP Jeeves/NNP/B-NP was/VBD/B-VP very/RB/B-ADJP poor/JJ/I-ADJP
+You can also expand your query to famous foods in California. &You/PRP/B-NP can/MD/B-VP also/RB/I-VP expand/VB/I-VP your/PRP$/B-NP query/NN/I-NP to/TO/B-PP famous/JJ/B-NP foods/NNS/I-NP in/IN/B-PP California/NNP/B-NP
+The steady improvements have earned the praise of analysts. &The/DT/B-NP steady/JJ/I-NP improvements/NNS/I-NP have/VBP/B-VP earned/VBN/I-VP the/DT/B-NP praise/NN/I-NP of/IN/B-PP analysts/NNS/B-NP
+Match.com will be more tightly integrated with Ask. &Match.com/NNP/B-NP will/MD/B-VP be/VB/I-VP more/RBR/I-VP tightly/RB/I-VP integrated/VBN/I-VP with/IN/B-PP Ask/VB/B-VP

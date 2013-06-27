@@ -1,0 +1,324 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Computational Linguistics Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        Context Free Grammar
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+<div style="font-size:16px;">
+Context Free Grammar is a formal grammar consisting of some rules. These rules can tell us whether the string or a sentence is valid or not. A valid sentence can be represented using these rules in the form of tree called phrase structure tree. In other words, these rules are used for parsing the sentences. 
+<br/><br/>Context Free Grammar is not good for free word order language such as Hindi. This concept is largely used in a language like English for parsing.
+</div>
+</div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+<div id="experiment-article-section-2-content" 
+        class="content">
+<p style="font-size:16px;">
+A Context Free Grammar is a set of productions used for generating sentences of a language.<br/><br/>
+Context Free Grammar has four components:<br/>
+<ol>
+<li>a set of <b>terminal symbols</b>, which are <i>lexicons</i> or <i>words</i>.</li>
+<li>a set of <b>non-terminal symbols</b>, which are generally denoted by <i>phrases</i> in computational linguistics. <b>Pre-terminal</b> is the special set of non-terminals which always extend to terminals. Pre-terminals are nothing but <i>Parts of Speech</i>.</li>
+<li>a set of <b>productions or rules</b> of the form V -> w, where V is a non-terminal and w is a sequence of terminals and non-terminals.</li>
+<li>a <b>start symbol</b>, a special non-terminal symbol which appears initially and stands for <i>sentence</i>.</li>
+</ol>
+<br/><br/>
+<b>Example:</b><br/>
+<u><i>Rules</i></u><br/>
+S -> NP VP<br/>
+NP -> det noun<br/>
+NP -> noun<br/>
+NP -> det adj noun<br/>
+NP -> adj noun<br/>
+VP -> verb NP<br/><br/>
+<u><i><b>Sentence:</b></u>Ram eats a mango</i><br/>
+<i style="font-size:14px">Now, we will show how this sentence is formed using the rules</i><br/>
+S -> NP VP<br/>
+S -> noun VP<br/>
+S -> noun verb NP<br/>
+S -> noun verb det noun<br/>
+S -> Ram eats a mango <i>(RHS in above step is nothing but the Parts of Speech of the words in a sentence)</i><br/><br/>
+However, this can also be represented in the form of phrase structure tree, as shown here:<br/><br/>
+<center><img src="PST.JPG" style="width:400px;height:250px" alt="PST not found"/></center><br/><br/>
+<i>This can also be interpretated as:</i><br/>
+<b><i>a</i></b> and <b><i>mango</i></b> combines to form <b>NP</b><br/>
+<b><i>eats</i></b> and <b><i>a mango</i></b> combines to form <b>VP</b><br/>
+<b><i>Ram</i></b> is extended to <b>noun</b> and then to <b>NP</b><br/>
+<b><i>Ram</i></b> and <b><i>eats a mango</i></b> which is actually VP (from STEP 2) combines to form <b>S</b><br/>.
+<br/>
+This is the task which is to be done in this experiment, and corresponding tree will be shown. For this experiment, you should know the parts of sppech of the words<br/><br/>
+<b><u>Context Free Grammar</u> for this experiment</b><br/>
+S -> NP VP<br/>
+S -> VP<br/>
+VP -> VP PP<br/>
+VP -> VP NP<br/>
+VP -> verb NP<br/>
+VP -> aux-verb verb<br/>
+NP -> NP PP<br/>
+NP -> noun<br/>
+NP -> det noun<br/>
+NP -> det adjective noun<br/>
+NP -> adjective noun<br/>
+NP -> pronoun<br/><br/><br/><br/><br/>
+</p>
+</div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+<hr><br>
+The objective of this experiment is to form phrase structure tree given the valid sentences and context free grammar.
+<br><br><hr>
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+	<div id="PHRASE_STRUCTURE_TREE"></div>
+        </div>
+
+      </section>
+
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+According to the Context Free Grammar given in <b>Procedure</b>, which of these is a valid sentences:<br/>
+<ol>
+<li>Ram ate a mango</li>
+<li>They eats a mango</li>
+<li>Ram ate a very big mango</li>
+<li>Ram ate a spoon</li>
+</ol>
+</div>
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+<b><u>STEP1:</u></b> Select a sentence<br/>
+<b><u>STEP2:</u></b> Select the buttons containing words and the corresponding chunk type, as demonstrated in <b>procedure</b><br/>
+<b><u>OUTPUT:</u></b> Phrase Structure Tree, formed from each step will be shown below<br/><br/>
+<b><u>NOTE</u></b>
+<ol>
+<li>Use the Context Free Grammar given in <b>Procedure</b></li>
+<li>For mutiple possible parse, choose the parse for more probable sentences</li>
+</ol>
+	  </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-7">
+   
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-7-content" 
+          class="content">
+<center>Context-Free Grammars for English, Chapter 9<br/><i>Speech and Language Processing, Daniel Jurafsky and James H. Martin</i><br/><br/><br/>
+Parsing with Context-Free Grammar, Chapter 10<br/><i>Speech and Language Processing, Daniel Jurafsky and James H. Martin</i></center>
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>
