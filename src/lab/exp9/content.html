@@ -1,0 +1,427 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Computational Linguistics Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        Chunking
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+<div style="font-size:15px;">
+Chunking of text invloves dividing a text into syntactically correlated words.
+For example, the sentence 'He ate an apple.' can be divided as follows:<br/>
+
+<img src="Exp6/a.jpg" alt="1_alt" style="height:45px; width:340px; align:center"/>
+
+<div style="font-size:15px;">
+Each chunk has an open boundary and close boundary that delimit the word groups as a minimal non-recursive unit. This can be formally expressed by using IOB prefixes.
+</div><br/>
+
+<img src="Exp6/b.jpg" alt="1_alt" style="height:125px; width:450px; align:center"/>
+
+
+</div><br/>
+
+<center>
+</div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+<div id="experiment-article-section-2-content" 
+        class="content">
+<pre>
+Chunking of text invloves dividing a text into syntactically correlated words.
+
+Eg: He ate an apple to satiate his hunger.
+[NP He ] [VP ate ] [NP an apple] [VP to satiate] [NP his hunger]
+
+Eg: दरवाज़ा खुल गया
+[NP दरवाज़ा] [VP खुल गया]
+
+<h4>Chunk Types</h4>
+The chunk types are based on the syntactic category part. Besides the head a chunk also contains modifiers (like determiners, adjectives, postpositions in NPs).
+
+The basic types of chunks in English are:
+	Chunk Type	Tag Name
+1.	Noun 		NP
+2.	Verb 		VP
+3.	Adverb 		ADVP
+4.	Adjectivial 	ADJP
+5.	Prepositional	PP
+
+The basic Chunk Tag Set for Indian Languages 
+
+Sl. No	Chunk Type		Tag Name	
+1	Noun Chunk		NP	
+2.1	Finite Verb Chunk 	VGF	
+2.2	Non-finite Verb Chunk	VGNF	
+2.3	Verb Chunk (Gerund)	VGNN	
+3	Adjectival Chunk	JJP	
+4	Adverb Chunk		RBP	
+
+
+<h4>NP	Noun Chunks</h4>
+
+Noun Chunks will be given the tag NP and include non-recursive noun phrases and postposition for Indian languages and preposition for English. Determiners, adjectives and other modifiers will be part of the noun chunk. 
+
+Eg: 
+            
+(इस/DEM किताब/NN में/PSP)NP 
+'this' 'book'  'in'    
+
+((in/IN the/DT big/ADJ room/NN))NP
+
+
+<h4>Verb Chunks</h4>
+
+The verb chunks are marked as VP for English, however they would be of several types for Indian languages.  A verb group will include the main verb and its auxiliaries, if any. 
+
+For English:
+
+I (will/MD be/VB loved/VBD)VP
+
+The types of verb chunks and their tags are described below.
+
+1. VGF	Finite Verb Chunk
+
+The auxiliaries in the verb group mark the finiteness of the verb at the chunk level. Thus, any verb group which is finite will be tagged as VGF. For example,
+
+Eg: मैंने घर पर (खाया/VM)VGF
+    'I erg''home' 'at''meal'  'ate'
+
+2. VGNF   Non-finite Verb Chunk
+
+A non-finite verb chunk will be tagged as VGNF. 
+
+Eg: सेब  (खाता/VM  हुआ/VAUX)VGNF लड़का जा रहा है 
+  'apple' 'eating' 'PROG'  'boy' go' 'PROG' 'is'
+
+3. VGNN	Gerunds
+
+A verb chunk having a gerund will be annotated as VGNN. 
+
+Eg: शराब (पीना/VM)VGNN सेहत के लिए हानिकारक है sharAba  
+    'liquor'  'drinking'      'heath'   'for' 'harmful'   'is'
+
+
+<h4>JJP/ADJP	Adjectival Chunk</h4>
+
+An adjectival chunk will be tagged as ADJP for English and JJP for Indian languages. This chunk will consist of all adjectival chunks including the predicative adjectives. 
+
+Eg: 
+
+वह लड़की है (सुन्दर/JJ)JJP 
+
+The fruit is (ripe/JJ)ADJP
+
+Note: Adjectives appearing before a noun will be grouped together within the noun chunk.
+
+
+<h4>RBP/ADVP	Adverb Chunk</h4>
+
+This chunk will include all pure adverbial phrases.
+
+Eg:
+
+वह (धीरे-धीरे/RB)RBP चल रहा था 
+'he' 'slowly' 'walk' 'PROG' 'was'
+
+He walks (slowly/ADV)/ADVP
+
+
+<h4>PP	Prepositional Chunk</h4>
+This chunk type is present for only English and not for Indian languages. It consists of only the preposition and not the NP argument.
+
+Eg: 
+
+(with/IN)PP a pen  
+			
+
+<h4>IOB prefixes</h4>
+
+Each chunk has an open boundary and close boundary that delimit the word groups as a minimal non-recursive unit. This can be formally expressed by using IOB prefixes: B-CHUNK for the first word of the chunk and I-CHUNK for each other word in the chunk. Here is an example of the file format:
+
+Tokens	POS	Chunk-Tags
+	
+He	PRP	B-NP 
+ate	VBD	B-VP 
+an	DT	B-NP
+apple	NN	I-NP
+to	TO	B-VP
+satiate	VB	I-VP
+his	PRP$	B-NP
+hunger	NN	I-NP 
+
+</pre>
+</div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+<hr><br>
+
+<center>
+The objective of this experiment is to understand the concept of chunking and get familiar with the basic chunk tagset.</center>
+<br><hr>
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+<div id="chunk"></div>
+        </div>
+
+      </section>
+
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+Q. Following are some erroneous chunks. Identify the errors, mark them into three categories: invalid chunk boundaries, not a minimal phrase and incorrect chunk label.<br/>
+   Do the necessary corrections. Note: The categories may be overlapping.<br/><br/>
+
+1. [NP She] [VP is] [AJDP a beautiful] [NP girl]<br/>
+2. [NP He] [VP could not] [ADJP be tolerated]<br/>
+3. [NP They] [VP invited] [NP him to] [NP the dinner party]<br/>
+4. [NP He] [VP was shot] [NP by the swats]<br/>
+5. [NP He] [VP longed] [PP for] [NP a hot cup of  coffee]<br/> 
+6. [VGNF सुनने में] [NP सब कुछ] [VGF अच्छा लगता है] <br/>
+7. [NP सीता के] [JJP काले] [JJP घने] [JJP लम्बे] [NP बाल] [VGF है]<br/>
+8. [NP मैं] [NP घास खाते हुए शेर को] [VGNF देखकर] [VGF दंग रह गयी] <br/>
+<br />
+
+<br />
+<div id="answer" style="display:none;">
+
+</div>
+</div>
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+<b><u>STEP1: </u></b> Select a language<br/>
+<b><u>STEP2: </u></b> Select a sentence<br/>
+<b><u>STEP3: </u></b> Select the corresponding chunk-tag for each word in the sentence and click the <button>Submit</button> button. <br/>
+<b><u>OUTPUT1: </u></b> The submitted answer will be checked. <br/>
+Click on <button>Get Answer </button> button for the correct answer.
+<br><br>
+<hr>
+	  </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-7">
+   
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-7-content" 
+          class="content">
+<center>http://www.clips.ua.ac.be/pages/mbsp-tags<br/></center>
+<center>Penn Treebank II Tagset</center> <br/>
+
+<center>http://ltrc.iiit.ac.in/MachineTrans/publications/technicalReports/tr031/posguidelines.pdf</center>
+<center>AnnCorra : Guidelines For POS And Chunk Annotation For Indian Languages - Akshar Bharati, Dipti Misra Sharma, Lakshmi Bai, Rajeev Sangal</center>
+</head>
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+राम ने सीता के लिए फल तोड़ा। &राम/Noun ने/Postposition सीता/Noun के/Postposition लिए/Postposition फल/Noun तोड़ा/Verb
+छोटे बच्चे पाठशाला जल्दी आयेंगे। &छोटे/Adjective बच्चे/Noun पाठशाला/Noun जल्दी/Adverb आयेंगे/Verb
+मेहनत का फल मीठा होता है। &मेहनत/Noun का/Postposition फल/Noun मीठा/Adjective होता/Verb है/Verb
+वाह! वह खूबसूरत है। &वाह/Interjection वह/Pronoun खूबसूरत/Adjective है/Verb
+पेड़ से पत्ते गिर गए। &पेड़/Noun से/Postposition पत्ते/Noun गिर/Verb गए/Verb
