@@ -1,8 +1,0 @@
-Noun
-Pronoun
-Verb
-Adjective
-Adverb
-Postposition
-Conjunction
-Interjection

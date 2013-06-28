@@ -1,6 +1,0 @@
-The child liked the chocolate. &The/Determiner child/Noun liked/Verb the/Determiner chocolate/Noun
-She was stopped by the bravest knight. &She/Pronoun was/Verb stopped/Verb by/Preposition the/Determiner bravest/Adjective knight/Noun
-Mary baked a cake for his birthday. &Mary/Noun baked/Verb a/Determiner cake/Noun for/Preposition his/Determiner birthday/Noun
-She decorated the cake carefully. &She/Pronoun decorated/Verb the/Determiner cake/Noun carefully/Adverb
-Mary wore a dress with polka dots. &Mary/Noun wore/Verb a/Determiner dress/Noun with/Preposition polka/Noun dots/Noun.
-
