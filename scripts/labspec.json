@@ -1,0 +1,139 @@
+{
+    "lab": {
+        "build_requirements": {
+            "platform": {
+                "arch": "i386", 
+                "build_steps": {
+                    "build": [], 
+                    "configure": [], 
+                    "post_build": [], 
+                    "pre_build": [], 
+                    "status": []
+                }, 
+                "installer": [], 
+                "os": "ubuntu", 
+                "osVersion": "12", 
+                "service_pack": ""
+            }
+        }, 
+        "description": {
+            "developer": [
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "dipti@iiit.ac.in", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "IIIT Hyderabad", 
+                    "name": "Dipti Sharma", 
+                    "organization": "", 
+                    "role": "Lab Developer", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "soma@iiit.ac.in", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "IIIT Hyderabad", 
+                    "name": "Soma Paul", 
+                    "organization": "", 
+                    "role": "Lab Developer", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "jayant.guptaug08@students.iiit.ac.in", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "IIIT Hyderabad", 
+                    "name": "Jayant Gupta", 
+                    "organization": "", 
+                    "role": "Lab RA", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "arpita.batra@students.iiit.ac.in", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "IIIT Hyderabad", 
+                    "name": "Arpita Batra", 
+                    "organization": "", 
+                    "role": "Lab RA", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "urmi.ghosh@students.iiit.ac.in", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "IIIT Hyderabad", 
+                    "name": "Urmi Ghosh", 
+                    "organization": "", 
+                    "role": "Lab RA", 
+                    "title": "", 
+                    "web": ""
+                }
+            ], 
+            "discipline": [
+                "Computer Science & Engineering"
+            ], 
+            "id": "cse23", 
+            "integration_level": 4, 
+            "name": "Computational Linguistics", 
+            "server-side": true, 
+            "status": "Released", 
+            "type": ""
+        }, 
+        "runtime_requirements": {
+            "platform": {
+                "arch": "i386", 
+                "hosting": "dedicated", 
+                "installer": [], 
+                "lab_actions": {
+                    "backup": [], 
+                    "clean": [], 
+                    "init": [], 
+                    "pause": [], 
+                    "publish": [], 
+                    "restore": [], 
+                    "resume": [], 
+                    "shutdown": [], 
+                    "start": [], 
+                    "stats": [], 
+                    "stop": []
+                }, 
+                "memory": {
+                    "max_required": "2gb", 
+                    "min_required": "256mb"
+                }, 
+                "os": "ubuntu", 
+                "osVersion": "12", 
+                "servicepack": "", 
+                "storage": {
+                    "min_required": "10gb"
+                }
+            }
+        }
+    }, 
+    "template": "1.0"
+}
