@@ -1,0 +1,14 @@
+#!/bin/bash
+# Restore Script for Computational Linguistics Lab
+
+# Restore Script restores the backup of the data used by the lab.
+# Since there is no data being used by Computational Linguistics Lab, 
+# the script does nothing. 
+
+# Usage of the script
+
+# To use restore script, run the command
+# ./scripts/restore
+ 
+
+echo -e "There is no data used by this lab.\nHence, nothing needs to be restored."
