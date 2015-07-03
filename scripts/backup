@@ -9,4 +9,4 @@
 # To use backup script, run the command
 # ./scripts/backup
  
-echo -e "There is no data used by this lab. \nHence, nothing needs to be backed up."
+#echo -e "There is no data used by this lab. \nHence, nothing needs to be backed up."#
