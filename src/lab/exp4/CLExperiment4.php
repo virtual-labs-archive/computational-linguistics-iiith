@@ -25,13 +25,12 @@ $('#corpus_opt').load('CLExperiment4-0.php?ind='+lno);
 
 <div id="mainContainer" align="center">
 <?php 
-echo "<form action=\"javascript:selectLang()\" target=\"_parent\" method=\"post\">";
-echo "<select name=\"lang_opt\" id=\"lang_opt\" autocomplete=\"off\" onchange=\"selectLang(this.value);\">";
-          echo "<option value=\"0\" select=\"selected\">---Select Language---</option>";
-          echo "<option value=\"1\">English</option>";
-	  echo "<option value=\"2\">Hindi</option>";
-          
-echo "</select>"; ?>
+echo '<form action="javascript:selectLang()" target="_parent" method="post">';
+echo '<select name="lang_opt" id="lang_opt" autocomplete="off" onchange="selectLang(this.value);">';
+          echo '<option value="0" select="selected">---Select Language---</option>';
+          echo '<option value="1">English</option>';
+
+echo '</select>'; ?>
 <br/><br/> 
 </form>
 <div id=corpus_opt></div> </div>
