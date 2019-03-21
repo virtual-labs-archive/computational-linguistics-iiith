@@ -8,195 +8,176 @@ edit -->
 
 <!DOCTYPE html>
 <html>
+
 <head></head>
+
 <body>
 
-<div id="experiment"> <!-- The Experiment Document Container-->
+    <div id="experiment">
+        <!-- The Experiment Document Container-->
 
-  <!-- The lab Header contains the logo and the name of the lab,
+        <!-- The lab Header contains the logo and the name of the lab,
   usually displayed on the top of the page-->
 
-  <header id="experiment-header" class="default">
-  
-    <div id="experiment-header-logo" class="logo">
-      <!-- Enclose the logo image of your lab or write it in 
-      text-->
-      <img src="../images/logo.jpg" />
-    </div>
+        <header id="experiment-header" class="default">
 
-    <div id="experiment-header-heading" class="heading">
-      <!-- Write the name of your lab and link it to the home 
+            <div id="experiment-header-logo" class="logo">
+                <!-- Enclose the logo image of your lab or write it in 
+      text-->
+                <img src="../images/logo.jpg" />
+            </div>
+
+            <div id="experiment-header-heading" class="heading">
+                <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
-      <a href="../index.html">Computational Linguistics Lab</a>	
-    </div>
+                <a href="../index.html">Computational Linguistics Lab</a>
+            </div>
 
-    <!-- Add any additional element you want to add to the lab 
+            <!-- Add any additional element you want to add to the lab 
     header, For example : Help (Enclosing them with suitable 
     div is recommended)-->
 
-  </header>
+        </header>
 
 
-  <!-- The lab article is the main content area where all the 
+        <!-- The lab article is the main content area where all the 
   experiment content sits-->
-  <article id="experiment-article">
-  
-    <!-- The lab article has an header, optional navigational 
+        <article id="experiment-article">
+
+            <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
-     <div id="experiment-article-breadcrumb" class="breadcrumb">
-     </div>
-    
-      <header id="experiment-article-heading" class="heading">
-        <!-- You can add a welcome message or title of the 
-        experiment here -->
-        Heap's Law
-        <!-- Add any additional element if required with proper 
-        enclosing-->
-      </header>
+            <div id="experiment-article-breadcrumb" class="breadcrumb">
+            </div>
 
-      <!-- Navigation menu is useful to organize the view of 
+            <header id="experiment-article-heading" class="heading">
+                <!-- You can add a welcome message or title of the 
+        experiment here -->
+                Heap's Law
+                <!-- Add any additional element if required with proper 
+        enclosing-->
+            </header>
+
+            <!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
-      <nav id="experiment-article-navigation" class="default">
-        <ul id="experiment-article-navigation-menu">
-          <!-- The menu can be dynamically generated to contain 
+            <nav id="experiment-article-navigation" class="default">
+                <ul id="experiment-article-navigation-menu">
+                    <!-- The menu can be dynamically generated to contain 
           the headings of your sections or instead write the 
           menu items of your choice individually enclosedu in 
           <li> tag as shown below-->
-        </ul>
-      </nav>
+                </ul>
+            </nav>
 
-      <!-- All the sections of your lab or experiment can be 
+            <!-- All the sections of your lab or experiment can be 
       enclosed together with a div element as shown below-->
-      <div id="experiment-article-sections">
+            <div id="experiment-article-sections">
 
-        <!-- First section of the article-->
-        <section id="experiment-article-section-1">
-          
-          <div id="experiment-article-section-1-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
-	  </div>	
-          
-          <!-- The heading for the section can be enclosed in a 
+                <!-- First section of the article-->
+                <section id="experiment-article-section-1">
+
+                    <div id="experiment-article-section-1-icon" class="icon">
+                        <!-- Enclose the icon image of your lab -->
+                        <img src="../images/introduction.jpg" />
+                    </div>
+
+                    <!-- The heading for the section can be enclosed in a 
           div tag. -->
-          <div id="experiment-article-section-1-heading" 
-          class="heading">
-            Introduction
-          </div>
+                    <div id="experiment-article-section-1-heading" class="heading">
+                        Introduction
+                    </div>
 
-          <!-- Write the section content inside a paragraph 
+                    <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
-          <div id="experiment-article-section-1-content" 
-          class="content">	
-<div style="font-size:14px;">
-As we gather larger copora (more instances of tokens), the corresponding number of distinct types gets diminished as we exhaust the discovery of full vocabulary. This phenomenon can be explained by the Heap's law which is formulated as: 
-<p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/>
-where V = types<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined empirically<br/> <br/><br/>
+                    <div id="experiment-article-section-1-content" class="content">
+                        <div style="font-size:14px;">
+                            As we gather larger copora (more instances of tokens), the corresponding number of distinct types gets diminished as we exhaust the discovery of full vocabulary. This phenomenon can be explained by the Heap's law which is formulated as:
+                            <p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/> where V = types<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined
+                            empirically<br/> <br/><br/>
 
-<center>
-<img src="Exp4/Exp4.jpg" style="height:500px;width:700px" /></center>
-</div>
+                            <center>
+                                <img src="Exp4/Exp4.jpg" style="height:500px;width:700px" /></center>
+                        </div>
 
 
-      </section>
+                </section>
 
-      <!-- Second section of the article-->
-      <section id="experiment-article-section-2">
-        
-        <div id="experiment-article-section-2-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/theory.jpg" />
-	</div>
-				
-        <!-- The heading for the section can be enclosed in a 
+                <!-- Second section of the article-->
+                <section id="experiment-article-section-2">
+
+                    <div id="experiment-article-section-2-icon" class="icon">
+                        <!-- Enclose the icon image of your lab. -->
+                        <img src="../images/theory.jpg" />
+                    </div>
+
+                    <!-- The heading for the section can be enclosed in a 
         div tag. -->
-        <div id="experiment-article-section-2-heading" 
-        class="heading">
-          Theory
-        </div>
+                    <div id="experiment-article-section-2-heading" class="heading">
+                        Theory
+                    </div>
 
 
-        <!-- Write the section content inside a paragraph 
+                    <!-- Write the section content inside a paragraph 
         element, we can also include images with <img> tag -->
-<div id="experiment-article-section-2-content" 
-        class="content">
-<p style="font-size:14px;">
-<h4> Heaps' Law</h4><br/>
-The relation between types and tokens can be explained by the <b>Heaps' law</b> (also called Herdan's law) which describes the number of distinct words in a document (types) as a function of the document length(tokens). It can be formulated as: <br/>
-<p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/>
-
-where V = types<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined empirically<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The values of the parameters depend on the language and with English text corpora, typically K is between 10 and 100, and β is between 0.4 and 0.6.<br/><br/>
-
-
-Applying logarithmics to both sides of the equation, we get:
-<p style="text-align:center"> logV = logK +βlogn</sup></p><br>
-which is an equation of a straight line with intercept logK and slope β.
-
-Heap's Law implies that as we gather larger copora (more instances of tokens), the number of distinct types returned gets diminished as we exhaust the discovery of full vocabulary.
-</p>
-</div>
-      </section>
+                    <div id="experiment-article-section-2-content" class="content">
+                        <p style="font-size:14px;">
+                            <h4> Heaps' Law</h4><br/> The relation between types and tokens can be explained by the <b>Heaps' law</b> (also called Herdan's law) which describes the number of distinct words in a document (types) as a function of the document
+                            length(tokens). It can be formulated as: <br/>
+                            <p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/> where V = types<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined
+                            empirically<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The values of the parameters depend on the language and with English text corpora, typically K is between 10 and 100, and β is between 0.4 and 0.6.<br/><br/>                            Applying logarithmics to both sides of the equation, we get:
+                            <p style="text-align:center"> logV = logK +βlogn</sup>
+                            </p><br> which is an equation of a straight line with intercept logK and slope β. Heap's Law implies that as we gather larger copora (more instances of tokens), the number of distinct types returned gets diminished as we exhaust
+                            the discovery of full vocabulary.
+                        </p>
+                    </div>
+                </section>
 
 
-      <section id="experiment-article-section-3">
-        
-        <div id="experiment-article-section-3-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
-	</div>
-     
-        <div id="experiment-article-section-3-heading" 
-        class="heading">
-          Objective
-        </div>
+                <section id="experiment-article-section-3">
 
-        <div id="experiment-article-section-3-content" 
-        class="content">
-<hr><br>
-The objective of this experiment is to understand the relation between types and tokens with increasing corpus size.
-<br><br><hr>
-        </div>
+                    <div id="experiment-article-section-3-icon" class="icon">
+                        <!-- Enclose the icon image of your lab. -->
+                        <img src="../images/objective.jpg" />
+                    </div>
 
-      </section>
+                    <div id="experiment-article-section-3-heading" class="heading">
+                        Objective
+                    </div>
+
+                    <div id="experiment-article-section-3-content" class="content">
+                        <hr><br> The objective of this experiment is to understand the relation between types and tokens with increasing corpus size.
+                        <br><br>
+                        <hr>
+                    </div>
+
+                </section>
 
 
-      <section id="experiment-article-section-4">
+                <section id="experiment-article-section-4">
 
-        <div id="experiment-article-section-4-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/simulation.jpg" />
-	</div>
+                    <div id="experiment-article-section-4-icon" class="icon">
+                        <!-- Enclose the icon image of your lab.-->
+                        <img src="../images/simulation.jpg" />
+                    </div>
 
-        <div id="experiment-article-section-4-heading" 
-        class="heading">
-          Experiment
-        </div>
+                    <div id="experiment-article-section-4-heading" class="heading">
+                        Experiment
+                    </div>
 
-        <div id="experiment-article-section-4-content" 
-        class="content">
-	<div id="ZIPF_LAW"></div>
-        </div>
+                    <div id="experiment-article-section-4-content" class="content">
+                        <div id="ZIPF_LAW"></div>
+                    </div>
 
-      </section>
+                </section>
 
 
-<!--       <section id="experiment-article-section-5">
+                <!--       <section id="experiment-article-section-5">
       
           <div id="experiment-article-section-5-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab.-->
-<!--	    <img src="../images/quizzes.jpg" />
+                <!--	    <img src="../images/quizzes.jpg" />
 	  </div>
 
           <div id="experiment-article-section-5-heading" 
@@ -213,35 +194,32 @@ The objective of this experiment is to understand the relation between types and
 </div>
         </section>-->
 
-        <section id="experiment-article-section-6">
-	  
-          <div id="experiment-article-section-6-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
-	  </div>
-	
-          <div id="experiment-article-section-6-heading" 
-          class="heading">
-	    Procedure
-	  </div>
-	
-          <div id="experiment-article-section-6-content" 
-          class="content">
-<b><u>STEP1:</u></b> Select the Language which you know better<br/>
-<b><u>STEP2:</u></b> Select the size of corpus<br/><br/>
-<b><u>OUTPUT:</u></b> Observe the graphs to know heap's law better<br/>
-	  </div>
-	
-        </section>
-			
-		
-<!--        <section id="experiment-article-section-7">
+                <section id="experiment-article-section-6">
+
+                    <div id="experiment-article-section-6-icon" class="icon">
+                        <!-- Enclose the icon image of your lab. -->
+                        <img src="../images/procedure.jpg" />
+                    </div>
+
+                    <div id="experiment-article-section-6-heading" class="heading">
+                        Procedure
+                    </div>
+
+                    <div id="experiment-article-section-6-content" class="content">
+                        <b><u>STEP1:</u></b> Select the Language which you know better(The experiment currently supports only english)<br/>
+                        <b><u>STEP2:</u></b> Select the size of corpus<br/><br/>
+                        <b><u>OUTPUT:</u></b> Observe the graphs to know heap's law better<br/>
+                    </div>
+
+                </section>
+
+
+                <!--        <section id="experiment-article-section-7">
    
           <div id="experiment-article-section-7-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab.-->
-<!--	    <img src="../images/readings.jpg" />
+                <!--	    <img src="../images/readings.jpg" />
 	  </div>
 
           <div id="experiment-article-section-7-heading" 
@@ -257,34 +235,35 @@ The objective of this experiment is to understand the relation between types and
 
         </section>-->
 
-      </div>
+                </div>
 
 
-    <!-- An article can have a sidebar that contain related 
+                <!-- An article can have a sidebar that contain related 
     links and additional material (however it is kept optional 
     at this moment) -->
-    <aside id="lab-article-sidebar" class="default">
-      <!-- put the content that you want to appear in the 
-      sidebar -->	
-    </aside>
+                <aside id="lab-article-sidebar" class="default">
+                    <!-- put the content that you want to appear in the 
+      sidebar -->
+                </aside>
 
 
-    <!-- Article footer can display related content and 
-    additional links -->						
-    <footer id="lab-article-footer" class="default">
-      <!-- Put the content that you want to appear here -->
-    </footer>
+                <!-- Article footer can display related content and 
+    additional links -->
+                <footer id="lab-article-footer" class="default">
+                    <!-- Put the content that you want to appear here -->
+                </footer>
 
-  </article>
+        </article>
 
 
-  <!-- Links to other labs, about us page can be kept the lab 
+        <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
-    <!-- Put the content here-->
-  </footer>
+        <footer id="lab-footer" class="default">
+            <!-- Put the content here-->
+        </footer>
 
-</div>		
+        </div>
 
 </body>
+
 </html>

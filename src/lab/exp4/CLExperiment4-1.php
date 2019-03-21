@@ -34,18 +34,17 @@ $('#display').load('CLExperiment4-2.php?ind='+tno+'&corp='+cno+'&lang='+lno);
 <br/>
 <?php
 
-$corp_opt=$_GET["ind"];
-$corp_opt=floatval($corp_opt);
-$corp_opt++;
-$lang_opt=$_GET["lang"];
-if(strcmp($lang_opt, "1")==0)
-   $dir_path="Exp4/English/Corpus ".$corp_opt."/";
-else
-   $dir_path="Exp4/Hindi/Corpus ".$corp_opt."/";
+$corp_opt = $_GET['ind'];
+$corp_opt = floatval($corp_opt);
+++$corp_opt;
+$lang_opt = $_GET['lang'];
+if (strcmp($lang_opt, '1') == 0) {
+    $dir_path = 'Exp4/English/Corpus '.$corp_opt.'/';
+}
 
-$lang_opt=floatval($lang_opt);
+$lang_opt = floatval($lang_opt);
 
-$files = glob($dir_path . "*");
+$files = glob($dir_path.'*');
 ?>
 
 <form name = "selector" action="javascript:selectSize()" target="_parent" method="post" onsubmit="selectSize()">
@@ -54,20 +53,17 @@ $files = glob($dir_path . "*");
 
 <?php
 
-$file_id=1;
+$file_id = 1;
 //print each file name
-foreach($files as $file)
-{
- 
-       $file=explode("/", $file);
-       echo $file[3];
-       $file=explode(".", $file[3]);
-       echo "<option value=\"".$lang_opt."*".$corp_opt."*".$file_id."\">".$file[0]."</option>";
-       $file_id++;
-    
+foreach ($files as $file) {
+    $file = explode('/', $file);
+    echo $file[3];
+    $file = explode('.', $file[3]);
+    echo '<option value="'.$lang_opt.'*'.$corp_opt.'*'.$file_id.'">'.$file[0].'</option>';
+    ++$file_id;
 }
-echo "</select><br/><br/>";
-echo "<input type=\"submit\" value=\"Generate Tokens vs. Types Graph\"></form>";
+echo '</select><br/><br/>';
+echo '<input type="submit" value="Generate Tokens vs. Types Graph"></form>';
 ?>
 
 <div id="display"></div>
