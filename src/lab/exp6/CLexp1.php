@@ -164,7 +164,7 @@ for($i=0;$i<count($possible_sent);$i++)
 	if(trim($possible_sent[$i])===trim($words_temp))
 		$flag_correct=1;
 
-echo "<div style='color:#0000AA;font-size:16px'><br/><br/><b>Form a  sentence (Declarative or Interrogative or any other type) from the given words</b></div><div style='color:#0000FF;font-size:14px' <b><i>(select the buttons in proper order) </i></b><br/><br/></div>";
+echo "<div style='color:#0000AA;font-size:16px'><br/><br/><b>Form a  sentence (Declarative or Interrogative or any other type) from all of the given words</b></div><div style='color:#0000FF;font-size:14px' <b><i>(select the buttons in proper order, the submit button only appears after all the buttons are used to form the sentence.) </i></b><br/><br/></div>";
 
 $temp1="";
 if($words_selected[0]!="%")

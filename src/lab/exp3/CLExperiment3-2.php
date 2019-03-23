@@ -31,7 +31,7 @@ if(flag==1)
 echo "Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types.<br/><br/>";
 $sol3=$_GET["sol"];
 echo "<center><form action=\"javascript:checkAns2()\" target=\"_parent\" method=\"post\">";
-echo "#new types: <br/><div id=\"ans3_cont\"><input type=\"text\" id=\"ans3\" name=\"types_root2\" size=\"4\"><input type=\"hidden\" name=\"types_root2\" id=\"sol3\" value=\"$sol3\"></div><br/><input type=\"submit\" value=\"Submit\">";
+echo "#new types: <br/><div id=\"ans3_cont\"><input type=\"number\" id=\"ans3\" name=\"types_root2\" step=\"1\" min=\"0\"><input type=\"hidden\" name=\"types_root2\" id=\"sol3\" value=\"$sol3\"></div><br/><input type=\"submit\" value=\"Submit\">";
 echo "</form></center><br/>"; 
 echo "<div id=\"result2\"></div>";
 ?>
