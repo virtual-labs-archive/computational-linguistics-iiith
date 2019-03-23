@@ -207,7 +207,7 @@ function changeColor(i)
 	var fl=0;
 	if(buttonCount[i]==0){
 		buttonCount[i]=1;
-		document.getElementById("but_"+i).style.background='#ff0000';
+		document.getElementById("but_"+i).style.background='#f9bf3b';
 	}
 	else{
 		buttonCount[i]=0;
