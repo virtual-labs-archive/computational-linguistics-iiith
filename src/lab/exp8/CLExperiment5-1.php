@@ -109,7 +109,7 @@ function clearTable()
       <?php
       echo "<div style='text-align:center;color:#0000FF'><i>Select the POS tag for corresponding words</i></div>";
       echo "<input type=\"hidden\" name=\"sentence_info\" id=\"sentence_info\" value=\"".$answer."\"/>";
-      echo "<th>Lexicon</th><th>POS</th><th id=\"cor_head\"></th><th id=\"ans_head\"></th>"; 
+      echo "<th>Lexicon</th><th>POS</th><th id=\"cor_head\">Verdict</th><th id=\"ans_head\">Answer</th>"; 
       for($j=0;$j<sizeof($answer_chunk);$j++){ 
       echo "<tr>";
       $part_answer=split("/",$answer_chunk[$j]);
