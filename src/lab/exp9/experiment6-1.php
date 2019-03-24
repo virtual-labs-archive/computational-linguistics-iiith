@@ -107,7 +107,7 @@ function clearTable()
       <?php
       echo "<br/><br/><div style='color:#0000AA;text-align:center;'><i>Identify the Chunk type</i></div><br/>";
       echo "<input type=\"hidden\" name=\"sentence_info\" id=\"sentence_info\" value=\"".$answer."\"/>";
-      echo "<th>Lexicon</th><th>POS</th><th>Chunk</th><th id=\"cor_head\"></th><th id=\"ans_head\"></th>"; 
+      echo "<th>Lexicon</th><th>POS</th><th>Chunk</th><th id=\"cor_head\">Verdict</th><th id=\"ans_head\">Answer</th>"; 
       for($j=0;$j<sizeof($answer_chunk);$j++){ 
       echo "<tr>";
       $part_answer=split("/",$answer_chunk[$j]);
