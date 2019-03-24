@@ -12,8 +12,7 @@ where V = types<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined empirically<br/> <br/><br/>
 
-<center>
-<img src="Exp4/Exp4.jpg" height="25%" width="40%" /></center>
+<center><img src="Exp4/Exp4.jpg"></center>
 </div>
 </body>
 </html>
