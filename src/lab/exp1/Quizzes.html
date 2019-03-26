@@ -35,7 +35,7 @@
 			            <!-- Brand and toggle get grouped for better mobile display -->
 			            <div class="navbar-header page-scroll">
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="sr-only"><h2>Toggle navigation</h2></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
@@ -99,23 +99,23 @@
 							
 							<!--edit -->
 <h1 class="text-h2-lightblue">Forming Sentences - 1</h1><div class="content" id="experiment-article-section-5-content">
-Which of these sentences are grammatically and logically correct?
+<form action="quizresults.php" method="post" name="quiz" onsubmit="return window.confirm(&quot;You are submitting information to an external page. \nAre you sure?&quot;);" target="_blank">
 <ol>
-<li>Ram eat an apple.</li>
-<li>Ram eats an apple.</li>
-<li>Apple eats Ram.</li>
-<li>Eat an apple</li>
-<li>Eat Ram</li>
-</ol>
-<br/><br/>
-<ol>
-<li>मैं घर के दूर हूँ</li>
-<li>बिल्ली खाती है चूहा</li>
-<li>बिल्ली खाता है चूहा</li>
-<li>बिल्ली चूहा को खाती है</li>
-<li>बिल्ली चूहे को खाती है</li>
-</ol>
-</div>						</div>
+<li><b>Which of these sentences are grammatically and logically correct?</b></li>
+<input name="Q1" type="radio" value="1">a. Ram eat an apple.<br>
+<input name="Q1" type="radio" value="2">b. Ram eats an apple.<br>
+<input name="Q1" type="radio" value="3">c. Apple eats Ram.<br>
+<input name="Q1" type="radio" value="4">d. Eat an apple<br>
+<input name="Q1" type="radio" value="5">e. Eat Ram<br>
+
+<li><b> Which of these sentences are grammatically and logically correct?</b></li>
+<input name="Q2" type="radio" value="1">मैं घर के दूर हूँ<br>
+<input name="Q2" type="radio" value="2">बिल्ली खाती है चूहा<br>
+<input name="Q2" type="radio" value="3">बिल्ली खाता है चूहा<br>
+<input name="Q2" type="radio" value="4">बिल्ली चूहा को खाती है<br>
+<input name="Q2" type="radio" value="5">बिल्ली चूहे को खाती है<br>
+	<p> <input target="_blank" type="submit" value="Submit answers for evaluation"></p>
+		        </ol></form>
 					</div>
 			</div>
 			<!-- =================================================================================================================================== -->
