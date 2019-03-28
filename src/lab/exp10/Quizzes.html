@@ -100,12 +100,32 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Context Free Grammar</h1><div class="content" id="experiment-article-section-5-content">
 According to the Context Free Grammar given in <b>Procedure</b>, which of these is a valid sentences:<br/>
-<ol>
-<li>Ram ate a mango</li>
-<li>They eats a mango</li>
-<li>Ram ate a very big mango</li>
-<li>Ram ate a spoon</li>
-</ol>
+
+<input id="q1" name="q1" type="radio" value="1">
+Ram ate a mango <br>
+<div class="ans" id="q1ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q2" name="q2" type="radio" value="2"> They eats a mango <br>
+<div class="ans" id="q2ans" style="display: none;">
+	Invalid
+</div>
+<br/>
+<input id="q3" name="q3" type="radio" value="3">Ram ate a very big mango <br>
+<div class="ans" id="q3ans" style="display: none;">
+	Invalid
+</div>
+<br/>
+<input id="q4" name="q4" type="radio" value="4">Ram ate a spoon <br>
+<div class="ans" id="q4ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input class="button" type="submit" value="Submit Answers" onclick="showans()">
+</input>
+<a href="Quizzes.html"> <button>Cancel</button></a>
+
 </div>						</div>
 					</div>
 			</div>
@@ -172,6 +192,13 @@ According to the Context Free Grammar given in <b>Procedure</b>, which of these 
 	<script src="../../../vendors/owl-carousel/owl.carousel.js"></script>
 	
 	<script type="text/javascript">
+	function showans(){
+		var element = document.getElementsByClassName("ans");
+		for(i=0; i<element.length; i++){
+			element[i].style.display = 'block';
+		}		
+	};	
+		
 	$(document).ready(function() {
 		 
 		  var owl = $("#owl-demo");
@@ -198,8 +225,9 @@ According to the Context Free Grammar given in <b>Procedure</b>, which of these 
 		      items : 8,
 		  });
 		 
-		
+			
 	
+
 	 //owl for aboutus
 	  var owl = $("#owl-aboutus");
 	  owl.owlCarousel({
