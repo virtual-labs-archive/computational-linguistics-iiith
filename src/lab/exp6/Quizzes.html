@@ -100,15 +100,52 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Word Sense Disambiguation</h1><div class="content" id="experiment-article-section-5-content">
 Give the senses for the words in bold in the following sentences.<br/>
-<ol>
-<li>Use <b>Google</b> <i>and</i> <b>Google</b> it </li>
-<li><b>Drop</b> the table <i>and</i> Water <b>drops</b></li>
-<li>Water <b>drops</b> <i>and</i> <b>drop</b> down menu</li>
-</ol><br/><br/>
-<ol>
-<li>राम <b>खाता</b> है <i>and</i> <b>खाता</b> खोलो</li>
-<li>किताब <b>खाने</b> में रखो <i>and</i> राम <b>खाने</b> के लिए बहार गया है</li>
-</ol>
+
+Use <b>Google</b> <i>and</i> <b>Google</b> it <br>
+
+Google1: <input type="text"  value=""><br>
+Google2: <input type="text"  value=""><br>
+<div class="ans" id="q1ans" style="display: none;">
+	verb(googling)     ,   noun( the search engine)
+</div>
+<br/>
+ <b>Drop</b> the table <i>and</i> Water <b>drops</b> <br>
+
+Drop1: <input type="text"  value=""><br>
+Drop2: <input type="text"  value=""><br>
+<div class="ans" id="q2ans" style="display: none;">
+	verb(to make fall vertically)    ,    noun(a small round or pear-shaped portion of liquid )
+</div>
+<br/>
+Water <b>drops</b> <i>and</i> <b>drop</b> down menu <br>
+
+Drops1: <input type="text"  value=""><br>
+Drops2: <input type="text"  value=""><br>
+<div class="ans" id="q3ans" style="display: none;">
+	noun (a small round or pear-shaped portion of liquid )    ,    Adjective(describing ability of menu to extend vertically)
+</div>
+<br/>
+<br/>
+
+राम <b>खाता</b> है <i>and</i> <b>खाता</b> खोलो <br>
+
+खाता1: <input type="text"  value=""><br>
+खाता2: <input type="text"  value=""><br>
+<div class="ans" id="q4ans" style="display: none;">
+	verb(eating)     ,   noun(account) 
+</div>
+<br/>
+किताब <b>खाने</b> में रखो <i>and</i> राम <b>खाने</b> के लिए बहार गया है <br>
+खाने1: <input type="text"  value=""><br>
+खाने2: <input type="text"  value=""><br>
+<div class="ans" id="q4ans" style="display: none;">
+	noun(place where something is kept)    ,   Verb(eating)
+</div>
+<br/>
+<input class="button" type="submit" value="Submit Answers" onclick="showans()">
+</input>
+<a href="Quizzes.html"> <button>Cancel</button></a>
+
 </div>						</div>
 					</div>
 			</div>
@@ -175,6 +212,14 @@ Give the senses for the words in bold in the following sentences.<br/>
 	<script src="../../../vendors/owl-carousel/owl.carousel.js"></script>
 	
 	<script type="text/javascript">
+		function showans(){
+		var element = document.getElementsByClassName("ans");
+		for(i=0; i<element.length; i++){
+			element[i].style.display = 'block';
+		}		
+	};	
+		
+
 	$(document).ready(function() {
 		 
 		  var owl = $("#owl-demo");
