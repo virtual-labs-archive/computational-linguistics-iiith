@@ -100,13 +100,44 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Tokens and Types</h1><div class="content" id="experiment-article-section-5-content">
 Give number of types and tokens for the following sentences:<br/>
-<ol>
-<li>What did you do?</li>
-<li>Two and two makes four.</li>
-<li>Ram eats an apple afteat eating a banana.</li>
-<li>April will come here after 10th of April.</li>
-<li>John drinks tea and George takes cold drink.</li>
-</ol>
+
+What did you do? <br>
+
+No.of tokens: <input type="text"  value=""><br>
+No.of Types: <input type="text"  value=""><br>
+<div class="ans" id="q1ans" style="display: none;">
+	No.of tokens:-4     ,   Types:-4
+</div>
+<br/>
+ Two and two makes four. <br>
+
+No.of tokens: <input type="text"  value=""><br>
+No.of Types: <input type="text"  value=""><br>
+<div class="ans" id="q2ans" style="display: none;">
+	No.of tokens:-5    ,    Types:-4
+</div>
+<br/>
+April will come here after 10th of April. <br>
+
+No.of tokens: <input type="text"  value=""><br>
+No.of Types: <input type="text"  value=""><br>
+<div class="ans" id="q3ans" style="display: none;">
+	No.of tokens:-8    ,    Types:-7
+</div>
+<br/>
+John drinks tea and George takes cold drink. <br>
+
+No.of tokens: <input type="text"  value=""><br>
+No.of Types: <input type="text"  value=""><br>
+<div class="ans" id="q4ans" style="display: none;">
+	No.of tokens:-8     ,   Types:-8
+</div>
+<br/>
+<input class="button" type="submit" value="Submit Answers" onclick="showans()">
+</input>
+<a href="Quizzes.html"> <button>Cancel</button></a>
+
+
 </div>						</div>
 					</div>
 			</div>
@@ -173,6 +204,14 @@ Give number of types and tokens for the following sentences:<br/>
 	<script src="../../../vendors/owl-carousel/owl.carousel.js"></script>
 	
 	<script type="text/javascript">
+	function showans(){
+		var element = document.getElementsByClassName("ans");
+		for(i=0; i<element.length; i++){
+			element[i].style.display = 'block';
+		}		
+	};	
+		
+
 	$(document).ready(function() {
 		 
 		  var owl = $("#owl-demo");

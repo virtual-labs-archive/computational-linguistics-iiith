@@ -100,22 +100,71 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Forming Sentences - 2</h1><div class="content" id="experiment-article-section-5-content">
 Which of these is a valid sentence?<br/>
-<ol>
-<li>Ram came after lunch.</li>
-<li>Ram came after having lunch.</li>
-<li>Sleeping I saw a tiger.</li>
-<li>I saw a sleeping tiger.</li>
-<li>No Parking is allowed.</li>
-</ol>
-<br/><br/>
-<ol>
-<li>खाते खाते राम सो गया</li>
-<li>राम खाते खाते सो गया</li>
-<li>राम खाता खाते सो गया</li>
-<li>राम खाकर सो गया</li>
-<li>राम और श्याम ने भी खाना खाया</li>
-<li>राम ने और श्याम भी खाना खाया</li>
-</ol>
+
+
+<input id="q1" name="q1" type="radio" value="1">
+Ram came after lunch. <br>
+<div class="ans" id="q1ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q2" name="q2" type="radio" value="2"> Ram came after having lunch. <br>
+<div class="ans" id="q2ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q3" name="q3" type="radio" value="3">Sleeping I saw a tiger.<br>
+<div class="ans" id="q3ans" style="display: none;">
+	Invalid
+</div>
+<br/>
+
+<input id="q4" name="q4" type="radio" value="4">I saw a sleeping tiger.<br>
+<div class="ans" id="q4ans" style="display: none;">
+	Valid
+</div>
+<br/>
+
+<input id="q5" name="q5" type="radio" value="5">No Parking is allowed.<br>
+<div class="ans" id="q5ans" style="display: none;">
+	Valid
+</div>
+<br>
+<input id="q6" name="q6" type="radio" value="6">खाते खाते राम सो गया <br>
+<div class="ans" id="q6ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q7" name="q7" type="radio" value="7"> राम खाते खाते सो गया <br>
+<div class="ans" id="q7ans" style="display: none;">
+	Invalid
+</div>
+<br/>
+<input id="q8" name="q8" type="radio" value="8">राम खाता खाते सो गया<br>
+<div class="ans" id="q8ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q9" name="q9" type="radio" value="9">राम खाकर सो गया<br>
+<div class="ans" id="q9ans" style="display: none;">
+	Valid
+</div>
+<br/>
+<input id="q10" name="q10" type="radio" value="10">राम और श्याम ने भी खाना खाया<br>
+<div class="ans" id="q10ans" style="display: none;">
+	Valid
+</div>
+<br/>
+
+<input id="q11" name="q11" type="radio" value="11">राम ने और श्याम भी खाना खाया<br>
+<div class="ans" id="q11ans" style="display: none;">
+	Invalid
+</div>
+<br/>
+<input class="button" type="submit" value="Submit Answers" onclick="showans()">
+</input>
+<a href="Quizzes.html"> <button>Cancel</button></a>
+
 </div>						</div>
 					</div>
 			</div>
@@ -182,6 +231,13 @@ Which of these is a valid sentence?<br/>
 	<script src="../../../vendors/owl-carousel/owl.carousel.js"></script>
 	
 	<script type="text/javascript">
+	function showans(){
+		var element = document.getElementsByClassName("ans");
+		for(i=0; i<element.length; i++){
+			element[i].style.display = 'block';
+		}		
+	};	
+		
 	$(document).ready(function() {
 		 
 		  var owl = $("#owl-demo");
