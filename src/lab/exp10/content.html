@@ -1,30 +1,29 @@
 <!-- This file needs to be edited by the lab developer to suit
-the requirements of their lab in particular.-->
-
-<!-- Add class="default" to include any element as it is
+the requirements of their lab in particular.--><!-- Add class="default" to include any element as it is
 specified in default.html. 
 Do not include class="default" to the elements that you want to
-edit -->
-
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
+edit --><!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 
 <div id="experiment"> <!-- The Experiment Document Container-->
 
   <!-- The lab Header contains the logo and the name of the lab,
   usually displayed on the top of the page-->
 
-  <header id="experiment-header" class="default">
+  <header class="default" id="experiment-header">
   
-    <div id="experiment-header-logo" class="logo">
+    <div class="logo" id="experiment-header-logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.jpg" />
+      <img src="../images/logo.jpg"/>
     </div>
 
-    <div id="experiment-header-heading" class="heading">
+    <div class="heading" id="experiment-header-heading">
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
@@ -45,10 +44,10 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
-     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     <div class="breadcrumb" id="experiment-article-breadcrumb">
      </div>
     
-      <header id="experiment-article-heading" class="heading">
+      <header class="heading" id="experiment-article-heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
         Context Free Grammar
@@ -58,7 +57,7 @@ edit -->
 
       <!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
-      <nav id="experiment-article-navigation" class="default">
+      <nav class="default" id="experiment-article-navigation">
         <ul id="experiment-article-navigation-menu">
           <!-- The menu can be dynamically generated to contain 
           the headings of your sections or instead write the 
@@ -74,23 +73,20 @@ edit -->
         <!-- First section of the article-->
         <section id="experiment-article-section-1">
           
-          <div id="experiment-article-section-1-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-1-icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/introduction.jpg"/>
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
-          <div id="experiment-article-section-1-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-1-heading">
             Introduction
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
-          <div id="experiment-article-section-1-content" 
-          class="content">	
+          <div class="content" id="experiment-article-section-1-content">	
 <div style="font-size:16px;">
 Context Free Grammar is a formal grammar consisting of some rules. These rules can tell us whether the string or a sentence is valid or not. A valid sentence can be represented using these rules in the form of tree called phrase structure tree. In other words, these rules are used for parsing the sentences. 
 <br/><br/>Context Free Grammar is not good for free word order language such as Hindi. This concept is largely used in a language like English for parsing.
@@ -103,51 +99,48 @@ Context Free Grammar is a formal grammar consisting of some rules. These rules c
       <!-- Second section of the article-->
       <section id="experiment-article-section-2">
         
-        <div id="experiment-article-section-2-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-2-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/theory.jpg" />
+	  <img src="../images/theory.jpg"/>
 	</div>
 				
         <!-- The heading for the section can be enclosed in a 
         div tag. -->
-        <div id="experiment-article-section-2-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-2-heading">
           Theory
         </div>
 
 
         <!-- Write the section content inside a paragraph 
         element, we can also include images with <img> tag -->
-<div id="experiment-article-section-2-content" 
-        class="content">
+<div class="content" id="experiment-article-section-2-content">
 <p style="font-size:16px;">
 A Context Free Grammar is a set of productions used for generating sentences of a language.<br/><br/>
 Context Free Grammar has four components:<br/>
-<ol>
+</p><ol>
 <li>a set of <b>terminal symbols</b>, which are <i>lexicons</i> or <i>words</i>.</li>
 <li>a set of <b>non-terminal symbols</b>, which are generally denoted by <i>phrases</i> in computational linguistics. <b>Pre-terminal</b> is the special set of non-terminals which always extend to terminals. Pre-terminals are nothing but <i>Parts of Speech</i>.</li>
-<li>a set of <b>productions or rules</b> of the form V -> w, where V is a non-terminal and w is a sequence of terminals and non-terminals.</li>
+<li>a set of <b>productions or rules</b> of the form V -&gt; w, where V is a non-terminal and w is a sequence of terminals and non-terminals.</li>
 <li>a <b>start symbol</b>, a special non-terminal symbol which appears initially and stands for <i>sentence</i>.</li>
 </ol>
 <br/><br/>
 <b>Example:</b><br/>
 <u><i>Rules</i></u><br/>
-S -> NP VP<br/>
-NP -> det noun<br/>
-NP -> noun<br/>
-NP -> det adj noun<br/>
-NP -> adj noun<br/>
-VP -> verb NP<br/><br/>
-<u><i><b>Sentence:</b></u>Ram eats a mango</i><br/>
+S -&gt; NP VP<br/>
+NP -&gt; det noun<br/>
+NP -&gt; noun<br/>
+NP -&gt; det adj noun<br/>
+NP -&gt; adj noun<br/>
+VP -&gt; verb NP<br/><br/>
+<u><i><b>Sentence:</b></i></u><i>Ram eats a mango</i><br/>
 <i style="font-size:14px">Now, we will show how this sentence is formed using the rules</i><br/>
-S -> NP VP<br/>
-S -> noun VP<br/>
-S -> noun verb NP<br/>
-S -> noun verb det noun<br/>
-S -> Ram eats a mango <i>(RHS in above step is nothing but the Parts of Speech of the words in a sentence)</i><br/><br/>
+S -&gt; NP VP<br/>
+S -&gt; noun VP<br/>
+S -&gt; noun verb NP<br/>
+S -&gt; noun verb det noun<br/>
+S -&gt; Ram eats a mango <i>(RHS in above step is nothing but the Parts of Speech of the words in a sentence)</i><br/><br/>
 However, this can also be represented in the form of phrase structure tree, as shown here:<br/><br/>
-<center><img src="PST.JPG" style="width:400px;height:250px" alt="PST not found"/></center><br/><br/>
+<center><img alt="PST not found" src="PST.JPG" style="width:400px;height:250px"/></center><br/><br/>
 <i>This can also be interpretated as:</i><br/>
 <b><i>a</i></b> and <b><i>mango</i></b> combines to form <b>NP</b><br/>
 <b><i>eats</i></b> and <b><i>a mango</i></b> combines to form <b>VP</b><br/>
@@ -156,41 +149,38 @@ However, this can also be represented in the form of phrase structure tree, as s
 <br/>
 This is the task which is to be done in this experiment, and corresponding tree will be shown. For this experiment, you should know the parts of sppech of the words<br/><br/>
 <b><u>Context Free Grammar</u> for this experiment</b><br/>
-S -> NP VP<br/>
-S -> VP<br/>
-VP -> VP PP<br/>
-VP -> VP NP<br/>
-VP -> verb NP<br/>
-VP -> aux-verb verb<br/>
-NP -> NP PP<br/>
-NP -> noun<br/>
-NP -> det noun<br/>
-NP -> det adjective noun<br/>
-NP -> adjective noun<br/>
-NP -> pronoun<br/><br/><br/><br/><br/>
-</p>
+S -&gt; NP VP<br/>
+S -&gt; VP<br/>
+VP -&gt; VP PP<br/>
+VP -&gt; VP NP<br/>
+VP -&gt; verb NP<br/>
+VP -&gt; aux-verb verb<br/>
+NP -&gt; NP PP<br/>
+NP -&gt; noun<br/>
+NP -&gt; det noun<br/>
+NP -&gt; det adjective noun<br/>
+NP -&gt; adjective noun<br/>
+NP -&gt; pronoun<br/><br/><br/><br/><br/>
+<p></p>
 </div>
       </section>
 
 
       <section id="experiment-article-section-3">
         
-        <div id="experiment-article-section-3-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-3-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/objective.jpg"/>
 	</div>
      
-        <div id="experiment-article-section-3-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-3-heading">
           Objective
         </div>
 
-        <div id="experiment-article-section-3-content" 
-        class="content">
-<hr><br>
+        <div class="content" id="experiment-article-section-3-content">
+<hr/><br/>
 The objective of this experiment is to form phrase structure tree given the valid sentences and context free grammar.
-<br><br><hr>
+<br/><br/><hr/>
         </div>
 
       </section>
@@ -198,19 +188,16 @@ The objective of this experiment is to form phrase structure tree given the vali
 
       <section id="experiment-article-section-4">
 
-        <div id="experiment-article-section-4-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-4-icon">
 	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/simulation.jpg" />
+	  <img src="../images/simulation.jpg"/>
 	</div>
 
-        <div id="experiment-article-section-4-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-4-heading">
           Experiment
         </div>
 
-        <div id="experiment-article-section-4-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-4-content">
 	<div id="PHRASE_STRUCTURE_TREE"></div>
         </div>
 
@@ -219,19 +206,16 @@ The objective of this experiment is to form phrase structure tree given the vali
 
         <section id="experiment-article-section-5">
       
-          <div id="experiment-article-section-5-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-5-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/quizzes.jpg" />
+	    <img src="../images/quizzes.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-5-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-5-heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-5-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-5-content">
 According to the Context Free Grammar given in <b>Procedure</b>, which of these is a valid sentences:<br/>
 <ol>
 <li>Ram ate a mango</li>
@@ -244,19 +228,16 @@ According to the Context Free Grammar given in <b>Procedure</b>, which of these 
 
         <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-6-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-6-icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/procedure.jpg"/>
 	  </div>
 	
-          <div id="experiment-article-section-6-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-6-heading">
 	    Procedure
 	  </div>
 	
-          <div id="experiment-article-section-6-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-6-content">
 <b><u>STEP1:</u></b> Select a sentence<br/>
 <b><u>STEP2:</u></b> Select the buttons containing words and the corresponding chunk type, as demonstrated in <b>procedure</b><br/>
 <b><u>OUTPUT:</u></b> Phrase Structure Tree, formed from each step will be shown below<br/><br/>
@@ -272,19 +253,16 @@ According to the Context Free Grammar given in <b>Procedure</b>, which of these 
 		
         <section id="experiment-article-section-7">
    
-          <div id="experiment-article-section-7-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-7-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
+	    <img src="../images/readings.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-7-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-7-heading">
             Further Readings
           </div>
 
-          <div id="experiment-article-section-7-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-7-content">
 <center>Context-Free Grammars for English, Chapter 9<br/><i>Speech and Language Processing, Daniel Jurafsky and James H. Martin</i><br/><br/><br/>
 Parsing with Context-Free Grammar, Chapter 10<br/><i>Speech and Language Processing, Daniel Jurafsky and James H. Martin</i></center>
           </div>
@@ -297,7 +275,7 @@ Parsing with Context-Free Grammar, Chapter 10<br/><i>Speech and Language Process
     <!-- An article can have a sidebar that contain related 
     links and additional material (however it is kept optional 
     at this moment) -->
-    <aside id="lab-article-sidebar" class="default">
+    <aside class="default" id="lab-article-sidebar">
       <!-- put the content that you want to appear in the 
       sidebar -->	
     </aside>
@@ -305,20 +283,59 @@ Parsing with Context-Free Grammar, Chapter 10<br/><i>Speech and Language Process
 
     <!-- Article footer can display related content and 
     additional links -->						
-    <footer id="lab-article-footer" class="default">
-      <!-- Put the content that you want to appear here -->
-    </footer>
+    <footer class="default" id="footer"><div class="footer-top" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <h4>Community Links</h4>
+        <p>
+	  <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
+	</p>
+        <p>
+	  <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+	</p>
+        <p>
+	  <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
+	</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h4>Contact Us</h4>
+	<p> <strong>Phone:</strong> General Information : 011-26582050 </p>
+	<p> <strong>Email:</strong> support@vlab.co.in </p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+	<h4>Follow Us</h4>
+	<div class="social-links">
+	  <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
+	    <i class="fa fa-twitter"></i>
+	  </a>
+	  <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
+	    <i class="fa fa-facebook"></i>
+	  </a>
+	  <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
+	    <i class="fa fa-youtube"></i>
+	  </a>
+	  <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867B2;">
+	    <i class="fa fa-linkedin"></i>
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
 
   </article>
 
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer class="default" id="lab-footer">
     <!-- Put the content here-->
   </footer>
 
 </div>		
 
-</body>
-</html>
+
+
+</body></html>

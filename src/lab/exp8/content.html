@@ -1,30 +1,29 @@
 <!-- This file needs to be edited by the lab developer to suit
-the requirements of their lab in particular.-->
-
-<!-- Add class="default" to include any element as it is
+the requirements of their lab in particular.--><!-- Add class="default" to include any element as it is
 specified in default.html. 
 Do not include class="default" to the elements that you want to
-edit -->
-
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
+edit --><!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 
 <div id="experiment"> <!-- The Experiment Document Container-->
 
   <!-- The lab Header contains the logo and the name of the lab,
   usually displayed on the top of the page-->
 
-  <header id="experiment-header" class="default">
+  <header class="default" id="experiment-header">
   
-    <div id="experiment-header-logo" class="logo">
+    <div class="logo" id="experiment-header-logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.jpg" />
+      <img src="../images/logo.jpg"/>
     </div>
 
-    <div id="experiment-header-heading" class="heading">
+    <div class="heading" id="experiment-header-heading">
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
@@ -45,10 +44,10 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
-     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     <div class="breadcrumb" id="experiment-article-breadcrumb">
      </div>
     
-      <header id="experiment-article-heading" class="heading">
+      <header class="heading" id="experiment-article-heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
         Fine - grained POS Tagging
@@ -58,7 +57,7 @@ edit -->
 
       <!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
-      <nav id="experiment-article-navigation" class="default">
+      <nav class="default" id="experiment-article-navigation">
         <ul id="experiment-article-navigation-menu">
           <!-- The menu can be dynamically generated to contain 
           the headings of your sections or instead write the 
@@ -74,26 +73,23 @@ edit -->
         <!-- First section of the article-->
         <section id="experiment-article-section-1">
           
-          <div id="experiment-article-section-1-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-1-icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/introduction.jpg"/>
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
-          <div id="experiment-article-section-1-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-1-heading">
             Introduction
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
-          <div id="experiment-article-section-1-content" 
-          class="content">	
+          <div class="content" id="experiment-article-section-1-content">	
 Part-of-speech tagging is the process of assigning a part-of-speech (lexical class marker) to each word in a corpus. In traditional grammars there were generally only a few parts of speech and therefore we need to expand the number of categories. Further distinction within each class helps in incorporating futther knowledge in each tag.<br/><br/>
 <div style="padding-left:250px;">
-<img src="images/pos-fg.jpg" alt="ALT_pos-fg" style="height:385px;width:510px" />
+<img alt="ALT_pos-fg" src="images/pos-fg.jpg" style="height:385px;width:510px"/>
 </div>
 </div>
 
@@ -103,168 +99,165 @@ Part-of-speech tagging is the process of assigning a part-of-speech (lexical cla
       <!-- Second section of the article-->
       <section id="experiment-article-section-2">
         
-        <div id="experiment-article-section-2-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-2-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/theory.jpg" />
+	  <img src="../images/theory.jpg"/>
 	</div>
 				
         <!-- The heading for the section can be enclosed in a 
         div tag. -->
-        <div id="experiment-article-section-2-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-2-heading">
           Theory
         </div>
 
 
         <!-- Write the section content inside a paragraph 
         element, we can also include images with <img> tag -->
-<div id="experiment-article-section-2-content" 
-        class="content">
+<div class="content" id="experiment-article-section-2-content">
 <p style="font-size:15px;">
-Part-of-speech tagging (POS tagging) is the process of marking up a word in a text as corresponding to a particular part of speech, based on both its definition, as well as its context. POS-taggers play an increasingly important role in speech recognition, natural language parsing and information retrieval.<br><br>
+Part-of-speech tagging (POS tagging) is the process of marking up a word in a text as corresponding to a particular part of speech, based on both its definition, as well as its context. POS-taggers play an increasingly important role in speech recognition, natural language parsing and information retrieval.<br/><br/>
 
 In traditional grammars there were generally only a few parts of speech (Refer to Experiment 5). However, there is a need for further distinction within these categories. For example these tagsets distinguish between possessive pronouns (my, your, his, her, its) and personal pronouns (I, you, he, me). Knowing whether a word is a possessive pronoun or a personal pronoun can tell us what words are likely to occur in its vicinity.<br/>
 
 For Example , possessive pronouns are likely to be followed by a noun, personal pronouns by a verb. <br/>
-<ul><li>his(Possessive) pen(Noun)</li>
+</p><ul><li>his(Possessive) pen(Noun)</li>
     <li>he(Personal_Pronoun) went(Verb)</li></ul><br/>
 
-Therefore, each of the traditional part of speech can be made more fine-grained so that can convey additional information. Such a tagset (adapted from the Penn tagset) is shown below:<br><br>
-<center><h2>PENN tagset</h2></center><br>
-<TABLE BORDER=2  CELLSPACING=2 WIDTH=100% >
-<TR>
-<TH> POS Tag</TH><TH> Description</TH><TH> Example </TH>
-</TR>
-<TR>
-<TD> CC  </TD><TD> Coordinating Conjunction  </TD><TD> and, but, or </TD>
+Therefore, each of the traditional part of speech can be made more fine-grained so that can convey additional information. Such a tagset (adapted from the Penn tagset) is shown below:<br/><br/>
+<center><h2>PENN tagset</h2></center><br/>
+<table border="2" cellspacing="2" width="100%">
+<tbody><tr>
+<th> POS Tag</th><th> Description</th><th> Example </th>
+</tr>
+<tr>
+<td> CC  </td><td> Coordinating Conjunction  </td><td> and, but, or </td>
 
-</TR>
-<TR>
-<TD> CD  </TD><TD> Cardinal Number </TD><TD> 1, one, third </TD>
-</TR>
-<TR>
-<TD> DT  </TD><TD> Determiner  </TD><TD> the, some</TD>
+</tr>
+<tr>
+<td> CD  </td><td> Cardinal Number </td><td> 1, one, third </td>
+</tr>
+<tr>
+<td> DT  </td><td> Determiner  </td><td> the, some</td>
 
-</TR>
-<TR>
-<TD> EX  </TD><TD> Existential There </TD><TD> <i>there</i> is </TD>
-</TR>
-<TR>
-<TD> IN  </TD><TD> Preposition/Subordinating conjunction </TD><TD> in, of, like, that </TD>
-</TR>
-<TR>
-<TD> JJ   </TD><TD> Adjective </TD><TD> green, good</TD>
+</tr>
+<tr>
+<td> EX  </td><td> Existential There </td><td> <i>there</i> is </td>
+</tr>
+<tr>
+<td> IN  </td><td> Preposition/Subordinating conjunction </td><td> in, of, like, that </td>
+</tr>
+<tr>
+<td> JJ   </td><td> Adjective </td><td> green, good</td>
 
-</TR>
-<TR>
-<TD> JJR   </TD><TD> Adjective, Comparative    </TD><TD> greener, better  </TD>
-</TR>
-<TR>
-<TD> JJS   </TD><TD> Adjective, Superlative    </TD><TD> greenest, best  </TD>
+</tr>
+<tr>
+<td> JJR   </td><td> Adjective, Comparative    </td><td> greener, better  </td>
+</tr>
+<tr>
+<td> JJS   </td><td> Adjective, Superlative    </td><td> greenest, best  </td>
 
-</TR>
-<TR>
-<TD> MD  </TD><TD> Modal </TD><TD> could, will </TD>
+</tr>
+<tr>
+<td> MD  </td><td> Modal </td><td> could, will </td>
 
-</TR>
-<TR>
-<TD> NN  </TD><TD> Noun, Singular or Mass </TD><TD> table </TD>
-</TR>
-<TR>
-<TD> NNS </TD><TD>  Noun Plural </TD><TD> tables </TD>
+</tr>
+<tr>
+<td> NN  </td><td> Noun, Singular or Mass </td><td> table </td>
+</tr>
+<tr>
+<td> NNS </td><td>  Noun Plural </td><td> tables </td>
 
-</TR>
-<TR>
-<TD> NNP </TD><TD>  Proper Noun, Singular  </TD><TD> John, Google   </TD>
-</TR>
-<TR>
-<TD> NNPS </TD><TD> Proper Noun, Plural  </TD><TD> Vikings, Bachchans  </TD>
+</tr>
+<tr>
+<td> NNP </td><td>  Proper Noun, Singular  </td><td> John, Google   </td>
+</tr>
+<tr>
+<td> NNPS </td><td> Proper Noun, Plural  </td><td> Vikings, Bachchans  </td>
 
-</TR>
-<TR>
-<TD> PDT  </TD><TD> Predeterminer  </TD><TD> <i>both</i> the boys  </TD>
-</TR>
-<TR>
-<TD> POS  </TD><TD> Possessive Ending  </TD><TD> friend<i>'s</i>  </TD>
+</tr>
+<tr>
+<td> PDT  </td><td> Predeterminer  </td><td> <i>both</i> the boys  </td>
+</tr>
+<tr>
+<td> POS  </td><td> Possessive Ending  </td><td> friend<i>'s</i>  </td>
 
-</TR>
-<TR>
-<TD> PRP  </TD><TD> Personal Pronoun  </TD><TD> I, he, it </TD>
-</TR>
-<TR>
-<TD> PRP$  </TD><TD> Possessive Pronoun  </TD><TD> my, his </TD>
+</tr>
+<tr>
+<td> PRP  </td><td> Personal Pronoun  </td><td> I, he, it </td>
+</tr>
+<tr>
+<td> PRP$  </td><td> Possessive Pronoun  </td><td> my, his </td>
 
-</TR>
-<TR>
-<TD> RB   </TD><TD> Adverb   </TD><TD> however, usually, naturally, here, very </TD>
-</TR>
-<TR>
-<TD> RBR   </TD><TD> Adverb, Comparative   </TD><TD> more </TD>
+</tr>
+<tr>
+<td> RB   </td><td> Adverb   </td><td> however, usually, naturally, here, very </td>
+</tr>
+<tr>
+<td> RBR   </td><td> Adverb, Comparative   </td><td> more </td>
 
-</TR>
-<TR>
-<TD> RBS   </TD><TD> Adverb, Superlative   </TD><TD> most </TD>
-</TR>
+</tr>
+<tr>
+<td> RBS   </td><td> Adverb, Superlative   </td><td> most </td>
+</tr>
 
-<TR>
-<TD> RP   </TD><TD> Particle  </TD><TD> give <i> up </i></TD> 
+<tr>
+<td> RP   </td><td> Particle  </td><td> give <i> up </i></td> 
 
-</TR>
-<TR>
-<TD> TO  </TD><TD> To </TD><TD> <i>to</i> go, <i>to</i> him </TD> 
-</TR>
-<TR>
+</tr>
+<tr>
+<td> TO  </td><td> To </td><td> <i>to</i> go, <i>to</i> him </td> 
+</tr>
+<tr>
 
-<TD> UH  </TD><TD> Interjection  </TD><TD> uhhuhhuhh </TD> 
-</TR>
-<TR>
-<TD> VB  </TD><TD> Verb, base form  </TD><TD> take  </TD>
+<td> UH  </td><td> Interjection  </td><td> uhhuhhuhh </td> 
+</tr>
+<tr>
+<td> VB  </td><td> Verb, base form  </td><td> take  </td>
 
-</TR>
-<TR>
-<TD> VBD </TD><TD>  Verb, Past   </TD><TD> took </TD>
-</TR>
-<TR>
-<TD> VBG </TD><TD>Verb, Gerund/Present Participle</TD><TD> taking  </TD>
+</tr>
+<tr>
+<td> VBD </td><td>  Verb, Past   </td><td> took </td>
+</tr>
+<tr>
+<td> VBG </td><td>Verb, Gerund/Present Participle</td><td> taking  </td>
 
-</TR>
-<TR>
-<TD> VBN  </TD><TD> Verb, Past Participle    </TD><TD> taken     </TD>
-</TR>
-<TR>
-<TD> VBP  </TD><TD> Verb, Singular, Present, non-3rd person </TD><TD>  take </TD> 
+</tr>
+<tr>
+<td> VBN  </td><td> Verb, Past Participle    </td><td> taken     </td>
+</tr>
+<tr>
+<td> VBP  </td><td> Verb, Singular, Present, non-3rd person </td><td>  take </td> 
 
-</TR>
-<TR>
-<TD> VBZ  </TD><TD> Verb, Singular, Present, 3rd person  </TD><TD> takes   </TD>
-</TR>
-<TR>
-<TD> WDT   </TD><TD> Wh-determiner    </TD><TD> which  </TD>
-</TR>
-<TR>
-<TD> WP   </TD><TD> Wh-pronoun  </TD><TD> who, what </TD>
-</TR>
-<TR>
-<TD> WP$   </TD><TD> Possessive Wh-pronoun  </TD><TD> whose  </TD>
-</TR>
-<TR>
-<TD> WRB   </TD><TD> Wh-abverb  </TD><TD> where, when </TD>
-</TR>
-</TABLE>
-<br><br>
+</tr>
+<tr>
+<td> VBZ  </td><td> Verb, Singular, Present, 3rd person  </td><td> takes   </td>
+</tr>
+<tr>
+<td> WDT   </td><td> Wh-determiner    </td><td> which  </td>
+</tr>
+<tr>
+<td> WP   </td><td> Wh-pronoun  </td><td> who, what </td>
+</tr>
+<tr>
+<td> WP$   </td><td> Possessive Wh-pronoun  </td><td> whose  </td>
+</tr>
+<tr>
+<td> WRB   </td><td> Wh-abverb  </td><td> where, when </td>
+</tr>
+</tbody></table>
+<br/><br/>
 For eg : <br/>
 <b>A child in the play liked to place the green bill on the red flower, and used to wonder which of them was beautiful. </b><br/>
 A/DT child/NN in/IN the/DT play/NN liked/VBD to/TO place/VB the/DT green/JJ bill/NN on/IN the/DT red/JJ flower/NN and/CC used/VBD to/TO wonder/VB which/WDT of/IN them/PRP was/VBD beautiful/JJ<br/><br/>
 
 <center><h2>A fine grained POS tagset for Indian languages</h2></center>
-<br>
-<TABLE  BORDER=2  CELLSPACING=2 WIDTH=100%>
-<TR>
-<TH>SI no.</TH><TH>Category</TH><TH>Tag name</TH><TH>Example</TH>
-</TR>
+<br/>
+<table border="2" cellspacing="2" width="100%">
+<tbody><tr>
+<th>SI no.</th><th>Category</th><th>Tag name</th><th>Example</th>
+</tr>
 
-<TR><TD>1.1</TD><td>Common Noun</td><td>NN</td><td>किताब, कुर्सी </td></tr>
+<tr><td>1.1</td><td>Common Noun</td><td>NN</td><td>किताब, कुर्सी </td></tr>
 <tr><td>1.2</td><td>Noun denoting spatial and temporal expressions</td><td>NST</td><td>ऊपर, सामने </td></tr>
 <tr><td>2.</td><td>Proper Noun</td><td>NNP</td><td>राम, राधा </td></tr>
 <tr><td>3.1</td><td>Pronoun</td><td>PRP</td><td>वह </td></tr>
@@ -284,37 +277,34 @@ A/DT child/NN in/IN the/DT play/NN liked/VBD to/TO place/VB the/DT green/JJ bill
 <tr><td>14</td><td>Interjection</td><td>INJ</td><td>अरे!, वाह! </td></tr>
 <tr><td>15</td><td>Negation</td><td>NEG</td><td>नहीं </td></tr>
 <tr><td>16</td><td>Compounds</td><td>*C</td><td><i>स्कूल</i> शिक्षा </td></tr>
-</TR> 
-</TABLE>
+ 
+</tbody></table>
 
 <br/><br/>
 For example: <br/>
 <b>सभी बच्चे बाहर से आये हुए अतिथियों का स्वागत करेंगे।</b><br/> 
 सभी/QF बच्चे/NN बाहर/NST से/PSP आये/VM हुए/VAUX अतिथियों/NN का/PSP स्वागत/NN करेंगे/VM 
 <br/><br/>
-</p>
+<p></p>
 </div>
       </section>
 
 
       <section id="experiment-article-section-3">
         
-        <div id="experiment-article-section-3-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-3-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/objective.jpg"/>
 	</div>
      
-        <div id="experiment-article-section-3-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-3-heading">
           Objective
         </div>
 
-        <div id="experiment-article-section-3-content" 
-        class="content">
-<hr><br>
+        <div class="content" id="experiment-article-section-3-content">
+<hr/><br/>
 To understand and test the knowledge of more fine-grained part of speech of words as they appear in a sentence.
-<br><br><hr>
+<br/><br/><hr/>
         </div>
 
       </section>
@@ -322,19 +312,16 @@ To understand and test the knowledge of more fine-grained part of speech of word
 
       <section id="experiment-article-section-4">
 
-        <div id="experiment-article-section-4-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-4-icon">
 	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/simulation.jpg" />
+	  <img src="../images/simulation.jpg"/>
 	</div>
 
-        <div id="experiment-article-section-4-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-4-heading">
           Experiment
         </div>
 
-        <div id="experiment-article-section-4-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-4-content">
 	<div id="POS_TAG_1"></div>
         </div>
 
@@ -343,19 +330,16 @@ To understand and test the knowledge of more fine-grained part of speech of word
 
         <section id="experiment-article-section-5">
       
-          <div id="experiment-article-section-5-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-5-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/quizzes.jpg" />
+	    <img src="../images/quizzes.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-5-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-5-heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-5-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-5-content">
 Give fine-grained POS tag for the words in following sentences:<br/>
 <ol>
 	<li>What is you name?</li>
@@ -377,25 +361,22 @@ Give fine-grained POS tag for the words in following sentences:<br/>
 
         <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-6-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-6-icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/procedure.jpg"/>
 	  </div>
 	
-          <div id="experiment-article-section-6-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-6-heading">
 	    Procedure
 	  </div>
 	
-          <div id="experiment-article-section-6-content" 
-          class="content">
-<b><u>STEP1: </u></b> Select a language from the drop down menu.<br>
-<b><u>STEP2: </u></b> Select a sentence from the drop down menu.<br>
-<b><u>STEP3: </u></b> Select corresponding POS for each word in the sentence and and click the <button>Submit</button> button.<br>
+          <div class="content" id="experiment-article-section-6-content">
+<b><u>STEP1: </u></b> Select a language from the drop down menu.<br/>
+<b><u>STEP2: </u></b> Select a sentence from the drop down menu.<br/>
+<b><u>STEP3: </u></b> Select corresponding POS for each word in the sentence and and click the <button>Submit</button> button.<br/>
 <b><u>OUTPUT1: </u></b> The submitted answer will be checked. <br/>
 <b><u>STEP4: </u></b> If incorrect, click on <button>Get Answer </button> button for the correct answer or repeat STEP3.
-<br/><br><hr>
+<br/><br/><hr/>
 	  </div>
 	
         </section>
@@ -403,19 +384,16 @@ Give fine-grained POS tag for the words in following sentences:<br/>
 		
         <section id="experiment-article-section-7">
    
-          <div id="experiment-article-section-7-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-7-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
+	    <img src="../images/readings.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-7-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-7-heading">
             Further Readings
           </div>
 
-          <div id="experiment-article-section-7-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-7-content">
 <center>http://www.comp.leeds.ac.uk/ccalas/tagsets/upenn.html<br/></center>
 <center>The University of Pennsylvania (Penn) Treebank Tag-set</center> <br/>
 
@@ -431,7 +409,7 @@ Give fine-grained POS tag for the words in following sentences:<br/>
     <!-- An article can have a sidebar that contain related 
     links and additional material (however it is kept optional 
     at this moment) -->
-    <aside id="lab-article-sidebar" class="default">
+    <aside class="default" id="lab-article-sidebar">
       <!-- put the content that you want to appear in the 
       sidebar -->	
     </aside>
@@ -439,20 +417,59 @@ Give fine-grained POS tag for the words in following sentences:<br/>
 
     <!-- Article footer can display related content and 
     additional links -->						
-    <footer id="lab-article-footer" class="default">
-      <!-- Put the content that you want to appear here -->
-    </footer>
+    <footer class="default" id="footer"><div class="footer-top" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <h4>Community Links</h4>
+        <p>
+	  <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
+	</p>
+        <p>
+	  <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+	</p>
+        <p>
+	  <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
+	</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h4>Contact Us</h4>
+	<p> <strong>Phone:</strong> General Information : 011-26582050 </p>
+	<p> <strong>Email:</strong> support@vlab.co.in </p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+	<h4>Follow Us</h4>
+	<div class="social-links">
+	  <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
+	    <i class="fa fa-twitter"></i>
+	  </a>
+	  <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
+	    <i class="fa fa-facebook"></i>
+	  </a>
+	  <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
+	    <i class="fa fa-youtube"></i>
+	  </a>
+	  <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867B2;">
+	    <i class="fa fa-linkedin"></i>
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
 
   </article>
 
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer class="default" id="lab-footer">
     <!-- Put the content here-->
   </footer>
 
 </div>		
 
-</body>
-</html>
+
+
+</body></html>
