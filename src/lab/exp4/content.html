@@ -1,30 +1,29 @@
 <!-- This file needs to be edited by the lab developer to suit
-the requirements of their lab in particular.-->
-
-<!-- Add class="default" to include any element as it is
+the requirements of their lab in particular.--><!-- Add class="default" to include any element as it is
 specified in default.html. 
 Do not include class="default" to the elements that you want to
-edit -->
-
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
+edit --><!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 
 <div id="experiment"> <!-- The Experiment Document Container-->
 
   <!-- The lab Header contains the logo and the name of the lab,
   usually displayed on the top of the page-->
 
-  <header id="experiment-header" class="default">
+  <header class="default" id="experiment-header">
   
-    <div id="experiment-header-logo" class="logo">
+    <div class="logo" id="experiment-header-logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.jpg" />
+      <img src="../images/logo.jpg"/>
     </div>
 
-    <div id="experiment-header-heading" class="heading">
+    <div class="heading" id="experiment-header-heading">
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
@@ -45,10 +44,10 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
-     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     <div class="breadcrumb" id="experiment-article-breadcrumb">
      </div>
     
-      <header id="experiment-article-heading" class="heading">
+      <header class="heading" id="experiment-article-heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
         Heap's Law
@@ -58,7 +57,7 @@ edit -->
 
       <!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
-      <nav id="experiment-article-navigation" class="default">
+      <nav class="default" id="experiment-article-navigation">
         <ul id="experiment-article-navigation-menu">
           <!-- The menu can be dynamically generated to contain 
           the headings of your sections or instead write the 
@@ -74,97 +73,88 @@ edit -->
         <!-- First section of the article-->
         <section id="experiment-article-section-1">
           
-          <div id="experiment-article-section-1-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-1-icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/introduction.jpg"/>
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
-          <div id="experiment-article-section-1-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-1-heading">
             Introduction
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
-          <div id="experiment-article-section-1-content" 
-          class="content">	
+          <div class="content" id="experiment-article-section-1-content">	
 <div style="font-size:14px;">
 As we gather larger copora (more instances of tokens), the corresponding number of distinct types gets diminished as we exhaust the discovery of full vocabulary. This phenomenon can be explained by the Heap's law which is formulated as: 
 <p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/>
 where V = types<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined empirically<br/> <br/><br/>
+          n = tokens<br/>
+          K and β are free parameters determined empirically<br/> <br/><br/>
 
 <center>
-<img src="Exp4/Exp4.jpg" style="height:500px;width:700px" /></center>
+<img src="Exp4/Exp4.jpg" style="height:500px;width:700px"/></center>
 </div>
 
 
-      </section>
+      </div></section>
 
       <!-- Second section of the article-->
       <section id="experiment-article-section-2">
         
-        <div id="experiment-article-section-2-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-2-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/theory.jpg" />
+	  <img src="../images/theory.jpg"/>
 	</div>
 				
         <!-- The heading for the section can be enclosed in a 
         div tag. -->
-        <div id="experiment-article-section-2-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-2-heading">
           Theory
         </div>
 
 
         <!-- Write the section content inside a paragraph 
         element, we can also include images with <img> tag -->
-<div id="experiment-article-section-2-content" 
-        class="content">
+<div class="content" id="experiment-article-section-2-content">
 <p style="font-size:14px;">
-<h4> Heaps' Law</h4><br/>
+</p><h4> Heaps' Law</h4><br/>
 The relation between types and tokens can be explained by the <b>Heaps' law</b> (also called Herdan's law) which describes the number of distinct words in a document (types) as a function of the document length(tokens). It can be formulated as: <br/>
 <p style="text-align:center"> V = f(n) = Kn<sup>β</sup></p><br/>
 
 where V = types<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = tokens<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K and β are free parameters determined empirically<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The values of the parameters depend on the language and with English text corpora, typically K is between 10 and 100, and β is between 0.4 and 0.6.<br/><br/>
+          n = tokens<br/>
+          K and β are free parameters determined empirically<br/>
+          The values of the parameters depend on the language and with English text corpora, typically K is between 10 and 100, and β is between 0.4 and 0.6.<br/><br/>
 
 
 Applying logarithmics to both sides of the equation, we get:
-<p style="text-align:center"> logV = logK +βlogn</sup></p><br>
+<p style="text-align:center"> logV = logK +βlogn</p><br/>
 which is an equation of a straight line with intercept logK and slope β.
 
 Heap's Law implies that as we gather larger copora (more instances of tokens), the number of distinct types returned gets diminished as we exhaust the discovery of full vocabulary.
-</p>
+<p></p>
 </div>
       </section>
 
 
       <section id="experiment-article-section-3">
         
-        <div id="experiment-article-section-3-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-3-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/objective.jpg"/>
 	</div>
      
-        <div id="experiment-article-section-3-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-3-heading">
           Objective
         </div>
 
-        <div id="experiment-article-section-3-content" 
-        class="content">
-<hr><br>
+        <div class="content" id="experiment-article-section-3-content">
+<hr/><br/>
 The objective of this experiment is to understand the relation between types and tokens with increasing corpus size.
-<br><br><hr>
+<br/><br/><hr/>
         </div>
 
       </section>
@@ -172,19 +162,16 @@ The objective of this experiment is to understand the relation between types and
 
       <section id="experiment-article-section-4">
 
-        <div id="experiment-article-section-4-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-4-icon">
 	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/simulation.jpg" />
+	  <img src="../images/simulation.jpg"/>
 	</div>
 
-        <div id="experiment-article-section-4-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-4-heading">
           Experiment
         </div>
 
-        <div id="experiment-article-section-4-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-4-content">
 	<div id="ZIPF_LAW"></div>
         </div>
 
@@ -215,19 +202,16 @@ The objective of this experiment is to understand the relation between types and
 
         <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-6-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-6-icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/procedure.jpg"/>
 	  </div>
 	
-          <div id="experiment-article-section-6-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-6-heading">
 	    Procedure
 	  </div>
 	
-          <div id="experiment-article-section-6-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-6-content">
 <b><u>STEP1:</u></b> Select the Language which you know better<br/>
 <b><u>STEP2:</u></b> Select the size of corpus<br/><br/>
 <b><u>OUTPUT:</u></b> Observe the graphs to know heap's law better<br/>
@@ -263,7 +247,7 @@ The objective of this experiment is to understand the relation between types and
     <!-- An article can have a sidebar that contain related 
     links and additional material (however it is kept optional 
     at this moment) -->
-    <aside id="lab-article-sidebar" class="default">
+    <aside class="default" id="lab-article-sidebar">
       <!-- put the content that you want to appear in the 
       sidebar -->	
     </aside>
@@ -271,20 +255,59 @@ The objective of this experiment is to understand the relation between types and
 
     <!-- Article footer can display related content and 
     additional links -->						
-    <footer id="lab-article-footer" class="default">
-      <!-- Put the content that you want to appear here -->
-    </footer>
+    <footer class="default" id="footer"><div class="footer-top" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <h4>Community Links</h4>
+        <p>
+	  <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
+	</p>
+        <p>
+	  <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+	</p>
+        <p>
+	  <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
+	</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h4>Contact Us</h4>
+	<p> <strong>Phone:</strong> General Information : 011-26582050 </p>
+	<p> <strong>Email:</strong> support@vlab.co.in </p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+	<h4>Follow Us</h4>
+	<div class="social-links">
+	  <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
+	    <i class="fa fa-twitter"></i>
+	  </a>
+	  <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
+	    <i class="fa fa-facebook"></i>
+	  </a>
+	  <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
+	    <i class="fa fa-youtube"></i>
+	  </a>
+	  <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867B2;">
+	    <i class="fa fa-linkedin"></i>
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
 
   </article>
 
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer class="default" id="lab-footer">
     <!-- Put the content here-->
   </footer>
 
 </div>		
 
-</body>
-</html>
+
+
+</body></html>

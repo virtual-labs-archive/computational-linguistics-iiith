@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
   <title> UI Manual</title>
 </head>
 
-<body>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 <div id="lab"> <!-- The Lab Document
 		    Container -->
 <!-- %%%%%%%%%%%%%%% 48 columns %%%%%%%%%%%%% -->
@@ -17,13 +20,13 @@
        top of the page-->
   
   <header id="lab-header">
-    <div id="lab-header-logo" class="logo">
+    <div class="logo" id="lab-header-logo">
       <!-- Enclose the logo image of your lab or
 	   write it in text-->
-	   <img src="images/logo.jpg" />
+	   <img src="images/logo.jpg"/>
     </div>
 
-    <div id="lab-header-heading" class="heading">
+    <div class="heading" id="lab-header-heading">
       <!-- Write the name of your lab and link
 	   it to the home page of your lab (h1
 	   tag is preferred while writing your
@@ -49,7 +52,7 @@
       <!-- You can add a welcome message or
       title of the experiment enclosed in h1 tag
       here -->
-      <div id="lab-article-heading" class="heading">
+      <div class="heading" id="lab-article-heading">
 	User Manual
       </div>
       <!-- Add any additional element if
@@ -78,25 +81,22 @@
       
       <!-- Section 1: Installation -->
       <section id="lab-article-section-1">
-	<div id="lab-article-section-1-icon" class="icon">
+	<div class="icon" id="lab-article-section-1-icon">
 	  <!-- Enclose the icon image of your
 	  lab or write it in text-->
-	  <img src="../images/introduction.jpg"
-	  />
+	  <img src="../images/introduction.jpg"/>
 	</div>
 	<!-- The heading for the section can be
 	enclosed in a div tag and shown with
 	a <h2> tag -->
-	<div id="lab-article-section-1-heading"
-	     class="heading">
+	<div class="heading" id="lab-article-section-1-heading">
 	  Installation
 	</div>
 	
 	<!-- Write the section content inside a
 	paragraph element, You can also include
 	images with <img> tag -->
-	<div id="lab-article-section-1-content" 
-	     class="content">
+	<div class="content" id="lab-article-section-1-content">
 
 	  <p> Welcome! This manual guides you through the
 	    process of assembling your virtual lab's content
@@ -120,8 +120,7 @@
 	    <ol>
 	      <li>Download
 		the <span class="code">ui.tgz</span>
-		file from this link <a
-                href="http://devel.virtual-labs.ac.in/portal/ui.tgz">ui.tgz </a>
+		file from this link <a href="http://devel.virtual-labs.ac.in/portal/ui.tgz">ui.tgz </a>
 	      </li>
 
 	      <li>Unzip the file.  This should create a
@@ -132,25 +131,22 @@
       </section>
       
       <section id="lab-article-section-2">
-	<div id="lab-article-section-2-icon" class="icon">
+	<div class="icon" id="lab-article-section-2-icon">
 	  <!-- Enclose the icon image of your
 	  lab or write it in text-->
-	  <img src="../images/introduction.jpg"
-	  />
+	  <img src="../images/introduction.jpg"/>
 	</div>
 	<!-- The heading for the section can be
 	enclosed in a div tag and shown with
 	a <h2> tag -->
-	<div id="lab-article-section-2-heading"
-	     class="heading">
+	<div class="heading" id="lab-article-section-2-heading">
 	  ui directory
 	</div>
 	
 	<!-- Write the section content inside a
 	paragraph element, You can also include
 	images with <img> tag -->
-	<div id="lab-article-section-2-content" 
-	     class="content">
+	<div class="content" id="lab-article-section-2-content">
 	  
 	  <p>
             The <span class="code">ui</span> 
@@ -164,8 +160,8 @@
 	  </p>
 
 	  <p>
-	    <table>
-	      <tr>
+	    </p><table>
+	      <tbody><tr>
 		<td>
                   <span class="code">
                     ui/src/lab/ 
@@ -253,11 +249,11 @@
 
 		  * maroon-grid (uses iiith style, which does
 		  not display icons)
-		  <br />
+		  <br/>
 
 		  * blue-icon (uses the iitb
 		  style, which uses icons for
-		  sections) <br /> Of course,
+		  sections) <br/> Of course,
 		  you are free to design your
 		  own theme, and place it in the
 		  themes directory. 
@@ -295,56 +291,53 @@
                   directory using the following command:
                   </p>
                   <pre>
-                  <span class="code" >
+                  <span class="code">
                   ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME] [OPTIONAL -F] </span>
                   </pre>
                   <p>
                   where 
-		  <ul>
+		  </p><ul>
 		  <li>
 		  <b>USERNAME-ON-DEVEL</b> is the login name for the
-                  developer on <span class="code" >
+                  developer on <span class="code">
 		  devel.virtual-labs.ac.in </span>and
-		  <li>
+		  </li><li>
                   <b>OPTIONAL NAME-OF-THEME</b> is an optional
                   parameter which could be <b>maroon-grid</b> or 
 		  <b>blue-icon</b> or your own
                   theme name. 
-		  <li>The <b>-F</b> option is meant for building
+		  </li><li>The <b>-F</b> option is meant for building
 		  to the  deployment server. For detailed help on 
 		  <span class="code"> transfer.sh</span>
 		  , please refer to the <span class="code">
 		   BUILD </span> section.
-		  </ul>
-                  </p>
+		  </li></ul>
+                  <p></p>
                 </td>
 	      </tr>
-	    </table>
-	  </p>
+	    </tbody></table>
+	  <p></p>
 	</div>
     
     </section>
     
     <section id="lab-article-section-3">
-      <div id="lab-article-section-3-icon" 
-	   class="icon">
+      <div class="icon" id="lab-article-section-3-icon">
 	<!-- Enclose the icon image of your lab
 	or write it in text-->
-	<img src="../images/introduction.jpg" />
+	<img src="../images/introduction.jpg"/>
       </div>
       <!-- The heading for the section can be
       enclosed in a div tag and shown with
       a <h2> tag -->
-      <div id="lab-article-section-3-heading"
-	   class="heading">
+      <div class="heading" id="lab-article-section-3-heading">
 	Build 
       </div>
       
       <!-- Write the section content inside a
       paragraph element, You can also include
       images with <img> tag -->
-      <div id="lab-article-section-3-content" 
-	   class="content">
+      <div class="content" id="lab-article-section-3-content">
 	   <p>
           The build process is completed with the 
 	  following three milestones. 
@@ -364,27 +357,25 @@
           <span class="code">ui/src</span>
 	      and run
 	   </p>
-        <pre>
-	       <span class="code">make -k theme=theme-name clean all</span>
+        <pre>	       <span class="code">make -k theme=theme-name clean all</span>
 	    </pre>
 
         <p>
 	    The theme-name is one of 
 	    </p>
 	    <p>
-	      <ul>
+	      </p><ul>
 	      <b>
 	        <li> maroon-grid</li>
 	        <li> blue-icon </li>
 	      </b>
 	      </ul>
-	      </p>
+	      <p></p>
 	      <p>
          or, the command
         </p>
 
-        <pre>
-	    <span class="code">make clean all</span>
+        <pre>	    <span class="code">make clean all</span>
         </pre>
 
         <p>
@@ -399,8 +390,7 @@
           won't be the case.
 	   </p>
         
-       <pre>
-	      <span class="code">make  clean </span>
+       <pre>	      <span class="code">make  clean </span>
        </pre>
 	
 	   <p>
@@ -410,8 +400,7 @@
 	 
        <h3>Structure of the build directory </h3>
 
-	   <pre>
-build/
+	   <pre>build/
 |-- content.html
 |-- css/
 |   |-- default.css
@@ -467,8 +456,7 @@ build/
         You need to run the following command from inside the
         <span class="code">ui/scripts/</span> directory:
        </p>
-        <pre>
-        <span class="code">
+        <pre>        <span class="code">
         ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME]
 	    </span>
 	    </pre>
@@ -477,7 +465,7 @@ build/
         where 
 	</p>
 	<p>
-	    <ul>
+	    </p><ul>
 	       <li><b>USERNAME-ON-DEVEL</b> is the login name for the
             developer on <span class="code">
 	       devel.virtual-labs.ac.in </span> </li>
@@ -488,7 +476,7 @@ build/
              theme name. 
 	        </li>
 	    </ul>
-	    </p>
+	    <p></p>
 	    <p>
         Once this command is run, you can view the 
         lab running on the URL
@@ -502,7 +490,7 @@ build/
 	</p>
 	 <p>
 	  	NOTE 
-		  <ul>
+		  </p><ul>
 		  <li>If you do not have the ssh keys to  
 		  <span class="code">devel.virtual-labs.ac.in</span>
 		  installed on the local machine under the 
@@ -516,7 +504,7 @@ build/
 		  until it reflects your changes.
 		  </li>
 		  </ul>
-       </p>
+       <p></p>
         
 	<h3>Build 3 : Build for the Deployment server</h3>
         <p>
@@ -526,13 +514,12 @@ build/
 	run on the <b>deployment server</b>. To make the final build, 
         you need to run the following command from inside the
         <span class="code">ui/scripts/</span> directory:
-	<pre>
-        <span class="code">
+	</p><pre>        <span class="code">
         ./transfer.sh [USERNAME-ON-DEVEL] [OPTIONAL NAME-OF-THEME] [-F] </span></pre>
-        </p>
+        <p></p>
         <p>
         where
-        <ul>
+        </p><ul>
 	<li> <b>USERNAME-ON-DEVEL</b> is the login name for the
         developer on <span class="code">devel.virtual-labs.ac.in
         </span>	</li>
@@ -542,11 +529,11 @@ build/
 	<b>blue-icon</b> or your own
         theme name. </li>
         <li>The <b>-F</b> option indicates that 
-	the script must make a <span class="code" >final-build</span>.
+	the script must make a <span class="code">final-build</span>.
        	Please note that the <b>-F</b> option must be mentioned as the
 	last argument only.</li>
 	</ul>
-        </p>
+        <p></p>
 	<p>
 	Once this command is run, a <span class="code">
 	final-build</span> will be created inside the <span class="code">
@@ -556,7 +543,7 @@ build/
 		  </p>
 		  <p>
       	NOTE  
-		  <ul>
+		  </p><ul>
 		  <li>If you do not have the ssh keys to  
 		  <span class="code">devel.virtual-labs.ac.in</span>
 		  installed on the local machine under the 
@@ -571,7 +558,7 @@ build/
 		  </li>
 		  </ul>
 	
-        </p>
+        <p></p>
 
      
       </div>	
@@ -581,25 +568,22 @@ build/
     
     
     <section id="lab-article-section-4">
-      <div id="lab-article-section-4-icon" 
-	   class="icon">
+      <div class="icon" id="lab-article-section-4-icon">
 	<!-- Enclose the icon image of your lab
 	or write it in text-->
-	<img src="../images/introduction.jpg" />
+	<img src="../images/introduction.jpg"/>
       </div>
       <!-- The heading for the section can be
       enclosed in a div tag and shown with
       a <h2> tag -->
-      <div id="lab-article-section-4-heading" 
-	   class="heading">
+      <div class="heading" id="lab-article-section-4-heading">
 	Content 
       </div>
       
       <!-- Write the section content inside a
       paragraph element, You can also include
       images with <img> tag -->
-      <div id="lab-article-section-4-content" 
-	   class="content">
+      <div class="content" id="lab-article-section-4-content">
 	<p>
 	  This template features a demo of a 
           science lab with a sample 
@@ -614,12 +598,12 @@ build/
           directory contains three files:
         </p>
         <p>
-          <ul>
+          </p><ul>
           <li><span class="code">index.html</span></li> 
           <li><span class="code">default.html</span></li> 
           <li><span class="code">content.html</span></li> 
           </ul>
-        </p>
+        <p></p>
         <p>
           The same structure has been followed 
           inside the <span class="code">
@@ -629,8 +613,8 @@ build/
           tabulated here as follows :
         </p>  
         <p>  
-          <table>
-          <tr>
+          </p><table>
+          <tbody><tr>
           <th>file</th>
           <th>permissions</th>
           <th>description</th>
@@ -650,9 +634,9 @@ build/
           <td>read-write</td>
           <td>editable-content</td>
           </tr>
-          </table>
+          </tbody></table>
 
-        </p>
+        <p></p>
 
 
         <h3>Editing content.html</h3>
@@ -717,25 +701,22 @@ build/
     </section>
     
     <section id="lab-article-section-5">
-      <div id="lab-article-section-5-icon" 
-	   class="icon">
+      <div class="icon" id="lab-article-section-5-icon">
 	<!-- Enclose the icon image of your lab
 	or write it in text-->
-	<img src="../images/introduction.jpg" />
+	<img src="../images/introduction.jpg"/>
       </div>
       <!-- The heading for the section can be
       enclosed in a div tag and shown with
       a <h2> tag -->
-      <div id="lab-article-section-5-heading" 
-	   class="heading">
+      <div class="heading" id="lab-article-section-5-heading">
 	      Style 
       </div>
       
       <!-- Write the section content inside a
       paragraph element, You can also include
       images with <img> tag -->
-      <div id="lab-article-section-5-content" 
-	   class="content">
+      <div class="content" id="lab-article-section-5-content">
 	   <h3> Change CSS styles </h3>
 	   <p>
 		The css styles have been defined 
@@ -772,8 +753,7 @@ build/
                 index.html is as follows:
                 </p>
                 <span class="code">
-		<pre>
-                  &lt;link rel="stylesheet" href="css/YOURSTYLE.css" /&gt;
+		<pre>                  &lt;link rel="stylesheet" href="css/YOURSTYLE.css" /&gt;
 		</pre>
                 </span>
 		<p>
@@ -785,11 +765,10 @@ build/
                 as shown below for a js file.
 		</p>
                 <span class="code">
-		<pre>
-		  &lt;script type="text/javascript" src="js/YOURJS.js" &gt; &lt;/script &gt;
+		<pre>		  &lt;script type="text/javascript" src="js/YOURJS.js" &gt; &lt;/script &gt;
 		</pre>
                 </span>
-	   </p>
+	   <p></p>
 	
 	  </div>
     </section>
@@ -820,5 +799,6 @@ kept the lab footer-->
   <!-- Put the content here-->
 </footer>
 </div>		
-</body>
-</html>
+
+
+</body></html>

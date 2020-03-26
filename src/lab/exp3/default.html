@@ -1,26 +1,27 @@
 <!-- This file default.html has got the default structure of the
 html pages for an experiment. In case we intend to edit it, we
-should edt the content.html file to suit our requirements. -->
-
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
+should edt the content.html file to suit our requirements. --><!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 
 <div id="experiment"> <!-- The Experiment Document Container-->
 
   <!-- The lab Header contains the logo and the name of the lab,
   usually displayed on the top of the page-->
 
-  <header id="experiment-header" >
+  <header id="experiment-header">
   
-    <div id="experiment-header-logo" class="logo">
+    <div class="logo" id="experiment-header-logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.jpg" />
+      <img src="../images/logo.jpg"/>
     </div>
 
-    <div id="experiment-header-heading" class="heading">
+    <div class="heading" id="experiment-header-heading">
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
@@ -42,7 +43,7 @@ should edt the content.html file to suit our requirements. -->
     menu, number of sections, an optional sidebar and a closing 
     footer-->
     
-      <header id="experiment-article-heading" class="heading">
+      <header class="heading" id="experiment-article-heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
         Simple Pendulum
@@ -52,7 +53,7 @@ should edt the content.html file to suit our requirements. -->
 
       <!-- Navigation menu is useful to organize the view of 
       multiple sections inside the article-->
-      <nav id="experiment-article-navigation" >
+      <nav id="experiment-article-navigation">
         <ul id="experiment-article-navigation-menu">
           <!-- The menu can be dynamically generated to contain 
           the headings of your sections or instead write the 
@@ -68,23 +69,20 @@ should edt the content.html file to suit our requirements. -->
         <!-- First section of the article-->
         <section id="experiment-article-section-1">
           
-          <div id="experiment-article-section-1-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-1-icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/introduction.jpg"/>
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
-          <div id="experiment-article-section-1-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-1-heading">
             Introduction
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
-          <div id="experiment-article-section-1-content" 
-          class="content">	
+          <div class="content" id="experiment-article-section-1-content">	
             <p>
             In this module, basic concepts of simple oscillator 
             are explained. Initially, an example of simple 
@@ -107,7 +105,7 @@ should edt the content.html file to suit our requirements. -->
             with <span>periodic motion</span>.
             </p>
 
-          <img src="../images/Pendulum.JPG" alt="pendulum">
+          <img alt="pendulum" src="../images/Pendulum.JPG"/>
         </div>
 
 
@@ -116,24 +114,21 @@ should edt the content.html file to suit our requirements. -->
       <!-- Second section of the article-->
       <section id="experiment-article-section-2">
         
-        <div id="experiment-article-section-2-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-2-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/theory.jpg" />
+	  <img src="../images/theory.jpg"/>
 	</div>
 				
         <!-- The heading for the section can be enclosed in a 
         div tag. -->
-        <div id="experiment-article-section-2-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-2-heading">
           Theory
         </div>
 
 
         <!-- Write the section content inside a paragraph 
         element, we can also include images with <img> tag -->
-        <div id="experiment-article-section-2-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-2-content">
           <p>
           There are two solutions to \(ax^2 + bx + c = 0\) and 
           they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
@@ -143,11 +138,10 @@ should edt the content.html file to suit our requirements. -->
           </p> 
 
           <p>
-          Where,  &tau;  =  <span>Torque </span>;   I  =  
-          <span>Moment of Inertia</span>;   &alpha;  = <span>
+          Where,  τ  =  <span>Torque </span>;   I  =  
+          <span>Moment of Inertia</span>;   α  = <span>
           Angular Velocity</span>. m is mass of the 
-          oscillator, l is the length of the <a class="more" 
-          href=""> oscillator </a> and theta is initial 
+          oscillator, l is the length of the <a class="more" href=""> oscillator </a> and theta is initial 
           displacement. The above equation can be rearranged as 
           </p>
           
@@ -155,20 +149,19 @@ should edt the content.html file to suit our requirements. -->
           If the amplitude of 
           <a class="more" href="">angular displacement</a> is 
           small then we can use the approximation 
-          (sin&theta; &asymp; &theta;).
+          (sinθ ≈ θ).
           By considering the above approximation, the equation 
           of motion reduces to :
           </p>
 
           <p>
-          The solution for equation of <a class="more" 
-          href="">simple harmonic oscillator </a> is 				  		
+          The solution for equation of <a class="more" href="">simple harmonic oscillator </a> is 				  		
           </p> 
 
           <p>							
-          where, &theta;(t) is the history of oscillation, 
-          &theta;<sub>0</sub> is the initial angle, 
-          &omega=(g/l)<sup>1/2</sup> is the 
+          where, θ(t) is the history of oscillation, 
+          θ<sub>0</sub> is the initial angle, 
+          &amp;omega=(g/l)<sup>1/2</sup> is the 
           <a class="more" href=""> natural frequency </a> of 
           the motion.
           </p>
@@ -178,19 +171,16 @@ should edt the content.html file to suit our requirements. -->
 
       <section id="experiment-article-section-3">
         
-        <div id="experiment-article-section-3-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-3-icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/objective.jpg"/>
 	</div>
      
-        <div id="experiment-article-section-3-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-3-heading">
           Objective
         </div>
 
-        <div id="experiment-article-section-3-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-3-content">
           <p>
             Objective of simple harmonic oscillator experiment 
             is to understand the concept of <span>time period 
@@ -209,21 +199,18 @@ should edt the content.html file to suit our requirements. -->
 
       <section id="experiment-article-section-4">
 
-        <div id="experiment-article-section-4-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-4-icon">
 	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/simulation.jpg" />
+	  <img src="../images/simulation.jpg"/>
 	</div>
 
-        <div id="experiment-article-section-4-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-4-heading">
           Experiment
         </div>
 
-        <div id="experiment-article-section-4-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-4-content">
           <p>
-            <embed src="PendulumForces.swf" /> 
+            <embed src="PendulumForces.swf"></embed> 
           </p>
         </div>
 
@@ -231,19 +218,16 @@ should edt the content.html file to suit our requirements. -->
 
       <section id="experiment-article-section-5">
    
-        <div id="experiment-article-section-5-icon" 
-        class="icon">
+        <div class="icon" id="experiment-article-section-5-icon">
 	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/manual.jpg" />
+	  <img src="../images/manual.jpg"/>
 	</div>
 
-        <div id="experiment-article-section-5-heading" 
-        class="heading">
+        <div class="heading" id="experiment-article-section-5-heading">
           Manual
         </div>
 
-        <div id="experiment-article-section-5-content" 
-        class="content">
+        <div class="content" id="experiment-article-section-5-content">
           <p> 
             Start the experiment with the default values of 
             length, mass and intial displacement (in angle). 
@@ -263,7 +247,7 @@ should edt the content.html file to suit our requirements. -->
             <li>
               You may note that this time period value is same 
               for any complete cycle.
-              <a  class="more" href="cITe/Documents/eerc/
+              <a class="more" href="cITe/Documents/eerc/
               pdf/1.manual.pdf">Read More</a>  
             </li> 
 
@@ -283,63 +267,59 @@ should edt the content.html file to suit our requirements. -->
 
         <section id="experiment-article-section-6">
       
-          <div id="experiment-article-section-6-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-6-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/quizzes.jpg" />
+	    <img src="../images/quizzes.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-6-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-6-heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-6-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-6-content">
             
             <p>
               
               <b>Q1.</b> 
               Time taken for one complete oscillation 
-              is called Time Period of the oscillator. <br> 
-              <input type="radio" name="q1" id="q1" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q1" id="q1" value="0">
+              is called Time Period of the oscillator. <br/> 
+              <input id="q1" name="q1" type="radio" value="1"/> 
+                <font color="green"> True </font> <br/> 
+              <input id="q1" name="q1" type="radio" value="0"/>
                 <font color="red"> False </font> <br/><br/> 
               
               <b>Q2.</b> 
               Time period of the oscillator is constant for 
               given values of mass, length and initial 
-              conditions.<br> 
-              <input type="radio" name="q2" id="q2" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q2" id="q2"value="0">
+              conditions.<br/> 
+              <input id="q2" name="q2" type="radio" value="1"/> 
+                <font color="green"> True </font> <br/> 
+              <input id="q2" name="q2" type="radio" value="0"/>
                 <font color="red"> False </font> <br/><br/> 
               
               <b>Q3.</b> 
               Value of Time period depends on initial 
-              conditions. <br> 
-              <input type="radio" name="q3" id="q3" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q3" id="q3"value="0">
+              conditions. <br/> 
+              <input id="q3" name="q3" type="radio" value="1"/> 
+                <font color="green"> True </font> <br/> 
+              <input id="q3" name="q3" type="radio" value="0"/>
                 <font color="red"> False </font> <br/><br/> 
               
               <b>Q4.</b> 
-              Value of time period depends on mass. <br> 
-              <input type="radio" name="q4" id="q4" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q4" id="q4" value="0">
+              Value of time period depends on mass. <br/> 
+              <input id="q4" name="q4" type="radio" value="1"/> 
+                <font color="green"> True </font> <br/> 
+              <input id="q4" name="q4" type="radio" value="0"/>
                 <font color="red"> False </font> <br/><br/> 
               
               <b>Q5.</b> 
               Value of time period depends on length of the 
-              oscillator. <br> 
-              <input type="radio" name="q5" id="q5" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q5" id="q5"value="0">
+              oscillator. <br/> 
+              <input id="q5" name="q5" type="radio" value="1"/> 
+                <font color="green"> True </font> <br/> 
+              <input id="q5" name="q5" type="radio" value="0"/>
                 <font color="red"> False </font> <br/><br/> 
-              <input type="submit" value="Submit Answers" 
-                class="button" />
+              <input class="button" type="submit" value="Submit Answers"/>
             </p>
 
           </div>
@@ -348,19 +328,16 @@ should edt the content.html file to suit our requirements. -->
 
         <section id="experiment-article-section-7">
 	  
-          <div id="experiment-article-section-7-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-7-icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/procedure.jpg"/>
 	  </div>
 	
-          <div id="experiment-article-section-7-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-7-heading">
 	    Procedure
 	  </div>
 	
-          <div id="experiment-article-section-7-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-7-content">
 	    <p>
 	      Procedure for the experiment is as follows
 	    </p>
@@ -371,19 +348,16 @@ should edt the content.html file to suit our requirements. -->
 		
         <section id="experiment-article-section-8">
    
-          <div id="experiment-article-section-8-icon" 
-          class="icon">
+          <div class="icon" id="experiment-article-section-8-icon">
 	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
+	    <img src="../images/readings.jpg"/>
 	  </div>
 
-          <div id="experiment-article-section-8-heading" 
-          class="heading">
+          <div class="heading" id="experiment-article-section-8-heading">
             Further Readings
           </div>
 
-          <div id="experiment-article-section-8-content" 
-          class="content">
+          <div class="content" id="experiment-article-section-8-content">
             <ul>	
               <li>
                 <a href="http://en.wikipedia.org/wiki/
@@ -411,7 +385,7 @@ should edt the content.html file to suit our requirements. -->
     <!-- An article can have a sidebar that contain related 
     links and additional material (however it is kept optional 
     at this moment) -->
-    <aside id="lab-article-sidebar" class="default">
+    <aside class="default" id="lab-article-sidebar">
       <!-- put the content that you want to appear in the 
       sidebar -->	
     </aside>
@@ -419,20 +393,59 @@ should edt the content.html file to suit our requirements. -->
 
     <!-- Article footer can display related content and 
     additional links -->						
-    <footer id="lab-article-footer" class="default">
-      <!-- Put the content that you want to appear here -->
-    </footer>
+    <footer class="default" id="footer"><div class="footer-top" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <h4>Community Links</h4>
+        <p>
+	  <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
+	</p>
+        <p>
+	  <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+	</p>
+        <p>
+	  <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
+	</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h4>Contact Us</h4>
+	<p> <strong>Phone:</strong> General Information : 011-26582050 </p>
+	<p> <strong>Email:</strong> support@vlab.co.in </p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+	<h4>Follow Us</h4>
+	<div class="social-links">
+	  <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
+	    <i class="fa fa-twitter"></i>
+	  </a>
+	  <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
+	    <i class="fa fa-facebook"></i>
+	  </a>
+	  <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
+	    <i class="fa fa-youtube"></i>
+	  </a>
+	  <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867B2;">
+	    <i class="fa fa-linkedin"></i>
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
 
   </article>
 
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer class="default" id="lab-footer">
     <!-- Put the content here-->
   </footer>
 
 </div>		
 
-</body>
-</html>
+
+
+</body></html>
