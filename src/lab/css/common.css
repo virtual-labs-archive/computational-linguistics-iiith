@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS for styling header of the page */
+
+/* reset default browser CSS */
+
+body, div, h1,h2,h3,p,img,header,section,aside, footer, button{
+	margin:0; padding:0; list-style:none;
+}
+
+a {
+	text-decoration: none; /* no underlines */
+	color: #961b25;/* dusty read */
+}
+
+a:hover {
+	color:#6f92a7; /*dusty blue */
+}
+
+:focus {
+	outline:0; /* no outline on focus */
+}
+
+h1,h2,h3 {
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; /* web safe colors */
+	font-weight: normal;
+}
+
+article {
+	margin:0;
+	padding:0;
+	position:relative;
+	display:block;
+}
