@@ -99,14 +99,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
-<h1 class="text-h2-lightblue">Coarse - grained POS Tagging</h1><div class="content" id="experiment-article-section-6-content">
-<b><u>STEP1: </u></b> Select a language from the drop down menu.<br/>
-<b><u>STEP2: </u></b> Select a sentence from the drop down menu.<br/>
-<b><u>STEP3: </u></b> Select corresponding POS for each word in the sentence and and click the <button>Submit</button> button.<br/>
-<b><u>OUTPUT1: </u></b> The submitted answer will be checked. <br/>
-<b><u>STEP4: </u></b> If incorrect, click on <button>Get Answer </button> button for the correct answer or repeat STEP3.
-<br/><br/><hr/>
-<br/><br/><br/><br/></div>						</div>
+<h1 class="text-h2-lightblue">Chunking</h1><div class="content" id="experiment-article-section-1-content">
+<div style="font-size:15px;">
+Chunking of text invloves dividing a text into syntactically correlated words.
+For example, the sentence 'He ate an apple.' can be divided as follows:<br/>
+<img alt="1_alt" src="Exp6/a.jpg" style="height:45px; width:340px; align:center"/>
+<div style="font-size:15px;">
+Each chunk has an open boundary and close boundary that delimit the word groups as a minimal non-recursive unit. This can be formally expressed by using IOB prefixes.
+</div><br/>
+<img alt="1_alt" src="Exp6/b.jpg" style="height:125px; width:450px; align:center"/>
+</div><br/>
+<center>
+</center></div>						</div>
 					</div>
 			</div>
 			<!-- =================================================================================================================================== -->
@@ -165,18 +169,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 	
-    <script src="../js/jquery.js"></script>
+    <script src="../../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 
 	<!-- Custom Theme JavaScript -->
-    <script src="../js/custom.js"></script>
+    <script src="../../js/custom.js"></script>
     
     <!-- Include js plugin -->
-    <script src="../vendors/owl-carousel/owl.carousel.js"></script>
+	<script src="../../vendors/owl-carousel/owl.carousel.js"></script>
 	
-<!--	<script type="text/javascript">
+	<script type="text/javascript">
 	$(document).ready(function() {
 		 
 		  var owl = $("#owl-demo");
@@ -213,7 +217,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	  });
 	 
 	});
-	</script>-->
+	</script>
 	
 
 
