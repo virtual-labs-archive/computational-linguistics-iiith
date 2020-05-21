@@ -25,7 +25,7 @@ $('#sen_opt').load('experiment6-0.php?ind='+lno);
 </head>
 <body>
 
-<div id="mainContainer" align="center">
+<!--<div id="mainContainer" align="center">
 <?php 
 echo "<form action=\"javascript:selectLang()\" target=\"_parent\" method=\"post\">";
 echo "<select name=\"lang_opt\" id=\"lang_opt\" autocomplete=\"off\" onchange=\"selectLang(this.value);\">";
@@ -36,6 +36,27 @@ echo "<select name=\"lang_opt\" id=\"lang_opt\" autocomplete=\"off\" onchange=\"
 echo "</select>"; ?>
 <br/><br/> 
 </form>
-<div id=sen_opt></div> </div>
+<div id=sen_opt></div> </div>-->
+
+
+<h1 class="text-h1-lightblue">Chunking</h1>
+<div class="content" id="experiment-article-section-4-content">
+  <div id="chunk">
+    <div align="center" id="mainContainer">
+      <div align="center" id="mainContainer">
+        <form action="javascript:selectLang()" method="post" target="_parent">
+          <select autocomplete="off" id="lang_opt" name="lang_opt" onchange="selectLang(this.value);">
+            <option select="selected" value="0">---Select Language---</option>
+            <option value="1">English</option>
+            <option value="2">Hindi</option>
+          </select>
+          <br/>
+          <br/>
+        </form>
+        <div id="sen_opt"></div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
