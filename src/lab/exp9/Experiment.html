@@ -48,6 +48,105 @@ $('#sen_opt').load('experiment6-0.php?ind='+lno);
 }
 
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function() 
+    {		
+      //the function is called once the document loads     
+
+      $('#hidden-content').load('default.html #experiment', 
+              function(response,status,xhr)
+      {
+        //loads the default.html #lab section into the
+        //#hidden-content
+		
+        $('#container').load('content.html #experiment', 
+              function(response,status,xhr)
+        {
+          //loads the content.html #lab section into the
+	  //#container
+
+          homePage=$("div#experiment-header-heading a").html();
+          
+	  thisPage=$("article#experiment-article header#experiment-article-heading").html();
+        
+	  breadcrumb="<font color='white'>"+ "<a href='../../index.html'>Home<a/> \> <a href='../index.html'>" + homePage + "</a> \> <a href='index.html'>" + thisPage + "</a>"+ "</font>";
+        
+	  $("article#experiment-article div#experiment-article-breadcrumb").html(breadcrumb);
+				
+	  $("#container .default").each(function() 
+	  {
+            // Extracts all elements with class = "default"
+            // and top down
+            
+	    sectionId = $(this).attr('id');
+            sectionContent = $("#hidden-content #" + 
+                  sectionId).html();
+            $("#container #" + sectionId).html(sectionContent);
+	  });
+			
+	  $("#container #experiment-article-sections > section").each(function() 
+	  {
+	    // loads all the content in the respective
+	    // sections with the corresponding section headings 
+
+            sectionId = $(this).attr('id');
+	    headerId = $("#" + sectionId + "-heading").html();
+	    iconId = $("#" + sectionId + "-icon").html();
+
+	    $("#container #experiment-article-navigation ul").
+	      append("<li> <a href=\'#\' id=\'"+ sectionId + 
+              "-menu\'>" + iconId +"<br />" +
+              headerId + "</a></li>");
+	  });
+	
+	  /*			
+          $("#experiment-article-sections").after(
+            "<div id='experiment-article-sections-view'> </div>");
+	  $("#experiment-article-sections-view").html($(
+            "#experiment-article-sections section:first").html()); */
+    
+	  $("#experiment-article-sections section").hide();
+	  //hide all the experiment sections
+
+	  $("#experiment-article-sections section:first").show();
+	  //show only the first experiment section when
+	  //the experiment page loads
+	  
+	  $("#experiment-article-navigation ul > li a").live('click',
+            function()            
+          {	
+            //enables the navigation
+
+            menuId = $(this).attr('id'); 
+            // this points to the current element
+	    
+	    sectionId = menuId.replace(/-menu/i, "");
+	    /*
+	    $("#experiment-article-sections-view").html($(
+            "#experiment-article-sections #" + 
+            sectionId).html());
+	    */
+            
+	    $("#experiment-article-sections section").hide();
+	    $("#experiment-article-sections #" + sectionId).show();
+	    $("#experiment-article-sections #" + sectionId + " #chunk").load("experiment6.php");
+        });
+      });		
+    });
+
+var timeOut = window.setTimeout(function(){
+$("#chunk").load("experiment6.php"); 
+clearTimeout(timeOut);
+
+},
+50);
+
+  });
+
+  </script>
+
+
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
 
 </head><body class="index" id="page-top">
@@ -250,6 +349,8 @@ $('#sen_opt').load('experiment6-0.php?ind='+lno);
 	});
 	</script>-->
 	
+
+
 
 
 
