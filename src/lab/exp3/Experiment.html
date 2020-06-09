@@ -28,6 +28,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="../css/style.css" rel="stylesheet"/>
 <!--    <script src="tabs.js" type="text/javascript"></script>-->
 
+
+<script>
+
+
+function selectCorpus()
+{
+var corp = document.getElementById("corp_opt");
+theIndx=corp.selectedIndex;
+corp_id=corp.options[theIndx].value;
+if(corp_id=="-1")
+	{
+		alert("Select a corpus");
+		return;
+	}
+
+id=corp_id.split("*");
+var cno=parseFloat(id[1]);
+var lno=parseFloat(id[0]);
+$('#opt').load('CLExperiment3-1.php?ind='+cno+'&lang='+lno);
+
+}
+</script>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function() 
     {		
@@ -310,6 +335,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	});
 	</script>-->
 	
+
 
 
 

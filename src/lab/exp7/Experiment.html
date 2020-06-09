@@ -27,6 +27,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet"/>
     <!--<script src="tabs.js" type="text/javascript"></script>-->
+<script>
+
+
+function selectLang()
+{
+
+var lang = document.getElementById("lang_opt");
+theIndx=lang.selectedIndex;
+lang_id=lang.options[theIndx].value;
+if(lang_id=="0")
+	{
+		alert("Select Language");
+		return;
+	}
+var lno=parseFloat(lang_id);
+$('#sen_opt').load('CLExperiment5-0.php?ind='+lno);
+}
+
+</script>
+<script>
+
+
+function selectLang()
+{
+
+var lang = document.getElementById("lang_opt");
+theIndx=lang.selectedIndex;
+lang_id=lang.options[theIndx].value;
+if(lang_id=="0")
+	{
+		alert("Select Language");
+		return;
+	}
+var lno=parseFloat(lang_id);
+$('#sen_opt').load('CLExperiment5-0.php?ind='+lno);
+}
+
+</script>
+
+
 <script type="text/javascript">
     $(document).ready(function() 
     {		
