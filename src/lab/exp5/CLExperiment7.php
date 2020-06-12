@@ -10,7 +10,7 @@ Implementation:
    - loadAssign.php: This file loads the assignment for the particular word.
    - check.php: It checks whether a particular dictionary entry is correct or not. 
    - eval.php: This code evaluates each submission of assignment.
---!>
+-->
 
 
 <html>
