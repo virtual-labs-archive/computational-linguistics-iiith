@@ -1,0 +1,7 @@
+List of all the functionalities :
+  
+  1. Whenever the wrong sequence is created by the user, then we have a button created as Get Correct Sentences. If we click on that button, then we can see 
+     so many random sequences of sentences that can be generated from the given words. In which the correct sentence is the first that is displayed upon hitting that button.
+     
+  2. If the pattern is wrong the message is called as "Wrong answer !!!". Then a button will automatically generated as "Get Correct Sentence" upon pressing it multiple
+     times the button gets changed to "Get Answers" and it displays all the random sentences and it changes "Hide the correct Sentence".
