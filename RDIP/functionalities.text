@@ -1,0 +1,6 @@
+When I press the experiment it shows the box like "select language" it shows options to select.
+After selecting a language it shows boxes with test words that are random in nature.
+We need to form a correct sentence through random words after formation 
+It shows two options 1.Reform the sentence 2.Check the correctness of this sentence
+if we press the reform the sentence it goes back to previous state. or If we press the check the correctness of this sentence it shows the result 
+if it is right it shows correct answer otherwise it shows the box as "Get convert answer"
