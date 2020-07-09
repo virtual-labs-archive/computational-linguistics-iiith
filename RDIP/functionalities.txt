@@ -1,0 +1,12 @@
+Functionalities I found in experiment:
+1.Dropdown menu for language selecion.
+2.Based on selection goto that type of words.
+3.Words for the creation of sentence.
+4.The hide and show functionality of the words.
+5.reform sentence button on click should show the words again.
+6.To check the correctness of the sentence.
+7.onclick of buttons the sentence formation.
+8.If the answer is correct print Right answer.
+9.If the answer is wrong print wrong answer.
+10.Show the hided answer button.
+11.It is showed only when the answer is wrong else it should be hided.
