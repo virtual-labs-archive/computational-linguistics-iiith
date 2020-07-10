@@ -1,21 +1,18 @@
 #lan{
-margin-left:500px;
+margin-left:600px;
 }
 #p1{
-margin-left:300px;
+margin-left:400px;
 color:darkblue;
 }
 #p2{
-margin-left:450px;
+margin-left:550px;
 color:blue;
 }
-#b1{
-margin-left:350px;
+table{
+ margin-left: auto;
+  margin-right: auto;
 }
-#b2,#b3,#b4,#b5,#b6{
-margin-left:20px;
-}
-#b7{
-margin-left:500px;
-margin-top:300px;
+#p3{
+  text-align:center;
 }
