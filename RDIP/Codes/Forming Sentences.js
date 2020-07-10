@@ -160,3 +160,8 @@ var text = '{"sentence1":[' +
     +
     '{"firstWord":"है","secondWord":"वहाँ","thirdWord":"बड़ी","fourthWord":"सी","fifthWord":"एक","sixthWord":"किताब"}]}';
 obj = JSON.parse(text);
+
+function sel() {
+	document.getElementById("demo").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words"; 
+	document.getElementById("info").innerHTML = "(select the buttons in proper order)";
+}
