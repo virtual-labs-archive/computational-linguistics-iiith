@@ -1,3 +1,7 @@
+function p(){
+    document.getElementById("p1").innerHTML="Form a sentence(Declarative or Interrogative or any other type)from the given words"
+    document.getElementById("p2").innerHTML="(select the buttons in proper order)"
+}
 function cor(){
     var sentences='{"ste1":['+'{"a":"John ate an apple before afternoon<br>","b":"before afternoon John ate an apple<br>","c":"John before afternoon ate an apple"},'+
 '{"a":"some students like to study in the night<br>","b":"at night some students like to study"},'+
