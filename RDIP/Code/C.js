@@ -1,4 +1,7 @@
-function e(){
+function dis(){
+  document.getElementById("p3").innerHTML=" ";
+  var x=document.getElementById("lan").value;
+  if(x=="English"){
     document.getElementById("p1").innerHTML="Form a sentence(Declarative or Interrogative or any other type)from the given words"
     document.getElementById("p2").innerHTML="(select the buttons in proper order)"
     var sentences='{"ste1":['+'{"a":"John ate an apple before afternoon","b":"before afternoon John ate an apple<br>","c":"John before afternoon ate an apple"},'+
@@ -37,7 +40,7 @@ for(var j=d;j<10;j++){
 }
 
 
-function h(){
+else{
     document.getElementById("p1").innerHTML="Form a sentence(Declarative or Interrogative or any other type)from the given words"
     document.getElementById("p2").innerHTML="(select the buttons in proper order)"
 var sentences2='{"ste2":['+'{"a":"राम और श्याम बाजार गयें","b":"राम और श्याम गयें बाजार","c":"बाजार गयें राम और श्याम","d":"गयें बाजार राम और श्याम"},'+
@@ -70,4 +73,12 @@ var sentences2='{"ste2":['+'{"a":"राम और श्याम बाजा�
         document.getElementById(j).innerHTML="  "
     }
     
+}
+}
+function pri(i){
+  document.getElementById("p4").innerHTML="Formed Sentence(after selecting words):"
+  var a=document.getElementById(i).value;
+  document.getElementById("p3").innerHTML+=a+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp";
+  document.getElementById(i).innerHTML="  ";
+  
 }
