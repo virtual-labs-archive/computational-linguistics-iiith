@@ -45,7 +45,7 @@ function cs(){
     document.getElementById("s10").innerHTML = "<center><button id='showansbtn' onclick='gs()'>Get Correct Sentence</button></center>"
 }
 
-
+//getting correct ans
 function gs(){
     
     answers="";
@@ -71,10 +71,14 @@ if (selection.value=='english'){
    
 }
 
+//hiding
 function hs(){
 	document.getElementById('s10').innerHTML = "<center><button id='showansbtn' onclick='toggle()'>Get Correct Sentence</button></center>"
 	document.getElementById("correctans").innerHTML = "";
 }
+
+
+//togle
 function toggle(){
     while(document.getElementById("correctans").innerHTML ==""){
 	
@@ -113,11 +117,12 @@ function fs(id,value){
 
 //reset option
 function rs(){
-	
-	finalsentence = "";
-	document.getElementById("s5").innerHTML = finalsentence;
-	document.getElementById("reform").innerHTML = "";
+  
+	document.getElementById("s5").innerHTML = "";
+		
+    document.getElementById("s6").innerHTML ="";
 	document.getElementById("s4").innerHTML = "";
+    cc=0;
 }
 
 
@@ -142,7 +147,7 @@ if (selection.value === "english"){
 		var fbu = "";
 		for(i=0;i<=j.length-1;i++){
 			val = j[i];
-			bu = "  <button id='btn"+i+"'onclick='fs(this.id,this.value)' value='"+val+"'>"+val+"</button>  ";
+			bu = "  <button id='btn"+i+"' onclick='fs(this.id,this.value)' value='"+val+"'>"+val+"</button>  ";
 			fbu +=bu;
             bc++
            
