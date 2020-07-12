@@ -7,6 +7,7 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 #s1{
     position: absolute;
@@ -32,14 +33,15 @@
 #s3{
      position: absolute;
     width: 900px;
+   
     top: 55%;
+    left: 70%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-style: italic;
     color: blue;
     font-family:  sans-serif;
-
-
+     
 }
 #s4{
      position: absolute;
@@ -51,7 +53,7 @@
     font-style: italic;
     color: blue;
     font-family:  sans-serif;
-
+     
 }
 #s5{
      position: absolute;
@@ -62,12 +64,12 @@
     font-size: 20px;
     font-style: normal;
     color: black;
-
-
+   
+     
 }
 #s6{
-
-
+     
+    
    position: absolute;
     width: 900px;
     top: 70%;
@@ -75,6 +77,17 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: black;
-
-}  
-
+     
+}
+#s7{
+     
+    
+   position: absolute;
+    width: 900px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: black;
+     
+}
