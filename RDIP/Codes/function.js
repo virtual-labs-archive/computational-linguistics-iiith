@@ -34,6 +34,7 @@ var cur_sent = "";
 var form_sent = "";
 var word_array ;
 var ques = 0;
+var count=0;
 var sentences = JSON.parse(sentence);
 
 function dropdown(){
@@ -83,6 +84,7 @@ function add_buttons(arr){
         document.getElementById('new-sentence').appendChild(button);
     }
     document.getElementById('form-sent').value = "";
+    count=0;
 }
 
 function shuffle(a) {
@@ -108,6 +110,10 @@ function a(id1){
     document.getElementById('form-sent').innerHTML = String( document.getElementById('form-sent').innerHTML ) + " " + String( document.getElementById(id1).value );
     formed_sentence = document.getElementById('form-sent').innerHTML;
     document.getElementById(id1).style.display = "none";
+    count += 1;
+   if(count == word_array.length){
+        document.getElementById("check-correctness").style.display = "initial";
+    }
 }
 
 function reform(){
@@ -124,6 +130,7 @@ function clear(){
     document.getElementById("second-line").innerHTML = "";
     document.getElementById('form-sent').innerHTML = "";
     document.getElementById("reform-button").style.display = "none";
+    document.getElementById("check-correctness").style.display = "none";
 }
 
 function set_display(val){
