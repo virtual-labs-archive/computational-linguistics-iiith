@@ -27,6 +27,17 @@ function shuffle(jumbled){
 	}
 	return jumble;
 }
+var finalsentence ="";
+function fs(id,value){
+
+	document.getElementById("s4").innerHTML = "Formed Sentence (after selecting words):";
+	finalsentence += value + " ";
+	 document.getElementById("s5").innerHTML = finalsentence;
+	document.getElementById(id).style.display = "none";
+	document.getElementById("s6").innerHTML = "<center><button id='rb' onclick='rs()'>Re-form the sentence</button></center>"
+}
+
+
 let selection = document.getElementById("choose");
 function run(){
 if (selection.value === "english"){
@@ -36,17 +47,15 @@ var r = Math.floor(Math.random()* eng.length);
 		var jumbled = eng[r][0];
 		var j = shuffle(jumbled);
 
-		var b ="";
-		var bs = "";
+		var bu ="";
+		var fbu = "";
 		for(i=0;i<=j.length-1;i++){
 			val = j[i];
-			b = "<button id='btn"+i+"' value='"+val+" onclick='myFunction("+i+")'>"+val+"  </button> ";
-			bs +=b;
+			bu = "  <button id='btn"+i+"'onclick='fs(this.id,this.value)' value='"+val+"'>"+val+"</button>  ";
+			fbu +=bu;
 
 		}
-		s3.innerHTML = bs;
-
-
+		s3.innerHTML = fbu.trim();
 }
 else if (selection.value === "hindi"){
                 document.getElementById("s2").innerHTML = "(select the buttons in proper order)"
@@ -56,19 +65,20 @@ else if (selection.value === "hindi"){
 		var jumbled = hin[r][0];
 		var j = shuffle(jumbled);
 
-		var b ="";
-		var bs = "";
+		var bu ="";
+		var fbu = "";
 		for(i=0;i<=j.length-1;i++){
 			val = j[i];
-			b = "<button id='btn"+i+"' value='"+val+"'>"+val+"</button> &nbsp;&nbsp;";
-			bs +=b;
+			bu = "  <button id='btn"+i+"'onclick='fs(this.id,this.value)' value='"+val+"'>"+val+"</button>  ";
+			fbu +=bu;
 		}
-		s3.innerHTML = bs;
+		s3.innerHTML = fbu.trim();
 	}
-else {
+else if (selection.value === "Select Language"){
+                alert("Choose any language")
                 document.getElementById("s2").innerHTML = ""
                 document.getElementById("s1").innerHTML = ""
-
-                alert("Choose any language")
+                document.getElementById("s3").innerHTML = ""
+                document.getElementById("s4").innerHTML = ""
             }
 }

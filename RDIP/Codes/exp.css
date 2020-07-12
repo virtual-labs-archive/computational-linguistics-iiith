@@ -33,12 +33,48 @@
      position: absolute;
     width: 900px;
     top: 55%;
-    left: 68%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-style: italic;
     color: blue;
     font-family:  sans-serif;
 
-} 
+
+}
+#s4{
+     position: absolute;
+    width: 900px;
+    top: 59%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+    font-family:  sans-serif;
+
+}
+#s5{
+     position: absolute;
+    width: 900px;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+
+
+}
+#s6{
+
+
+   position: absolute;
+    width: 900px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: black;
+
+}  
 
