@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src='function.js'></script>
+    <head lang="en">
+        <meta charset="utf-8">
+
         <title>Experiment</title>
+
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="Function.js"></script>
     </head>
-    <style>
-        body{
-            background-color: papayawhip;
-        }
-    </style>
     <body>
-        <h1><center><b><i>Experiment</i></b></center></h1><br><br><br>
-        <center><select id="selection" onchange="dropdown()">
-            <option value="select">---Select Language---</option>
-            <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
-          </select></center><br><br><br>
-          <div id="engbutttons" style="display: none;">
-            <h3 id="info" style="color: blue;"></h3>
+        
+
+            <div class="display">
+
+                <div class="section1">
+                    <div class="head1">
+                       <center> <i />Experiment</div></center>
+                    </div>
+                    <div class="item" style="text-align: center;">
+                        <select id="selection" onchange="dropdown()">
+                            <option value="null">---Select Language---</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="section2">
+                        <p id="line1"></p>
+                        <p><i id="line2"></i></p>
+                        <p id="new-sentence" onclick="second_message();a(event.target.id)"></p><br><br>
+                        <p id="second-msg"></p><i id="second-line"></i>
+                        <p id="form-sent"></p>
+                        <button id="reform-button" style="display: none;" onclick="reform()">Re-form the sentence</button>
+                    </div>
+                </div>
+
             </div>
-            <div id="hindibutttons" style="display: none;">
-                <h3 id="info1" style="color: blue;"></h3>
-            </div>
+
     </body>
 </html>

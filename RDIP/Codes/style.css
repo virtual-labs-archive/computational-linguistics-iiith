@@ -1,0 +1,103 @@
+body{
+    font-family: serif;
+    background-color: papayawhip;
+}
+
+.container{
+    margin:auto;
+    padding: 0px;
+    width: 1024px;
+    text-align: center;
+}
+
+.display{
+    width: 100%;
+    min-height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    text-align: left;
+}
+
+.section1{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.head1{
+    color: #222222;
+    font-weight: 800;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.head2{
+    color:#222222;
+    text-decoration: underline;
+    font-weight: 600;
+    padding-top:10px;
+    font-size: 18px;
+}
+
+.item{
+    font-size: 16px;
+    color: black;
+    padding:10px;
+}
+
+.section2{
+    text-align: center;
+}
+
+hr{
+    margin-top:30px;
+    margin-bottom: 30px;
+    height:1px;
+    border-width:0;
+    color:gray;
+    background-color:gray
+}
+
+select{
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    text-align: left;
+    zoom:120%;
+    color:#444444;
+}
+
+#section2{
+    margin-top:100px;
+}
+
+#line1, #second-msg{
+    color: #0000AA;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#line2, #second-line{
+    color: #0000FF;
+    font-size: 14px;
+}
+
+#new-sentence button{
+    padding:5px;
+}
+
+#new-sentence button, #reform-button{
+    cursor: pointer;
+    margin:10px;
+}
+
+#form-sent{
+    font-size: 30px;
+    color: #444444;
+}
