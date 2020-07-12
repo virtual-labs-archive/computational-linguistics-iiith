@@ -34,9 +34,17 @@ function fs(id,value){
 	finalsentence += value + " ";
 	 document.getElementById("s5").innerHTML = finalsentence;
 	document.getElementById(id).style.display = "none";
-	document.getElementById("s6").innerHTML = "<center><button id='rb' onclick='rs()'>Re-form the sentence</button></center>"
+	document.getElementById("s6").innerHTML = "<center><button id='reform' onclick='rs()'>Re-form the sentence</button></center>"
+
 }
 
+function rs(){
+
+	finalsentence = "";
+	document.getElementById("s5").innerHTML = finalsentence;
+	document.getElementById("reform").innerHTML = "";
+	document.getElementById("s4").innerHTML = "";
+}
 
 let selection = document.getElementById("choose");
 function run(){
