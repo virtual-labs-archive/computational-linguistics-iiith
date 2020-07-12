@@ -106,6 +106,10 @@ select{
     color: red;
 }
 #wronganswer{
-    font-size: 30px;
+    font-size: 35px;
     color: red;
+}
+#correct-sentence{
+    font-size: 20px;
+    color:black;
 }

@@ -137,8 +137,8 @@ function clear(){
     document.getElementById("check-correctness").style.display = "none";
     document.getElementById('correctanswer').style.display = "none";
     document.getElementById('wronganswer').style.display = "none";
-    document.getElementById('correct-sentences').style.display= "none";
-    document.getElementById('correct-sentences').innerHTML = "Get the correct sentence";
+    document.getElementById('correct-sentence').style.display= "none";
+    document.getElementById('correct-sentences').innerHTML = "Get correct sentence";
     document.getElementById('correct-sentence').innerHTML = "";
 }
 
@@ -190,4 +190,29 @@ function sent_check(){
 function correctsent(){
     document.getElementById('correct-sentence').style.display = "initial";
     var req = document.getElementById('correct-sentences').innerHTML;
+    if(req == "Get correct sentence" || req=="Get answers"){
+        document.getElementById('correct-sentences').innerHTML = "Hide the correct sentence";
+        if(selection == "English"){
+            for(sent in sentences.English[ques]){
+                var t = document.createTextNode(sentences.English[ques][sent]);
+                document.getElementById('correct-sentence').appendChild(t);
+                var line = document.createElement("br");
+                document.getElementById('correct-sentence').appendChild(line);
+            }
+            return;
+        }
+        else if(selection == "Hindi"){
+            for(sent in sentences.Hindi[ques]){
+                var t = document.createTextNode(sentences.Hindi[ques][sent]);
+                document.getElementById('correct-sentence').appendChild(t);
+                var line = document.createElement("br");
+                document.getElementById('correct-sentence').appendChild(line);
+            }
+            return;
+        }
+    }
+    else if(req == "Hide the correct sentence"){
+        document.getElementById('correct-sentences').innerHTML = "Get answers";
+        document.getElementById('correct-sentence').innerHTML = "";
+    }
 }
