@@ -40,8 +40,10 @@ function cs(){
         }
     }
     document.getElementById('s9').innerHTML = "Wrong !!!";
-    
+    document.getElementById("s10").innerHTML = "<center><button id='new' onclick='gs()'>Get Correct Sentence</button></center>"
 }
+
+
 function shuffle(jumbled){
 	var jumble = jumbled.split(" ");
 	var i = jumble.length, temp, randomi;
@@ -133,4 +135,5 @@ else if (selection.value === "Select Language"){
                 document.getElementById("s4").innerHTML = ""
                
             }
-}
+		}
+	
