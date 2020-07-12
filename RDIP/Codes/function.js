@@ -137,6 +137,9 @@ function clear(){
     document.getElementById("check-correctness").style.display = "none";
     document.getElementById('correctanswer').style.display = "none";
     document.getElementById('wronganswer').style.display = "none";
+    document.getElementById('correct-sentences').style.display= "none";
+    document.getElementById('correct-sentences').innerHTML = "Get the correct sentence";
+    document.getElementById('correct-sentence').innerHTML = "";
 }
 
 function set_display(val){
@@ -161,6 +164,7 @@ function sent_check(){
         }
         else {
             document.getElementById('wronganswer').style.display = "initial";
+            document.getElementById('correct-sentences').style.display="initial"
         }
         return ;
     }
@@ -177,7 +181,13 @@ function sent_check(){
         }
         else{
             document.getElementById('wronganswer').style.display = "initial";
+            document.getElementById('correct-sentences').style.display="initial";
         }
         return true;
     }
+}
+
+function correctsent(){
+    document.getElementById('correct-sentence').style.display = "initial";
+    var req = document.getElementById('correct-sentences').innerHTML;
 }
