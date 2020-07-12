@@ -1,5 +1,6 @@
 function dis(){
   document.getElementById("p3").innerHTML=" ";
+  document.getElementById("p5").innerHTML=" ";
   var x=document.getElementById("lan").value;
   if(x=="English"){
     document.getElementById("p1").innerHTML="Form a sentence(Declarative or Interrogative or any other type)from the given words"
@@ -78,7 +79,20 @@ var sentences2='{"ste2":['+'{"a":"राम और श्याम बाजा�
 function pri(i){
   document.getElementById("p4").innerHTML="Formed Sentence(after selecting words):"
   var a=document.getElementById(i).value;
+  document.getElementById("p3").value+=a+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"
   document.getElementById("p3").innerHTML+=a+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp";
   document.getElementById(i).innerHTML="  ";
-  
+  document.getElementById("p5").innerHTML="<button>Re-form</button>";
+}
+function reform(){
+  document.getElementById("p3").innerHTML=" ";
+  document.getElementById("p4").innerHTML=" ";
+  document.getElementById("p5").innerHTML=" ";
+  for(var i=0;i<10;i++){
+    var a=document.getElementById(i).value
+    if(a!=undefined){
+    document.getElementById(i).innerHTML="<button>"+a+"</button>"
+  }
+}
+
 }
