@@ -83,7 +83,7 @@ function add_buttons(arr){
         button.innerHTML = arr[i];
         document.getElementById('new-sentence').appendChild(button);
     }
-    document.getElementById('form-sent').value = "";
+    document.getElementById('form-sent').value = String();
     count=0;
 }
 
@@ -98,7 +98,9 @@ function shuffle(a) {
     return a;
 }
 
-function second_message(){
+function second_message(id1){
+    if(id1=="new-sentence")
+       return;
     document.getElementById('second-msg').innerHTML = "Formed Sentence ";
     document.getElementById('second-line').innerHTML = "(after selecting words):";
     document.getElementById("reform-button").style.display = "initial";
@@ -106,9 +108,14 @@ function second_message(){
 
 function a(id1){
     if(id1 == "new-sentence")
-        return;
+        return ;
+        if(count == 0){
+            document.getElementById('form-sent').innerHTML = String( document.getElementById(id1).value );
+        }
+        else{
     document.getElementById('form-sent').innerHTML = String( document.getElementById('form-sent').innerHTML ) + " " + String( document.getElementById(id1).value );
-    formed_sentence = document.getElementById('form-sent').innerHTML;
+        }
+    form_sent = document.getElementById('form-sent').innerHTML;
     document.getElementById(id1).style.display = "none";
     count += 1;
    if(count == word_array.length){
@@ -123,14 +130,13 @@ function reform(){
 }
 
 function clear(){
-    selection = "";
-    cur_sent = "";
-    form_sent = "";
     document.getElementById("second-msg").innerHTML = "";
     document.getElementById("second-line").innerHTML = "";
     document.getElementById('form-sent').innerHTML = "";
     document.getElementById("reform-button").style.display = "none";
     document.getElementById("check-correctness").style.display = "none";
+    document.getElementById('correctanswer').style.display = "none";
+    document.getElementById('wronganswer').style.display = "none";
 }
 
 function set_display(val){
@@ -139,4 +145,39 @@ function set_display(val){
     document.getElementById("new-sentence").style.display = val;
     document.getElementById("second-msg").style.display = val;
     document.getElementById("second-line").style.display = val;
+}
+
+function sent_check(){
+    var status = false;
+    if(selection == "English"){
+        for(sent in sentences.English[ques]){
+            if(sentences.English[ques][sent] == form_sent){
+                 status = true;
+                break;
+            }
+        }
+        if(status == true){
+            document.getElementById('correctanswer').style.display = "initial";
+        }
+        else {
+            document.getElementById('wronganswer').style.display = "initial";
+        }
+        return ;
+    }
+    else if(selection == "Hindi"){
+        for(sent in sentences.Hindi[ques]){
+            if(sentences.Hindi[ques][sent] == form_sent){
+                status = true;
+                break;
+            }
+        }
+
+        if(status == true){
+            document.getElementById('correctanswer').style.display = "initial";
+        }
+        else{
+            document.getElementById('wronganswer').style.display = "initial";
+        }
+        return true;
+    }
 }

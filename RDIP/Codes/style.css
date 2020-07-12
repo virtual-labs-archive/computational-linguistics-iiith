@@ -92,7 +92,7 @@ select{
     padding:5px;
 }
 
-#new-sentence button, #reform-button{
+#new-sentence button, #reform-button,#check-correctness{
     cursor: pointer;
     margin:10px;
 }
@@ -100,4 +100,12 @@ select{
 #form-sent{
     font-size: 30px;
     color: #444444;
+}
+#correctanswer{
+    font-size: 35px;
+    color: red;
+}
+#wronganswer{
+    font-size: 30px;
+    color: red;
 }
