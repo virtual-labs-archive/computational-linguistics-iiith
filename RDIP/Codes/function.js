@@ -190,8 +190,8 @@ function sent_check(){
 function correctsent(){
     document.getElementById('correct-sentence').style.display = "initial";
     var req = document.getElementById('correct-sentences').innerHTML;
-    if(req == "Get correct sentence" || req=="Get answers"){
-        document.getElementById('correct-sentences').innerHTML = "Hide the correct sentence";
+    if(req == "Get correct Sentence" || req=="Get answers"){
+        document.getElementById('correct-sentences').innerHTML = "Hide the correct Sentence";
         if(selection == "English"){
             for(sent in sentences.English[ques]){
                 var t = document.createTextNode(sentences.English[ques][sent]);
@@ -211,7 +211,7 @@ function correctsent(){
             return;
         }
     }
-    else if(req == "Hide the correct sentence"){
+    else if(req == "Hide the correct Sentence"){
         document.getElementById('correct-sentences').innerHTML = "Get answers";
         document.getElementById('correct-sentence').innerHTML = "";
     }

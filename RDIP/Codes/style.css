@@ -1,6 +1,6 @@
 body{
     font-family: serif;
-    background-color: papayawhip;
+    background-color: peachpuff;
 }
 
 .container{
@@ -8,6 +8,7 @@ body{
     padding: 0px;
     width: 1024px;
     text-align: center;
+    opacity:50%;
 }
 
 .display{
@@ -33,7 +34,7 @@ body{
 .head1{
     color: #222222;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 30px;
     padding-bottom: 10px;
 }
 
@@ -79,13 +80,13 @@ select{
 
 #line1, #second-msg{
     color: #0000AA;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 800;
 }
 
 #line2, #second-line{
     color: #0000FF;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #new-sentence button{
