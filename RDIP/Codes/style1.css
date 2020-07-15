@@ -1,0 +1,31 @@
+body{
+    font-family: serif;
+    background-color: peachpuff;
+}
+.head1{
+    color: #222222;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.display{
+    width: 100%;
+    min-height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    text-align: left;
+}
+.container{
+    margin:auto;
+    padding: 0px;
+    width: 1024px;
+    text-align: center;
+    opacity:50%;
+}
