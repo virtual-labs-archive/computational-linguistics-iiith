@@ -190,7 +190,7 @@ function sent_check(){
 function correctsent(){
     document.getElementById('correct-sentence').style.display = "initial";
     var req = document.getElementById('correct-sentences').innerHTML;
-    if(req == "Get correct Sentence" || req=="Get answers"){
+    if(req == "Get correct sentence" || req=="Get answers"){
         document.getElementById('correct-sentences').innerHTML = "Hide the correct Sentence";
         if(selection == "English"){
             for(sent in sentences.English[ques]){
