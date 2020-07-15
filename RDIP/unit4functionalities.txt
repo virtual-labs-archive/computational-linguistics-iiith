@@ -1,0 +1,8 @@
+Functionalities observed:
+1.Dropdown
+2.corpuses list 
+3.text boxes to submit
+4.submit button functionality
+5.after succesful completion continue button
+6.continue button functionality
+7.the variation of text button on submition
