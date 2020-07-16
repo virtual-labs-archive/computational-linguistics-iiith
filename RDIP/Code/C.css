@@ -16,3 +16,14 @@ table{
 #p4,#p3,#p5,#p6{
   text-align:center;
 }
+#p7{
+  color:green;
+  text-align:center;
+}
+#p8{
+   color:red;
+   text-align:center;
+}
+#hide{
+display:none;
+}
