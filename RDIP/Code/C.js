@@ -16,6 +16,7 @@ var sentences2='{"ste2":['+'{"a":"राम और श्याम बाजा�
     '{"a":"एक लाल किताब वहाँ है","b":"एक लाल किताब है वहाँ","c":"वहाँ है एक लाल किताब","d":"है वहाँ एक लाल किताब"},'+
     '{"a":"एक बड़ी सी किताब वहाँ है","b":"एक बड़ी सी किताब है वहाँ","c":"बड़ी सी एक किताब वहाँ है","d":"बड़ी सी एक किताब है वहाँ","e":"वहाँ है एक बड़ी सी किताब","f":"वहाँ है बड़ी सी एक किताब","g":"है वहाँ एक बड़ी सी किताब","h":"है वहाँ बड़ी सी एक किताब"}]}'
 function dis(){
+  document.getElementById("p9").innerHTML=" ";
   document.getElementById("p8").innerHTML=" ";
   document.getElementById("p7").innerHTML=" ";
   document.getElementById("p3").innerHTML=" ";
@@ -103,6 +104,7 @@ function pri(i){
 }
 }
 function reform(){
+  document.getElementById("p9").innerHTML=" ";
   document.getElementById("p7").innerHTML=" "
   document.getElementById("p8").innerHTML=" "
   document.getElementById("p3").value=" ";
@@ -127,18 +129,24 @@ if(x=="English"){
 obj=JSON.parse(sentences);
 if(n==obj.ste1[m].a||n==obj.ste1[m].b||n==obj.ste1[m].c||n==obj.ste1[m].d||n==obj.ste1[m].e||n==obj.ste1[m].f||n==obj.ste1[m].g||n==obj.ste1[m].h){
 document.getElementById("p7").value="CORRECT ANSWER"
+document.getElementById("p7").innerHTML="CORRECT ANSWER"
 }
 else{
   document.getElementById("p8").value="WRONG ANSWER"
+  document.getElementById("p8").innerHTML="WRONG ANSWER"
+  document.getElementById("p9").innerHTML="<button>Get Correct Sentence</button>"
 }
 }
 else{
   obj=JSON.parse(sentences2);
 if(n==obj.ste2[m].a||n==obj.ste2[m].b||n==obj.ste2[m].c||n==obj.ste2[m].d||n==obj.ste2[m].e||n==obj.ste2[m].f||n==obj.ste2[m].g||n==obj.ste2[m].h||n==obj.ste2[m].i||n==obj.ste2[m].j||n==obj.ste2[m].k||n==obj.ste2[m].l){
   document.getElementById("p7").value="CORRECT ANSWER"
+  document.getElementById("p7").innerHTML="CORRECT ANSWER"
 }
 else{
+  document.getElementById("p8").innerHTML="WORNG ANSWER"
   document.getElementById("p8").value="WRONG ANSWER"
+  document.getElementById("p9").innerHTML="<button>Get Correct Sentence</button>"
 }
 }
 }
