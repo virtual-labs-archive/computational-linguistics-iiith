@@ -113,7 +113,7 @@ function reform(){
   document.getElementById("p8").innerHTML=" "
   document.getElementById("p3").value=" ";
   document.getElementById("p3").innerHTML=" ";
-  document.getElementById("p4").innerHTML=" ";
+  document.getElementById("p4").innerHTML="  ";
   document.getElementById("p5").innerHTML=" ";
   count1=0;
   for(var i=0;i<10;i++){
