@@ -23,9 +23,20 @@ body{
     text-align: left;
 }
 .container{
-    margin:auto;
-    padding: 0px;
-    width: 1024px;
     text-align: center;
-    opacity:50%;
+	align-content: center;
+	margin-right: 100px;
+	margin-left: 100px;
 }
+option{
+	text-align: center;
+}
+table,tr,td{
+	margin-left: 600px;
+	border: 1px solid black;
+	border-collapse: collapse; 
+	padding: 5px;
+}
+input{
+	width:60px;
+} 
