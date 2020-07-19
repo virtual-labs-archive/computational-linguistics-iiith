@@ -1,0 +1,23 @@
+*selection of corpous:
+
+1.dropdown to select coropus 
+2.display a paragraph when dropdown is selected
+
+*input of tokens and types
+
+1.number of words should be in tokens
+2.words which are repeated should not count in types
+3.submit button
+
+*correction of tokens and types
+
+1.if they are wrong red color should be display in input value
+2.if they are right green color should be display in input value
+3. when it is wrong wrong answer should display under submit button
+4.if it is right answer continue button shuold be display
+
+*new types
+
+1.same word with different tense are said to be new types 
+2.the new types input box is displayed and submit button is down the new type
+3.and if it is correct it displays same as above  
