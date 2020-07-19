@@ -7,7 +7,8 @@ function dropdown()
     if(x=='corpus1'){
         document.getElementById('answer').innerHTML="";
 		document.getElementById("submit").innerHTML="";
-		document.getElementById('continue').innerHTML="";
+        document.getElementById('continue').innerHTML="";
+        document.getElementById('tab1').innerHTML="";
 		document.getElementById("corp").innerHTML=corpus1;
 		document.getElementById("display").innerHTML="Enter the correct number of tokens and types from the corpus:";
 		document.getElementById("tab").innerHTML="<table><tr><td>"+"#tokens"+"</td><td>"+"<input id='token' type='text'>"+"</td></tr><tr><td>"+"#types"+"</td><td>"+"<input id='types' type='text'>"+"</td></tr></table>";
@@ -16,7 +17,8 @@ function dropdown()
 	if(x=='corpus2'){
         document.getElementById('answer').innerHTML="";
 		document.getElementById("submit").innerHTML="";
-		document.getElementById('continue').innerHTML="";
+        document.getElementById('continue').innerHTML="";
+        document.getElementById('tab1').innerHTML="";
 		document.getElementById("corp").innerHTML=corpus2;
 		document.getElementById("display").innerHTML="Enter the correct number of tokens and types from the corpus:";
 		document.getElementById("tab").innerHTML=document.getElementById("tab").innerHTML="<table><tr><td>"+"#tokens"+"</td><td>"+"<input id='token' type='text'>"+"</td></tr><tr><td>"+"#types"+"</td><td>"+"<input id='types' type='text'>"+"</td></tr></table>";
@@ -25,7 +27,8 @@ function dropdown()
 	if(x=='corpus3'){
         document.getElementById('answer').innerHTML="";
 		document.getElementById("submit").innerHTML="";
-		document.getElementById('continue').innerHTML="";
+        document.getElementById('continue').innerHTML="";
+        document.getElementById('tab1').innerHTML="";
 		document.getElementById("corp").innerHTML=corpus3;
 		document.getElementById("display").innerHTML="Enter the correct number of tokens and types from the corpus:";
 	    document.getElementById("tab").innerHTML="<table><tr><td>"+"#tokens"+"</td><td>"+"<input id='token' type='text'>"+"</td></tr><tr><td>"+"#types"+"</td><td>"+"<input id='types' type='text'>"+"</td></tr></table>";
@@ -56,7 +59,7 @@ function compare(corp){
 		document.getElementById('answer').innerHTML="Right answer!";
 		document.getElementById('token').style.backgroundColor="green";
 		document.getElementById('types').style.backgroundColor="green";
-		document.getElementById('continue').innerHTML="<button>continue</button>";
+		document.getElementById('continue').innerHTML="<button onclick='newTypes()'>continue</button>";
 	}
 	if(token== tokens(corp) && type1!= types(corp)){
 		document.getElementById('answer').innerHTML="Wrong answer!";
@@ -74,3 +77,9 @@ function compare(corp){
 		document.getElementById('types').style.backgroundColor="red";
     }
 }
+function newTypes(){
+	document.getElementById('answer').innerHTML="Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types";
+	document.getElementById("submit").innerHTML="";
+	document.getElementById('continue').innerHTML="#New types:";
+	document.getElementById('tab1').innerHTML="<input id='newtype' type=text>";
+} 
