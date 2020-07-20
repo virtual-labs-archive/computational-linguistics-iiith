@@ -251,7 +251,7 @@ function checkbutton() {
 	button.addEventListener("click", checkcorrectness);	
 }
 
-/*function checkcorrectness() {
+function checkcorrectness() {
 	var resultsentence = "";
 	var elements = document.getElementsByClassName("formedbutton");
 	for (var i = 0; i < elements.length; i++) {
@@ -312,7 +312,7 @@ function checkbutton() {
 	}
 }
 
-function getanswers() {
+/*function getanswers() {
 	document.getElementById("ansdiv").innerHTML = "";
 	var getansdiv = document.getElementById("getansdiv");
 	document.getElementById("getansdiv").innerHTML = "";
