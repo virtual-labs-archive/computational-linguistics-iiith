@@ -229,7 +229,7 @@ function buttonclick() {
 	}
 }
 
-/*function reform() {
+function reform() {
 	document.getElementById("formeddiv").innerHTML = "";
 	formeddivexists = 0;
     document.getElementById("buttondiv").innerHTML = "";
@@ -241,7 +241,7 @@ function buttonclick() {
     buttoncreation(getsentence);
 }
 
-function checkbutton() {
+/*function checkbutton() {
 	var ansdiv = document.getElementById("ansdiv");
 	checkdiv = document.getElementById("checkdiv");
 	var button = document.createElement('BUTTON');
