@@ -312,7 +312,7 @@ function checkcorrectness() {
 	}
 }
 
-/*function getanswers() {
+function getanswers() {
 	document.getElementById("ansdiv").innerHTML = "";
 	var getansdiv = document.getElementById("getansdiv");
 	document.getElementById("getansdiv").innerHTML = "";
@@ -369,4 +369,4 @@ function creategetans() {
 	button.setAttribute('id', 'creategetansid');
 	button.addEventListener("click", getanswers);
 	return button;
-}*/
+}
