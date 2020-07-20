@@ -241,7 +241,7 @@ function reform() {
     buttoncreation(getsentence);
 }
 
-/*function checkbutton() {
+function checkbutton() {
 	var ansdiv = document.getElementById("ansdiv");
 	checkdiv = document.getElementById("checkdiv");
 	var button = document.createElement('BUTTON');
@@ -251,7 +251,7 @@ function reform() {
 	button.addEventListener("click", checkcorrectness);	
 }
 
-function checkcorrectness() {
+/*function checkcorrectness() {
 	var resultsentence = "";
 	var elements = document.getElementsByClassName("formedbutton");
 	for (var i = 0; i < elements.length; i++) {
