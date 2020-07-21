@@ -232,4 +232,4 @@ function newcheck() {
 	}
 }
 
-/* Algorithm */
+/* Functionality related to Comparison */
