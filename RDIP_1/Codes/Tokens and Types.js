@@ -232,4 +232,4 @@ function newcheck() {
 	}
 }
 
-/* Functionality related to Comparison */
+/* Displaying Correct or Wrong Answer */
