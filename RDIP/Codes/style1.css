@@ -1,0 +1,42 @@
+body{
+    font-family: serif;
+    background-color: peachpuff;
+}
+.head1{
+    color: #222222;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.display{
+    width: 100%;
+    min-height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    text-align: left;
+}
+.container{
+    text-align: center;
+	align-content: center;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+option{
+	text-align: center;
+}
+table,tr,td{
+	margin-left: 600px;
+	border: 1px solid black;
+	border-collapse: collapse; 
+	padding: 5px;
+}
+input{
+	width:60px;
+} 

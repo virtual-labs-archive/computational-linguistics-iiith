@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../../src/themes/maroon-grid/images/logo.jpg">
+        <title>Experiment</title>
+
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="Function.js"></script>
+    </head>
+    <body>
+        
+
+            <div class="display">
+
+                <div class="section1">
+                    <div class="head1">
+                        <center><i>Experiment</i></center></div>
+                    </div><br>
+                    <div class="item" style="text-align: center;">
+                        <select id="selection" onchange="dropdown()">
+                            <option value="selectlang">---Select Language---</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="section2">
+                        <p id="line1"></p>
+                        <p><i id="line2"></i></p>
+                        <p id="new-sentence" onclick="second_message(event.target.id);a(event.target.id)"></p><br><br>
+                        <p id="second-msg"></p><i id="second-line"></i>
+                        <p id="form-sent"></p>
+                        <button id="reform-button" style="display: none;" onclick="reform()">Re-form the sentence</button><br><br>
+                        <button id="check-correctness" style="display: none;" onclick="sent_check()">Check the correctness of this sentence</button><br>
+                        <br><p id="correctanswer" style="display: none;">Correct Answer!!!</p>
+                        <p id="wronganswer" style="display: none;">Wrong Answer!!!</p><br><br>
+                        <button id="correct-sentences" style="display: none;" onclick="correctsent()">Get correct Sentence</button>
+                        <br><p id="correct-sentence"></p>
+                    </div>
+                </div>
+
+            </div>
+
+    </body>
+</html>

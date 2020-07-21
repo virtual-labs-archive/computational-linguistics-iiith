@@ -1,0 +1,19 @@
+{
+  "name": "libraries",
+  "version": "1.0.0",
+  "description": "to install snowball",
+  "main": "require.js",
+  "dependencies": {
+    "snowball": "^0.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "computational-linguistics-iiith"
+  }
+}
