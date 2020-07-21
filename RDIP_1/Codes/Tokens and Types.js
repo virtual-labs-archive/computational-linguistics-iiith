@@ -202,7 +202,7 @@ function check() {
     stemmedtypes = stemmed.length;        
     console.log(stemmedtypes); 
     n = stemmedtypes;
-}
+}*/
 
 function newtypes() {
 	document.getElementById("submitdiv").innerHTML = "";
@@ -230,4 +230,4 @@ function newcheck() {
 		document.getElementById("newansdiv").innerHTML = "Wrong Answer";
 		document.getElementById("newansdiv").style.color = "red";
 	}
-}*/
+}
