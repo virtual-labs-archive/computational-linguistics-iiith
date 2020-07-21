@@ -84,7 +84,7 @@ function table() {
 	button.addEventListener("click", check);
 }
 
-/*function check() {
+function check() {
 	var a = document.getElementById("token").value;
 	var b = document.getElementById("type").value;
 	console.log(a);
@@ -185,7 +185,7 @@ function table() {
 	stemmedcorpus();
 }
 
-function stemmedcorpus(){
+/*function stemmedcorpus(){
 	var paragraph = Corpus[c];
 	console.log(paragraph);
 	paragraph = paragraph.toLowerCase();
