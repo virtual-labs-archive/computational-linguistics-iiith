@@ -204,7 +204,7 @@ function stemmedcorpus(){
     n = stemmedtypes;
 }
 
-/*function newtypes() {
+function newtypes() {
 	document.getElementById("submitdiv").innerHTML = "";
 	document.getElementById("ansdiv").innerHTML = "";
 	document.getElementById("buttondiv").innerHTML = "";
@@ -218,7 +218,7 @@ function stemmedcorpus(){
 	button.addEventListener("click", newcheck);
 }
 
-function newcheck() {
+/*function newcheck() {
 	var a = document.getElementById("newtypestext").value;
 	if (a == n) {
 		document.getElementById("newtypestext").style.backgroundColor = "green";
