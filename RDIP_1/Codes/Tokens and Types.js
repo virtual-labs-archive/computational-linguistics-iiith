@@ -185,7 +185,7 @@ function check() {
 	stemmedcorpus();
 }
 
-/*function stemmedcorpus(){
+function stemmedcorpus(){
 	var paragraph = Corpus[c];
 	console.log(paragraph);
 	paragraph = paragraph.toLowerCase();
@@ -202,9 +202,9 @@ function check() {
     stemmedtypes = stemmed.length;        
     console.log(stemmedtypes); 
     n = stemmedtypes;
-}*/
+}
 
-function newtypes() {
+/*function newtypes() {
 	document.getElementById("submitdiv").innerHTML = "";
 	document.getElementById("ansdiv").innerHTML = "";
 	document.getElementById("buttondiv").innerHTML = "";
@@ -230,4 +230,6 @@ function newcheck() {
 		document.getElementById("newansdiv").innerHTML = "Wrong Answer";
 		document.getElementById("newansdiv").style.color = "red";
 	}
-}
+}*/
+
+/* Continue button created */
