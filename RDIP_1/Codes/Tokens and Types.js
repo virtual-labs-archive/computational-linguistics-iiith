@@ -218,7 +218,7 @@ function newtypes() {
 	button.addEventListener("click", newcheck);
 }
 
-/*function newcheck() {
+function newcheck() {
 	var a = document.getElementById("newtypestext").value;
 	if (a == n) {
 		document.getElementById("newtypestext").style.backgroundColor = "green";
@@ -230,6 +230,6 @@ function newtypes() {
 		document.getElementById("newansdiv").innerHTML = "Wrong Answer";
 		document.getElementById("newansdiv").style.color = "red";
 	}
-}*/
+}
 
-/* Continue button created */
+/* Algorithm */
