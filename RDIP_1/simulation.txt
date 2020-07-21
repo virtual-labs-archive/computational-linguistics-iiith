@@ -1,0 +1,17 @@
+List of all the functionalities :
+
+	1. There is a dropdown Corpus.
+
+	2. If we select "Select a Corpus" then alert is popped Select a corpus. 
+
+	3. A paragraph is displayed.
+
+	4. Then we have display table.
+
+	5. There is a Submit button.
+
+	6. If the answer is wrong then no button is displayed. Else "Continue" button is displayed.
+
+	7. After pressing Continue button then Newtypes is will be asked. Upon pressing the correct value it   shows "Right Answer".
+
+	8. Else "Wrong Answer" is displayed. 
