@@ -1,0 +1,78 @@
+div {
+	text-align: center;
+}
+
+#corpuses {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	margin-top: 30px;
+	color: #141313;
+    line-height: 24px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#createtable {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	display: none;
+}
+
+table,tr,td {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    color: #141313;
+    border:2px solid rgb(83, 82, 82);
+    border-collapse: collapse;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+#mysubmit {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	display: none;
+    margin-bottom: 10px;
+}
+
+#ansdiv {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+#buttondiv {
+    margin-top: 35px;
+}
+
+#newtypediv{
+    margin-top: 20px;
+}
+
+#newtypes {
+    font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+#newtypestext {
+    height:25px;
+    width: 70px;
+    display: none;
+    margin-bottom: 2px;
+}
+
+#newsubmitdiv {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#newansdiv {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
