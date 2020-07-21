@@ -232,4 +232,4 @@ function newcheck() {
 	}
 }
 
-/* Displaying Correct or Wrong Answer */
+/* BOOTSTRAP and CSS added */
