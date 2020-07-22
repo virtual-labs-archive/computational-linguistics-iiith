@@ -328,7 +328,7 @@ function check() {
 
 }
 
-function getanswer() {
+function getanswer() { /* Functionality of the "Get Answer" button */
 	if(wrong == 1){
 		document.getElementById("getansdiv").innerHTML = "";
         var button = document.createElement('BUTTON');
