@@ -25,17 +25,42 @@
 
 	<title>Coarse - grained POS Tagging</title>
 	<link rel="stylesheet" type="text/css" href="Coarse - grained POS Tagging.css">
+    <script src="../Libraries/require.js"></script>
+    <script src="Coarse - grained POS Tagging.js"></script>
+
 </head>
 <body>
-	<h2>Experiment</h2>
+	<h2 id="Heading">Experiment</h2>
 	<br>
 	<div align="center">
 		<select id="language" onchange="sel()">
-			<option value="Null">---Select Language---</option>
+			<option value="Null" selected>---Select Language---</option>
             <option value="English">English</option>
             <option value="Hindi">Hindi</option>
 		</select>
 	</div>
-<script src="Coarse - grained POS Tagging.js"></script>
+	<div>
+		<select id="English" onchange="selectsentence()">
+			<option value="Nil" selected>---Select a sentence---</option>
+			<option value="1">The child liked the chocolate.</option>
+			<option value="2">She was stopped by the bravest knight.</option>
+			<option value="3">Mary baked a cake for his birthday</option>
+			<option value="4">She decorated the cake carefully</option>
+			<option value="5">Mary wore a dress with polka dots.</option>
+		</select>
+
+		<select id="Hindi" onchange="selectsentence()">
+			<option value="Nill" selected>---Select a sentence---</option>
+			<option value="1">राम ने सीता के लिए फल तोड़ा।</option>
+			<option value="2">छोटे बच्चे पाठशाला जल्दी आयेंगे।</option>
+			<option value="3">मेहनत का फल मीठा होता है।</option>
+			<option value="4">वाह! वह खूबसूरत है।</option>
+			<option value="5">पेड़ से पत्ते गिर गए।</option>
+		</select>
+	</div>
+	<div><i id="statement"></i></div>
+	<div id="table"><table id="createtable" align="center"></table></div>
+	<div id="submitdiv"></div>
+	<div id="getansdiv"></div>
 </body>
 </html>
