@@ -152,7 +152,7 @@ function table() {
 	columns(table);
 }
 
-/*function columns(table) {
+function columns(table) {
 	sentence = sentence.substr(0,sentence.length-1);
 	var arr = sentence.split(/[\s!]+/);
 	var j = 0;
@@ -210,7 +210,7 @@ function table() {
 	button.addEventListener("click", check);
 }
 
-function check() {
+/*function check() {
 	document.getElementById("getansdiv").innerHTML = "";
 	wrong = 0;
 	if (language == "English") {
