@@ -398,7 +398,7 @@ function getanswer() { /* Functionality of the "Get Answer" button */
     }
 }
 
-/*function hideanswer() {
+function hideanswer() {
 	var tablerows = document.getElementById("createtable").rows;
     for(var i=1;i<tablerows.length;i++){
         var col = tablerows[i].cells;
@@ -410,4 +410,6 @@ function getanswer() { /* Functionality of the "Get Answer" button */
 	button.appendChild(text);
 	getansdiv.appendChild(button);
 	button.addEventListener("click", getanswer);
-}*/
+}
+
+// Extra Functionalities added.
