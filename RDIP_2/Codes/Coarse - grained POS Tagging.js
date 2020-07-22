@@ -1,4 +1,4 @@
-var English = {
+/*var English = {
 					'1' : 'The child liked the chocolate.',
 
 					'2' : 'She was stopped by the bravest knight.',
@@ -22,7 +22,7 @@ var Hindi = {
 				'5' : 'पेड़ से पत्ते गिर गए।',
 			}
 
-/*var Englishpos = {
+var Englishpos = {
 
 					'1' : ["Determiner" , "Noun" , "Verb" , "Determiner" , "Noun"],
 
@@ -35,7 +35,7 @@ var Hindi = {
 					'5' : ["Noun" , "Verb" , "Determiner" , "Noun" , "Preposition" , "Noun" , "Noun."],
 				 }*/
 
-/*var pos = require(['pos'], function (pos) {}); 
+var pos = require(['pos'], function (pos) {}); 
 var sentenceno = 0;
 var EnglishTags = [];                                           
 function getpos() {
@@ -75,9 +75,9 @@ function getpos() {
 	    EnglishTags.push(tags);
 		}
 	
-}*/
+}
 
-var language = "";
+/*var language = "";
 var sentence = "";
 var wrong = 0;
 
@@ -206,9 +206,9 @@ function columns(table) {
 	var button = document.createElement('BUTTON');
 	var text = document.createTextNode("Submit"); 
 	button.appendChild(text);
-	submitdiv.appendChild(button); /* Submit button added */
-	button.addEventListener("click", check);
-}
+	submitdiv.appendChild(button);	/* Submit button added */
+	//button.addEventListener("click", check);
+//}
 
 /*function check() {
 	document.getElementById("getansdiv").innerHTML = "";
