@@ -204,9 +204,9 @@ function columns(table) {
 
 	}
 	var button = document.createElement('BUTTON');
-	var text = document.createTextNode("Submit");
+	var text = document.createTextNode("Submit"); 
 	button.appendChild(text);
-	submitdiv.appendChild(button);
+	submitdiv.appendChild(button); /* Submit button added */
 	button.addEventListener("click", check);
 }
 
