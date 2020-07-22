@@ -1,4 +1,4 @@
-/*var English = {
+var English = {
 					'1' : 'The child liked the chocolate.',
 
 					'2' : 'She was stopped by the bravest knight.',
@@ -33,9 +33,9 @@ var Englishpos = {
 					'4' : ["Pronoun" , "Verb" , "Determiner" , "Noun" , "Adverb"],
 
 					'5' : ["Noun" , "Verb" , "Determiner" , "Noun" , "Preposition" , "Noun" , "Noun."],
-				 }*/
+				 }
 
-var pos = require(['pos'], function (pos) {}); 
+/*var pos = require(['pos'], function (pos) {}); 
 var sentenceno = 0;
 var EnglishTags = [];                                           
 function getpos() {
@@ -75,9 +75,9 @@ function getpos() {
 	    EnglishTags.push(tags);
 		}
 	
-}
+}*/
 
-/*var language = "";
+var language = "";
 var sentence = "";
 var wrong = 0;
 
@@ -207,10 +207,10 @@ function columns(table) {
 	var text = document.createTextNode("Submit"); 
 	button.appendChild(text);
 	submitdiv.appendChild(button);	/* Submit button added */
-	//button.addEventListener("click", check);
-//}
+	button.addEventListener("click", check);
+}
 
-/*function check() {
+function check() {
 	document.getElementById("getansdiv").innerHTML = "";
 	wrong = 0;
 	if (language == "English") {
@@ -328,7 +328,7 @@ function columns(table) {
 
 }
 
-function getanswer() {
+/*function getanswer() {
 	if(wrong == 1){
 		document.getElementById("getansdiv").innerHTML = "";
         var button = document.createElement('BUTTON');
