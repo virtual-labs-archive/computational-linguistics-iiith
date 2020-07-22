@@ -77,7 +77,7 @@ function getpos() {
 	
 }*/
 
-/*var language = "";
+var language = "";
 var sentence = "";
 var wrong = 0;
 
@@ -152,7 +152,7 @@ function table() {
 	columns(table);
 }
 
-function columns(table) {
+/*function columns(table) {
 	sentence = sentence.substr(0,sentence.length-1);
 	var arr = sentence.split(/[\s!]+/);
 	var j = 0;
