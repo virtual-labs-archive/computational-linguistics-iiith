@@ -328,7 +328,7 @@ function check() {
 
 }
 
-/*function getanswer() {
+function getanswer() {
 	if(wrong == 1){
 		document.getElementById("getansdiv").innerHTML = "";
         var button = document.createElement('BUTTON');
@@ -398,7 +398,7 @@ function check() {
     }
 }
 
-function hideanswer() {
+/*function hideanswer() {
 	var tablerows = document.getElementById("createtable").rows;
     for(var i=1;i<tablerows.length;i++){
         var col = tablerows[i].cells;
