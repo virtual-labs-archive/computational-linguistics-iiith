@@ -1,0 +1,18 @@
+List of all the functionalities :
+	1. There is a dropdown present in the Experiment section which includes languages 
+		(i).  English 
+		(ii). Hindi
+
+    2. Upon selection of one of those languages another dropdown comes and there will be 5 sentences of both the languages each.
+
+    3. Upon selecting one of those sentences, each sentence will be broken into parts consisting of each word.
+
+    4. For each word present in a table there will be a dropdown for the Parts of Speech of each word.
+
+    5. There will also be a Submit button along with the table which is designed to check the correct Parts of Speech for each word.
+
+    6. Upon selection of correct Parts of Speech, if all the answers are correct then there will be tick marks associated with each word. If all the tick marks are present for each word then the answers are correct.
+
+    7. If any one of the answers comes to be wrong then the corresponding Parts of Speech for that word will be shown in cross manner, and an additional button will be created as "Get Answer", upon pressing that button the correct answers for the respective words will be displayed in another column.
+
+    8. The button also changes to "Hide Answer" button which is continuous and again changes to "Get Answer" button upon pressing.

@@ -1,0 +1,69 @@
+#Heading {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	font-size: 30px;
+}
+
+div {
+	text-align: center;
+}
+
+#English, #Hindi {
+	margin-top: 30px;
+	display: none;
+	margin-bottom: 25px;
+}
+
+#statement {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	font-size: 16px;
+    color: blue;
+    padding:10px;
+    text-align: center;
+    line-height: 0.1;
+}
+
+#table {
+	line-height: 1pt;
+	padding:20px;
+}
+
+#createtable {
+	line-height: 1%;
+	border-spacing: 0px;
+}
+
+th,td {
+	border-style: solid;
+  	border-color: hsl(0, 0%, 73%);
+    border-spacing: 1px;
+    padding:8px;
+    height:50px;
+    border-width: thin;
+}
+
+th {
+    color: brown;
+    font-weight: 499;
+}
+
+td {
+	text-align: left;
+}
+
+#headings {
+	font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+	color: brown;
+}
+
+#submitdiv {
+	margin-top: 20px;
+}
+
+#image {
+	display: inline;
+	margin-right: auto;
+}
+
+#getansdiv {
+	margin-top: 30px;
+}
