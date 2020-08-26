@@ -1,0 +1,29 @@
+#lan{
+margin-left:600px;
+}
+#p1{
+margin-left:400px;
+color:darkblue;
+}
+#p2{
+margin-left:550px;
+color:blue;
+}
+table{
+ margin-left: auto;
+  margin-right: auto;
+}
+#p4,#p3,#p5,#p6,#p9,#p11,#p10{
+  text-align:center;
+}
+#p7{
+  color:green;
+  text-align:center;
+}
+#p8{
+   color:red;
+   text-align:center;
+}
+#hide{
+display:none;
+}

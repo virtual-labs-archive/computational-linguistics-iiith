@@ -1,0 +1,17 @@
+language_selection:
+       To select language we use option tag after selection it is directed to the random sentence function 
+Random_selection: 
+       To select a random sentence we have sentences therefore using random numbers we select a sentence
+jumbled_words:
+       Using split option we will divide a sentence into words
+       And these words are send to button tag
+       when we click on the words which are in the button tag they are redirected to sentence function
+combining_sentence:
+       Using paragraph id we will add the value of button to paragraph
+       After the compleition  of all buttons it is redirected to correction sentence
+correction_sentence:
+       The combined sentence is again splited into words and by using indexing we check the words are located in write position
+       If the words are at correct places then it returns "Correct sentence"
+       If the words are at un correct places then it returns "Incorrect senetence"
+       If it is wrong sentence the we use reform button to reform the sentence
+       If we selected reform the sentence it is  directed to jumbled_words 
