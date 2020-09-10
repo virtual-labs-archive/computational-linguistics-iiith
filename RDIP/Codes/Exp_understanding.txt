@@ -1,1 +1,24 @@
+Forming Sentences (Given experiment)
+
+Using Javascript, HTML and CSS, we have to replicate the given experiment. 
+We have to form complex sentences.
+
+Possible languages : Hindi, English
+
+On selecting a language, a sentence will be provided in a jumbled format which then has to be rearranged to make a meaningful sentence.
+
+The experiment being on "Forming Sentences": there can be a couple of correct answers.
+
+Various buttons need to be placed such as "Check the correctness of the answer" -> Gives the statement "Correct" or "Wrong"
+
+If correct there should probably be an option that provides a new sentence(not visible currently in the sample provided).
+The English and Hindi Sentences are randomly chosen from a list of sentences. Every time English or Hindi is chosen, a new random English/Hindi Sentence comes into play. (This functionality is missing)
+
+
+If Wrong -> A show correct answer button should display the correct one. 
+This can be hidden again on clicking a "Hide button".
+
+A reform button should again place all the jumbled words back in its position, for the user to try and formulate the correct response again.
+
+
 
