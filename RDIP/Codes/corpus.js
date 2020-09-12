@@ -30,4 +30,13 @@ obj2 = JSON.parse(hin);
 document.getElementById("hindi").innerHTML =
 obj2.h4[0].a;
 }
+
+function choice(){
+	var d= document.getElementById("lang")
+	var ch = d.options[d.selectedIndex].text
+	if (ch=="English" || ch=="Hindi"){
+		document.getElementById("disp_ins").innerHTML =	"Form a sentence (Declarative or Interrogative or any other type) from the given words " + "<br>" + "(select the buttons in proper order)"
+	}
+
+}
 /**/
