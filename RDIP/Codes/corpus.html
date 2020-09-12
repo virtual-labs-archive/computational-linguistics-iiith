@@ -5,14 +5,23 @@
 	<script src="corpus.js"></script>
 </head>
 <body>
-
-<input type="button" id="eng" value="English" onclick="English()"></input>
+<!--<input type="button" id="eng" value="English" onclick="English()"></input>
 <br>
 <p id="english"></p>
 <br><br>
 <input type="button" id="hin" value="Hindi" onclick="Hindi()"></input>
 <br><br>
-<p id="hindi"></p>
+<p id="hindi"></p>-->
+
+<select name="lang" id="lang" onchange="choice()"> 
+        <option value="none" selected disabled hidden> 
+          ---Select Language--- 
+      </option> 
+        <option id="english" value="english">English</option> 
+        <option id="hindi" value="hindi">Hindi</option>  
+    </select>
+
+<p id="disp_ins" align="CENTER"></p>
 
 </body>
 </html>
