@@ -13,13 +13,13 @@ function choice(){
 	if(ch =="English"){
 		n=Math.floor(Math.random() * 10) + 1;
 		var en=eng[n][1];
-		document.getElementById("e").innerHTML = eng[n][1];
+		//document.getElementById("e").innerHTML = eng[n][1];
 		randomEng(en);
 	}
 	else{
 		n=Math.floor(Math.random() * 7) + 1;
 		var hi=hin[n][1];
-		document.getElementById("h").innerHTML = hin[n][1];
+		//document.getElementById("h").innerHTML = hin[n][1];
 		randomHin(hi);
 	}
 
