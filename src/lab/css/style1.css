@@ -1,0 +1,1093 @@
+/*
+Theme Name: Vlabs
+Theme URI: http://www.vlabs.ac.in
+Author: Vlabs.co.in
+Author URI: http://www.vlabs.ac.in
+Description: The theme to accompany the profile site for vlabs.ac.in
+Version: 1.0
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+/
+/*
+try to alter with above URL and check which fit the best
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+*/
+body {
+    overflow-x: hidden;
+   font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+} 
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+/*******************************************************************************/
+/*****************************CUSTOME STYLE*************************************/
+/*******************************************************************************/
+
+.search-textbox
+{
+  background: url("../images/search-box.png") no-repeat;
+  border: 0 none;
+  color: #666666;
+  float: left;
+  font-family: Calibri;
+  font-size: 15px;
+  height: 36px;
+  margin: 0;
+  padding-left: 15px;
+  transition: background 0.3s ease-in-out 0s;
+  width: 220px;
+
+}
+
+.search-button
+{
+  background: url("../images/search.png") no-repeat;
+  cursor: pointer;
+  height: 36px;
+  text-indent: -99999em;
+  width: 36px;
+  border: 0px;
+  
+}
+.main-logo-a
+{
+	height: auto;
+	overflow: visible;
+	margin-left: 0px !important;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
+}
+
+.menu-a
+{
+	font-size: 18px !important;
+	font-family: Calibri !important;
+  color: #2C99CD !important;
+  padding-left: 10px !important;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+  padding-right: 10px !important;
+  
+}
+
+.menu-a-active
+{
+	color: white !important;
+}
+
+.menu-li
+{
+	/* float: right; */
+	border-radius: 10px;
+ 	margin-left: 20px;
+	margin-right: 20px; 
+}
+
+.menu-li:HOVER
+{
+	background-color: #77BB41 !important;
+}
+
+.menu-a:HOVER
+{
+	color: white !important;	
+}
+.menu-li-active
+{
+	  background-color: #77BB41;
+}
+
+.menu-div
+{
+	/* margin-top: 30px; */
+	
+}
+
+.menu-ul
+{
+	margin-top: 52px;
+}
+
+@media only screen and (max-width: 375px) {
+	.featured-labs-experiment-div
+	{
+		text-align: center;
+	}
+	.featured-labs-experiment-icon
+	{
+		float: left;
+		min-width: 78px;
+	}
+}
+
+
+@media only screen and (min-width: 401px) {
+
+	.custom-toggle
+	{
+		margin-bottom: 0px !important;
+		margin-top: 27px !important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	
+	.main-logo-a
+	{
+		width: 60%;
+	}
+	
+	.custom-toggle
+	{
+		margin-bottom: 0px !important;
+		margin-top: 12% !important;
+	}
+	
+	
+/* 	.menu-div
+	{
+		margin-top: 30px !important;
+	} */
+	
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 523px) { 
+   
+/*    .menu-div
+	{
+		margin-top: 30px !important;
+	} */
+}
+
+@media only screen and (max-width: 496px) {
+	
+	.featured-labs-div
+	{
+		background: none !important;
+	}
+}
+
+@media only screen and (max-width: 540px) { 
+	.broad-labs-empty-div
+	{
+		display: none;
+	}
+	.border-right-green-dotted
+	{
+		margin-top: 60px !important;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+ 
+ .main-logo
+   {
+   		width: 70%;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+   
+   .menu-ul
+	{
+		margin-top: 0px !important;
+	}
+	
+	.menu-li-active
+	{
+		  background-color: white !important;
+	}
+	
+	.menu-a-active
+	{
+		color: #2C99CE !important;
+	}
+	
+	.search-ul
+	{
+		display: none !important;
+	}
+	
+
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .menu-a
+	{
+		font-size: 1.4em !important;
+	}
+	
+	.main-logo
+	{
+		width: 70%;
+	}
+	
+	.banner-text-small
+	 {
+		font-size: 1.2em !important;
+  	 }
+
+	.banner-text-medium
+	{
+		font-size: 1.7em !important;
+	}
+	
+	.banner-text-big
+	{
+		font-size: 2.0em !important;
+	}
+	
+}
+
+@media only screen and (max-width: 991px) { 
+	.menu-ul
+	{
+		margin-top: 30px;
+	}
+	
+	.search-textbox
+	{
+		width: 150px;
+		font-size: 0.9em;
+	}
+	
+	.menu-li
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.aboutus-col-8
+	{
+		padding-right: 15px !important;
+	}
+	.footer-div
+	{
+	background-size: cover !important;
+	 }
+	 
+	 .lab-list-col-10
+	 {
+	 	/* background: none !important; */
+	 }
+	 
+	.featured-labs-main-div
+	{
+		margin-top: -35px !important;	
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+ 
+}
+
+
+/*====================new grid================================*/
+@media only screen and (min-width: 992px) { 
+	.col-md-2-5
+	{
+		width: 20%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 991px) { 
+	.col-md-2-5
+	{
+		width: 33.33%;
+		float: left;
+	}
+	.col-md-2-5-1-l
+	{
+			background: url("../images/dotted-devider-h-o.png") no-repeat;
+	background-position: left bottom;
+	}
+}
+
+@media only screen and (max-width: 767px) { 
+	.col-md-2-5
+	{
+		width: 50%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 540px) { 
+	.col-md-2-5
+	{
+		width: 100%;
+		float: left;
+	}
+}
+.col-md-2-5
+{
+  position: relative;
+  min-height: 1px;
+  vertical-align: bottom;
+  /* display: flex; */
+  min-height: 228px;
+}
+
+.col-md-2-5-1-l
+{
+	width: 100%;
+	  min-height: 228px;
+	  height: 100%;
+}
+
+.col-md-2-5-1-withbg
+{
+	background: url("../images/dotted-devider-h-o.png") no-repeat;
+	background-position: left bottom;
+	width: 100%;
+	  min-height: 228px;
+	  height: 100%;
+}
+
+.col-md-2-5-2
+{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+/*************************************************************/
+.row-container-height{
+	height:180px;
+}
+
+.featured-labs-div
+{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 15px !important;
+}
+.border-bottom-img
+{
+	 /*  border-bottom: 2px dotted;
+	  border-top : 0px;
+	  border-left: 0px;
+	  border-right: 0px;
+    -webkit-border-image: url(../images/dotted-devider-h-o.png) 30 round; Safari 3.1-5
+    -o-border-image: url(../images/dotted-devider-h-o.png) 30 round; Opera 11-12.1
+    border-image: url(../images/dotted-devider-h-o.png) 30 round; */
+}
+
+.broad-labs-a:HOVER
+{
+	text-decoration: none !important;
+
+}
+.col-md-2-5-1-l:HOVER, .col-md-2-5-1-withbg:HOVER
+{
+		background-color: #e4e4e4 !important;	
+}
+
+.border-right-green-dotted
+{
+	border-right: 2px dotted;
+	 margin-top: 30px;
+	 border-right-color: #678f48;
+	 min-height: 115px;
+}
+
+a:focus
+{
+	color: #72AB44 !important;
+}
+
+.featured-labs
+{
+	min-height: 208px !important;
+	/*overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 3;
+ 	-webkit-box-orient: vertical;*/
+}
+/*========================font classes=======================*/
+.text-h2-lightblue
+{
+	color: #2C99CE;
+	font-size: 1.8em;
+	margin-left: 0.8em;
+	font-size: 1.2em;
+}
+
+.text-a-lightgreen
+{
+	color: #72AB44;
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+
+.text-a-lightgreen:HOVER
+{
+	color: #72AB44 !important;
+}
+
+.text-a-white
+{
+	color: white;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+
+
+.text-h2-lightblue-small
+{
+	color: #2C99CE;
+	font-size: 1.5em;
+}
+
+.text-h3-darkblue-bold
+{
+	color: #3e6389;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.text-h3-darkblue
+{
+	color: #3e6389;
+	font-size: 1.4em; 	
+}
+
+.text-normal-gray-small
+{
+	color: #888;
+	font-size: 12px;
+}
+
+.text-normal-gray-big
+{
+	color: #888;
+	font-size: 30px;
+}
+
+.text-normal-gray-smallest
+{
+	color: #888;
+	font-size: 13px;
+}
+
+.featured-labs-icon-text
+{
+	color: #888;
+	font-size: 13px;
+}
+
+.featured-labs-main-div
+{
+	margin-top: -50px;	
+}
+
+.nounderline
+{
+	text-decoration: none;
+}
+
+.nounderline:HOVER
+{
+	text-decoration: none !important;
+}
+.text-normal-gray-medium
+{
+	color: #888;
+	font-size: 1.4em;
+}
+/*===========================================================*/
+
+.shadow
+{
+	-webkit-box-shadow: inset  0 8px 6px -6px black;
+	   -moz-box-shadow:  inset 0 8px 6px -6px black;
+	        box-shadow:  inset 0 8px 6px -6px black;
+}
+
+
+/*owl style sheet*/
+#owl-demo .item{
+  display: block;
+  padding: 1px 10px;
+  margin: 5px;
+  color: #888;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+ 
+//To move navigation buttons outside use these settings:
+ 
+#owl-demo .owl-controls .owl-buttons div, #owl-partner-institutions .owl-controls .owl-buttons div{
+  position: absolute;
+}
+ 
+#owl-demo .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px; 
+  position: absolute;
+   background: none !important;
+}
+ 
+  #owl-partner-institutions .owl-controls .owl-buttons .owl-prev
+  {
+  	left: -45px;
+  top: 20px; 
+  position: absolute;
+   background: none !important;
+  }
+  
+#owl-demo .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+  position: absolute;
+   background: none !important;
+}
+
+#owl-partner-institutions .owl-controls .owl-buttons .owl-next
+{
+	 right: -45px;
+  top: 20px;
+  position: absolute;
+   background: none !important;
+}
+
+#owl-demo .owl-controls .owl-pagination, #owl-partner-institutions .owl-controls .owl-pagination
+{
+	display: none;
+}
+
+#owl-aboutus .owl-controls .owl-buttons
+{
+	display: none;
+}
+
+#owl-aboutus .owl-controls .owl-pagination
+{
+	text-align: left;
+}
+#owl-aboutus .owl-controls .owl-page span
+{
+	background-color: white;
+	border: 2px solid;
+	height: 20px;
+	width: 20px;
+}
+
+#owl-aboutus .owl-controls .owl-page.active span, #owl-aboutus .owl-controls.clickable .owl-page:hover span
+{
+	background-color: #FF6600;
+	border: 0px;
+}
+/*******************/
+
+
+/*Labs page*/
+.sidebar-col-2
+{
+	
+}
+
+.lab-list-col-10
+{
+	background: url("../images/devider-blue-v-o.png") repeat-y;
+	background-position: left top;
+	margin-bottom: 25px;
+}
+
+.sidebar-a:HOVER, .text-h3-darkblue:HOVER {
+	color: #ff6600 !important;
+}
+
+.lab-list-row-div
+{
+	  background: url('../images/bottom-line-n.png') no-repeat;
+  background-position: left bottom;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1.5px dotted;
+  border-bottom-color: #888;
+  padding-bottom: 10px;
+}
+
+.lab-list-row-col-2
+{
+	margin-top: 15px;
+}
+
+/**********************************************************************************/
+ 
+.banner-text
+{
+	position: relative;
+	top: -59px;
+	color: white !important;
+}
+
+.banner-text-small
+{
+	font-size: 1.7em;
+}
+
+.banner-text-medium
+{
+	font-size: 2.2em;
+}
+
+.banner-text-big
+{
+	font-size: 2.7em;
+}
+
+.baneer-text-sub-div
+{
+	position: relative; 
+	float: left	
+} 
+
+.banner-text-1
+{
+	left: 3.7%; 	
+}
+
+.banner-text-2
+{
+	left: 9.6%; 	
+}
+
+.banner-text-3
+{
+	left: 15%; 	
+}
+
+.banner-text-4
+{
+	left:22%;
+}
+
+.banner-caption-div
+{
+  position: absolute;
+  top: 140px;
+  left: 3.7%;	
+  width: 150%;
+}
+
+.banner-caption-text
+{
+<<<<<<< HEAD
+	font-size: 2.0em;	
+	text-align: left;
+=======
+	font-size: 1.2em;	
+>>>>>>> f3b4f22ca1ec6639cf95185650d5427a8bca30ee
+	line-height: normal;
+	color: black;
+	
+}
+
+
+/*==========================RESPONSIVE+++++++++++++++++++++++++++++++*/
+
+@media only screen and (max-width: 399px) { 
+
+	.banner-text-small
+	 {
+		font-size: 0.8em !important;
+  	 }
+
+	.banner-text-medium
+	{
+		font-size: 0.9em !important;
+	}
+	
+	.banner-text-big
+	{
+		font-size: 1.1em !important; 
+	}
+	
+	.banner-text
+	{
+		top: -21px;
+		letter-spacing: -1.5px;
+	}
+	
+	.banner-text-1
+	{
+		left: 1.5%; 	
+	}
+	
+	.banner-text-2
+	{
+		left: 3.0%; 	
+	}
+	
+	.banner-text-3
+	{
+		left: 5%; 	
+	}	
+	
+	.banner-text-4
+	{
+		left: 8%; 	
+	}
+	
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+	.banner-text-small
+	 {
+		font-size: 0.9em !important;
+  	 }
+
+	.banner-text-medium
+	{
+		font-size: 1.1em !important;
+	}
+	
+	.banner-text-big
+	{
+		font-size: 1.2em !important;
+	}
+	
+	.banner-text
+	{
+		top: -24px;
+		letter-spacing: -1px;
+	}
+	
+	.banner-text-2
+	{
+		left: 7.0%; 	
+	}	
+	
+	.banner-text-3
+	{
+		left: 12%; 	
+	}	
+	
+	.banner-text-4
+	{
+		left: 17%; 	
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+	.banner-text-small
+	 {
+		font-size: 0.9em !important;
+  	 }
+
+	.banner-text-medium
+	{
+		font-size: 1.2em !important;
+	}
+	
+	.banner-text-big
+	{
+		font-size: 1.4em !important;
+	}
+	.banner-text
+	{
+		top: -30px;
+	}
+	
+	.banner-text-2
+	{
+		left: 7.0%; 	
+	}	
+	
+	.banner-text-3
+	{
+		left: 12%; 	
+	}
+	
+	.banner-text-4
+	{
+		left: 17%; 	
+	}	
+}
+
+
+@media only screen and (max-width: 349px) {
+	
+	.banner-caption-text
+	{
+		font-size: 0.5em;	
+	}
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+	
+	.banner-caption-text
+	{
+		font-size: 0.6em;	
+	}
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 444px) {
+	
+	.banner-caption-text
+	{
+		font-size: 0.7em;	
+	}
+
+}
+
+
+@media only screen and (min-width: 445px) and (max-width: 609px) {
+	
+	.banner-caption-text
+	{
+		font-size: 0.9em;	
+	}
+
+}
+
+@media only screen and (min-width: 610px) and (max-width: 767px) {
+	
+	.banner-caption-text
+	{
+		font-size: 1.1em;	
+	}
+
+}
+
+@media only screen and (max-width: 767px) { 
+	.banner-caption-div
+	{
+	  position: relative !important;
+	}		
+}
+
+@media only screen and (max-width: 346px) { 
+	.banner-caption-div
+	{
+	  top: -39px;
+	  left: -32%;
+	}		
+}
+
+@media only screen and (min-width: 347px) and (max-width: 399px) { 
+	.banner-caption-div
+	{
+	  top: -43px;
+	  left: -22%;
+	}		
+}
+
+@media only screen and (min-width: 400px) and (max-width: 444px) { 
+	.banner-caption-div
+	{
+	  top: -50px;
+	  left: -31%;
+	}		
+}
+
+@media only screen and (min-width: 445px) and (max-width: 500px) { 
+	.banner-caption-div
+	{
+	  top: -57px;
+	  left: -23%;
+	}		
+}
+
+@media only screen and (min-width: 501px) and (max-width: 569px) { 
+	.banner-caption-div
+	{
+	  top: -65px;
+	  left: -30%;
+	}		
+}
+
+@media only screen and (min-width: 570px) and (max-width: 639px) { 
+	.banner-caption-div
+	{
+	  top: -74px;
+	  left: -22%;
+	}		
+}
+
+@media only screen and (min-width: 640px) and (max-width: 709px) { 
+	.banner-caption-div
+	{
+	  top: -83px;
+	  left: -16%;
+	}		
+}
+
+@media only screen and (min-width: 710px) and (max-width: 767px) { 
+	.banner-caption-div
+	{
+	  top: -92px;
+	  left: -11%;
+	}		
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+	.banner-text-small
+	 {
+		font-size: 1.2em !important;
+  	 }
+
+	.banner-text-medium
+	{
+		font-size: 1.7em !important;
+	}
+	
+	.banner-text-big
+	{
+		font-size: 2.0em !important;
+	}
+	
+	.banner-text
+	{
+		top: -40px;
+	}
+	
+	.banner-text-2
+	{
+		left: 7.0%; 	
+	}	
+	
+	.banner-text-3
+	{
+		left: 12%; 	
+	}	
+	
+	.banner-text-4
+	{
+		left: 17%; 	
+	}	
+	
+	.banner-caption-text
+	{
+		font-size: 1.5em;	
+	}
+	.banner-caption-div
+	{
+	  top: 99px;
+	}	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) { 
+
+	.banner-text
+	{
+		top: -52px;
+	}		
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1150px) { 
+
+	.banner-text-2
+	{
+		left: 7.0%; 	
+	}	
+	
+	.banner-text-3
+	{
+		left: 9%; 	
+	}	
+	
+	.banner-text-4
+	{
+		left: 12%; 	
+	}
+	
+	.banner-caption-text
+	{
+		font-size: 1.6em;	
+	}
+	.banner-caption-div
+	{
+	  top: 133px;
+	}	
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1275px) { 
+
+	.banner-text-2
+	{
+		left: 8.3%; 	
+	}	
+	.banner-text-3
+	{
+		left: 12%; 	
+	}
+	
+	.banner-text-4
+	{
+		left: 17%; 	
+	}	
+	
+	.banner-caption-text
+	{
+		font-size: 1.8em;	
+	}
+}
+

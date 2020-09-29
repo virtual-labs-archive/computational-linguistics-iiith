@@ -18,7 +18,8 @@ html {
 }
 
 p {
-    font-size: 16px;
+    font-size: 17.5px;
+    text-align: justify;
 }
 
 /*** Calendar **********************/
@@ -33,9 +34,21 @@ background: #fff;
 font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 }
 
-.container-fluid .calender  .button {
-text-align: center;
-padding: 2px;
+/* Styles for feedback button in feedback section */
+#feedback-btn {
+	color: #2C99CE !important;
+	border-color: #2C99CE !important; 
+}
+
+#feedback-btn-link {
+	display: block;
+	margin: auto;
+	width: 17%;
+}	
+
+#feedback-btn-link:hover {
+	text-decoration: inherit !important;
+	color: inherit !important;
 }
 
 .container-fluid .calender  .nav {
@@ -810,9 +823,17 @@ a:focus
 {
 	color: #2C99CE;
 	font-size: 1.8em;
+        margin-top: 5px;
+        margin-bottom:20px;
+}
+.text-h1-lightblue
+{
+	color: #2C99CE;
+	font-size: 1.8em;
+        font-weight: bold;
+        text-align : center;
 
 }
-
 .text-a-lightgreen
 {
 	color: #72AB44;
@@ -1007,7 +1028,20 @@ font-size: 30px;
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
-	color: #ff6600 !important;
+	              color: #ff6600 !important;
+                  }
+h3
+{
+    line-height: 32px;
+}
+h1
+{
+    line-height:50px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2
+{
+    margin-bottom: 15px ;
 }
 
 .lab-list-row-div
