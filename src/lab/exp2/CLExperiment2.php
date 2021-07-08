@@ -14,6 +14,16 @@ function getOption(lang){
 	$('#words_sentence').load('CLexp2.php?lang='+lang+'&words_selected=%&words=%&possible_sent=%&turn=0&position=%');
 }
 
+function newTest(){
+    var lang = $('#selectLanguage').find(":selected").val();
+    if(lang=="null")
+	{
+		alert("Select language");
+		return;
+	}
+    $('#words_sentence').load('CLexp2.php?lang='+lang+'&words_selected=%&words=%&possible_sent=%&turn=0&position=%');
+}
+
 </script>
 </head>
 <body>
@@ -25,5 +35,6 @@ function getOption(lang){
 </select>
 </div>
 <br/><div align="center" id='words_sentence'></div>
+<div align="center"><button onclick="newTest()">Try a new case</button></div>
 </body>
 </html>
